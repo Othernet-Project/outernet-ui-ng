@@ -1,6 +1,10 @@
 @import "outernet/partial/colors";
 @import "outernet/partial/fonts";
 
+@mixin button-label-base {
+  font-family: $base-font;
+}
+
 @mixin button-base {
   display: inline-block;
   text-decoration: none;
@@ -10,18 +14,29 @@
   }
 }
 
+@mixin button-label {
+  @include button-label-base;
+  font-size: $base-size;
+  line-height: 137.5%;
+}
+
 @mixin button {
   @include button-base;
-  @include regular;
+  @include button-label;
   padding: 0.5em 1.25em 0.5em 1.25em;
   min-width: 8.125em;
   border-radius: 3.125em;
 }
 
+@mixin button-label-l {
+  @include button-label-base;
+  font-size: 18px;
+  line-height: 116%;
+}
+
 @mixin button-l {
   @include button-base;
-  @include heading-6;
-  /*padding: 16px 20px 16px 20px;*/
+  @include button-label-l;
   padding: 0.722em 1.25em 0.722em 1.25em;
   min-width: 160px;
   border-radius: 2.778em;
