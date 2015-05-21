@@ -1,7 +1,7 @@
 @import "outernet/partial/colors";
 @import "outernet/partial/fonts";
 
-@mixin button {
+@mixin button-base {
   display: inline-block;
   text-decoration: none;
   text-align: center;
@@ -10,16 +10,16 @@
   }
 }
 
-@mixin button-regular {
-  @include button;
-  @include regular-font;
+@mixin button {
+  @include button-base;
+  @include regular;
   padding: 0.5em 1.25em 0.5em 1.25em;
   min-width: 8.125em;
   border-radius: 3.125em;
 }
 
-@mixin button-large {
-  @include button;
+@mixin button-l {
+  @include button-base;
   @include heading-6;
   /*padding: 16px 20px 16px 20px;*/
   padding: 0.722em 1.25em 0.722em 1.25em;
@@ -27,18 +27,18 @@
   border-radius: 2.778em;
 }
 
-@mixin inactive-button-primary {
+@mixin button-inactive {
   color: #fff;
   background-color: $iconic;
 }
 
-@mixin inactive-button-secondary {
+@mixin button-inactive-s {
   color: $iconic;
   background-color: transparent;
   border: 1px solid $iconic;
 }
 
-@mixin action-button-primary {
+@mixin button-action {
   color: #fff;
   background-color: $sky;
   &:hover {
@@ -46,7 +46,7 @@
   }
 }
 
-@mixin action-button-secondary {
+@mixin button-action-s {
   color: $sky;
   background-color: transparent;
   border: 1px solid $sky;
@@ -56,7 +56,7 @@
   }
 }
 
-@mixin cta-button-primary {
+@mixin button-cta {
   color: #fff;
   background-color: $sun;
   &:hover {
@@ -64,7 +64,7 @@
   }
 }
 
-@mixin cta-button-secondary {
+@mixin button-cta-s {
   color: $sun;
   background-color: transparent;
   border: 1px solid $sun;
@@ -74,7 +74,7 @@
   }
 }
 
-@mixin confirm-button-primary {
+@mixin button-confirm {
   color: #fff;
   background-color: $forest;
   &:hover {
@@ -82,7 +82,7 @@
   }
 }
 
-@mixin confirm-button-secondary {
+@mixin button-confirm-s {
   color: $forest;
   background-color: transparent;
   border: 1px solid $forest;
@@ -92,7 +92,7 @@
   }
 }
 
-@mixin delete-button-primary {
+@mixin button-delete {
   color: #fff;
   background-color: $fire;
   &:hover {
@@ -100,12 +100,73 @@
   }
 }
 
-@mixin delete-button-secondary {
+@mixin button-delete-s {
   color: $fire;
   background-color: transparent;
   border: 1px solid $fire;
   &:hover {
     border: 1px solid $fire25d;
     color:$fire25d;
+  }
+}
+
+//Reverse Buttons
+@mixin button-inactive-r {
+  color: $sky;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+@mixin button-inactive-s-r {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  opacity: 0.5;
+}
+
+@mixin button-action-r {
+  color: $sky;
+  background-color: #fff;
+  &:hover {
+    color: $sky25d;
+    opacity: 0.75;
+  }
+}
+
+@mixin button-action-s-r {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  &:hover {
+    color: $sky25d;
+    background-color: #fff;
+    opacity: 0.75;
+  }
+}
+
+@mixin button-cta-r {
+  color: $sun;
+  background-color: #fff;
+  &:hover {
+    color: $sun25d;
+    opacity: 0.75;
+  }
+}
+
+@mixin button-confirm-r {
+  background-color: #fff;
+  color: $forest;
+  &:hover {
+    color:$forest25d;
+    opacity: 0.75;
+  }
+}
+
+@mixin button-delete-r {
+  background-color: #fff;
+  color: $fire;
+  &:hover {
+    color: $fire25d;
+    opacity: 0.75;
   }
 }

@@ -4,28 +4,48 @@
     <link rel="stylesheet" type="text/css" href="/static/css/tests/font-test.css?nocache={ ts }">
     <body>
         <h1>Primary Buttons</h1>
-        <a href="#" class="inactive-button-primary-regular">Regular Inactive Button</a><br><br>
-        <a href="#" class="inactive-button-primary-large">Large Inactive Button</a><br><br>
-        <a href="#" class="action-button-primary-regular">Regular Action Button</a><br><br>
-        <a href="#" class="action-button-primary-large">Large Action Button</a><br><br>
-        <a href="#" class="cta-button-primary-regular">Regular CTA Button</a><br><br>
-        <a href="#" class="cta-button-primary-large">Large CTA Button</a><br><br>
-        <a href="#" class="confirm-button-primary-regular">Regular Confirm Button</a><br><br>
-        <a href="#" class="confirm-button-primary-large">Large Confirm Button</a><br><br>
-        <a href="#" class="delete-button-primary-regular">Regular Delete Button</a><br><br>
-        <a href="#" class="delete-button-primary-large">Large Delete Button</a><br><br>
+        <a href="#" class="button-inactive">Regular Inactive Button</a><br><br>
+        <a href="#" class="button-inactive-l">Large Inactive Button</a><br><br>
+        <a href="#" class="button-action">Regular Action Button</a><br><br>
+        <a href="#" class="button-action-l">Large Action Button</a><br><br>
+        <a href="#" class="button-cta">Regular CTA Button</a><br><br>
+        <a href="#" class="button-cta-l">Large CTA Button</a><br><br>
+        <a href="#" class="button-confirm">Regular Confirm Button</a><br><br>
+        <a href="#" class="button-confirm-l">Large Confirm Button</a><br><br>
+        <a href="#" class="button-delete">Regular Delete Button</a><br><br>
+        <a href="#" class="button-delete-l">Large Delete Button</a><br><br>
 
         <h1>Secondary Buttons</h1>
-        <a href="#" class="inactive-button-secondary-regular">Regular Inactive Button</a><br><br>
-        <a href="#" class="inactive-button-secondary-large">Large Inactive Button</a><br><br>
-        <a href="#" class="action-button-secondary-regular">Regular Action Button</a><br><br>
-        <a href="#" class="action-button-secondary-large">Large Action Button</a><br><br>
-        <a href="#" class="cta-button-secondary-regular">Regular CTA Button</a><br><br>
-        <a href="#" class="cta-button-secondary-large">Large CTA Button</a><br><br>
-        <a href="#" class="confirm-button-secondary-regular">Regular Confirm Button</a><br><br>
-        <a href="#" class="confirm-button-secondary-large">Large Confirm Button</a><br><br>
-        <a href="#" class="delete-button-secondary-regular">Regular Delete Button</a><br><br>
-        <a href="#" class="delete-button-secondary-large">Large Delete Button</a><br><br>
+        <a href="#" class="button-inactive-s">Regular Inactive Button</a><br><br>
+        <a href="#" class="button-inactive-s-l">Large Inactive Button</a><br><br>
+        <a href="#" class="button-action-s">Regular Action Button</a><br><br>
+        <a href="#" class="button-action-s-l">Large Action Button</a><br><br>
+        <a href="#" class="button-cta-s">Regular CTA Button</a><br><br>
+        <a href="#" class="button-cta-s-l">Large CTA Button</a><br><br>
+        <a href="#" class="button-confirm-s">Regular Confirm Button</a><br><br>
+        <a href="#" class="button-confirm-s-l">Large Confirm Button</a><br><br>
+        <a href="#" class="button-delete-s">Regular Delete Button</a><br><br>
+        <a href="#" class="button-delete-s-l">Large Delete Button</a><br><br>
+
+        <h1>Reverse Buttons</h1>
+        <div class="filler">
+            <br>
+            <a href="#" class="button-inactive-r">Regular Inactive Button</a><br><br>
+            <a href="#" class="button-inactive-l-r">Large Inactive Button</a><br><br>
+            <a href="#" class="button-inactive-s-r">Secondary Regular Inactive Button</a><br><br>
+            <a href="#" class="button-inactive-s-l-r">Secondary Large Inactive Button</a><br><br>
+            <a href="#" class="button-action-r">Regular Action Button</a><br><br>
+            <a href="#" class="button-action-l-r">Large Action Button</a><br><br>
+            <a href="#" class="button-action-s-r">Secondary Regular Action Button</a><br><br>
+            <a href="#" class="button-action-s-l-r">Secondary Large Action Button</a><br><br>
+            <a href="#" class="button-cta-r">Regular CTA Button</a><br><br>
+            <a href="#" class="button-cta-l-r">Large CTA Button</a><br><br>
+            <a href="#" class="button-confirm-r">Regular Confirm Button</a><br><br>
+            <a href="#" class="button-confirm-l-r">Large Confirm Button</a><br><br>
+            <a href="#" class="button-delete-r">Regular Delete Button</a><br><br>
+            <a href="#" class="button-delete-l-r">Large Delete Button</a><br><br>
+
+        </div>
 
     </body>
 </html>

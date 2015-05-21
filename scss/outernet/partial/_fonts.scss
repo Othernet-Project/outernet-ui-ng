@@ -27,13 +27,13 @@ $base-size: 16px;
 }
 
 //Fonts (sub, regular, and headers)
-@mixin regular_font {
+@mixin regular {
   font-family: $base-font;
   font-size: $base-size;
   line-height: 137.5%;
 }
 
-@mixin sub_text {
+@mixin sub {
   font-family: $base-font;
   font-size: 87.5%;
   line-height: 137.5%;

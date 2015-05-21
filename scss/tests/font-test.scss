@@ -5,7 +5,7 @@
 
 
 body {
-  @include regular_font;
+  @include regular;
 }
 
 i {
@@ -21,7 +21,7 @@ u {
 }
 
 sub {
-  @include sub_text;
+  @include sub;
 }
 
 h1 {

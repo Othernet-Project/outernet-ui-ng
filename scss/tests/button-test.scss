@@ -2,103 +2,180 @@
 @import "compass/css3";
 @import "outernet/partial/buttons.scss";
 
-.inactive-button-primary-regular {
-  @include button-regular;
-  @include inactive-button-primary;
+.button-inactive {
+  @include button;
+  @include button-inactive;
 }
 
-.inactive-button-primary-large {
-  @include button-large;
-  @include inactive-button-primary;
+.button-inactive-l {
+  @include button-l;
+  @include button-inactive;
 }
 
-.inactive-button-secondary-regular {
-  @include button-regular;
-  @include inactive-button-secondary;
+.button-inactive-s {
+  @include button;
+  @include button-inactive-s;
 }
 
-.inactive-button-secondary-large {
-  @include button-large;
-  @include inactive-button-secondary;
+.button-inactive-s-l {
+  @include button-l;
+  @include button-inactive-s;
 }
 
-.action-button-primary-regular {
-  @include button-regular;
-  @include action-button-primary;
+.button-action {
+  @include button;
+  @include button-action;
 }
 
-.action-button-primary-large {
-  @include button-large;
-  @include action-button-primary;
+.button-action-l {
+  @include button-l;
+  @include button-action;
 }
 
-.action-button-secondary-regular {
-  @include button-regular;
-  @include action-button-secondary;
+.button-action-s {
+  @include button;
+  @include button-action-s;
 }
 
-.action-button-secondary-large {
-  @include button-large;
-  @include action-button-secondary;
+.button-action-s-l {
+  @include button-l;
+  @include button-action-s;
 }
 
-.cta-button-primary-regular {
-  @include button-regular;
-  @include cta-button-primary;
+.button-cta {
+  @include button;
+  @include button-cta;
 }
 
-.cta-button-primary-large {
-  @include button-large;
-  @include cta-button-primary;
+.button-cta-l {
+  @include button-l;
+  @include button-cta;
 }
 
-.cta-button-secondary-regular {
-  @include button-regular;
-  @include cta-button-secondary;
+.button-cta-s {
+  @include button;
+  @include button-cta-s;
 }
 
-.cta-button-secondary-large {
-  @include button-large;
-  @include cta-button-secondary;
+.button-cta-s-l {
+  @include button-l;
+  @include button-cta-s;
 }
 
-.confirm-button-primary-regular {
-  @include button-regular;
-  @include confirm-button-primary;
+.button-confirm {
+  @include button;
+  @include button-confirm;
 }
 
-.confirm-button-primary-large {
-  @include button-large;
-  @include confirm-button-primary;
+.button-confirm-l {
+  @include button-l;
+  @include button-confirm;
 }
 
-.confirm-button-secondary-regular {
-  @include button-regular;
-  @include confirm-button-secondary;
+.button-confirm-s {
+  @include button;
+  @include button-confirm-s;
 }
 
-.confirm-button-secondary-large {
-  @include button-large;
-  @include confirm-button-secondary;
+.button-confirm-s-l {
+  @include button-l;
+  @include button-confirm-s;
 }
 
-.delete-button-primary-regular {
-  @include button-regular;
-  @include delete-button-primary;
+.button-delete {
+  @include button;
+  @include button-delete;
 }
 
-.delete-button-primary-large {
-  @include button-large;
-  @include delete-button-primary;
+.button-delete-l {
+  @include button-l;
+  @include button-delete;
 }
 
-.delete-button-secondary-regular {
-  @include button-regular;
-  @include delete-button-secondary;
+.button-delete-s {
+  @include button;
+  @include button-delete-s;
 }
 
-.delete-button-secondary-large {
-  @include button-large;
-  @include delete-button-secondary;
+.button-delete-s-l {
+  @include button-l;
+  @include button-delete-s;
+}
+
+
+//reverse buttons
+
+.filler {
+  background-color: $base;
+}
+
+.button-inactive-r {
+  @include button;
+  @include button-inactive-r;
+}
+
+.button-inactive-l-r {
+  @include button-l;
+  @include button-inactive-r;
+}
+
+.button-inactive-s-r {
+  @include button;
+  @include button-inactive-s-r;
+}
+
+.button-inactive-s-l-r {
+  @include button-l;
+  @include button-inactive-s-r;
+}
+
+.button-action-r {
+  @include button;
+  @include button-action-r;
+}
+
+.button-action-l-r {
+  @include button-l;
+  @include button-action-r;
+}
+
+.button-action-s-r {
+  @include button;
+  @include button-action-s-r;
+}
+
+.button-action-s-l-r {
+  @include button-l;
+  @include button-action-s-r;
+}
+
+.button-cta-r {
+  @include button;
+  @include button-cta-r;
+}
+
+.button-cta-l-r {
+  @include button-l;
+  @include button-cta-r;
+}
+
+.button-confirm-r {
+  @include button;
+  @include button-confirm-r;
+}
+
+.button-confirm-l-r {
+  @include button-l;
+  @include button-confirm-r;
+}
+
+.button-delete-r {
+  @include button;
+  @include button-delete-r;
+}
+
+.button-delete-l-r {
+  @include button-l;
+  @include button-delete-r;
 }
 
