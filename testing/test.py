@@ -17,6 +17,11 @@ def working_test():
     return template('templates/test.mako')
 
 
+@app.route('/button-test')
+def button_test():
+    return template('templates/button-test.mako')
+
+
 @app.route('/hyperlink-test')
 def hyperlink_test():
     return template('templates/hyperlink-test.mako')

@@ -1,5 +1,5 @@
 <html>
-<link rel="stylesheet" type="text/css" href="/static/css/base.css">
+<link rel="stylesheet" type="text/css" href="/static/css/outernet/ui.css">
 <body>
 <ul>
 <h1>
@@ -7,7 +7,11 @@
 <a href="/working-test">working-test</a>
 </li>
 <li>
+<a href="/button-test">button-test</a>
+</li>
+<li>
 <a href="/hyperlink-test">hyperlink-test</a>
+</li>
 <li>
 <a href="/font-test">font-test</a>
 </li>
