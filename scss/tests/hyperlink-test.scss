@@ -1,0 +1,19 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "outernet/partial/hyperlinks.scss";
+
+a.general {
+  @include hyperlink_general;
+}
+
+a.cta {
+  @include hyperlink_cta;
+}
+
+a.confirm {
+  @include hyperlink_confirm;
+}
+
+a.delete {
+  @include hyperlink_confirm;
+}

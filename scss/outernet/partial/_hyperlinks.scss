@@ -1,0 +1,36 @@
+@import "outernet/partial/colors";
+@import "outernet/partial/fonts";
+
+
+@mixin hyperlink_general {
+  color: $sky;
+  text-decoration: none;
+  &:hover {
+    @include underline;
+    color: $sky25d;
+  }
+}
+
+@mixin hyperlink_cta {
+  color: $sun;
+  text-decoration: none;
+  &:hover {
+    @include underline;
+  }
+}
+
+@mixin hyperlink_confirm {
+  color: $forest;
+  text-decoration: none;
+  &:hover {
+    @include underline;
+  }
+}
+
+@mixin hyperlink_delete {
+  color: $fire;
+  text-decoration: none;
+  &:hover {
+    @include underline;
+  }
+}

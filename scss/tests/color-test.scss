@@ -1,0 +1,18 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "outernet/partial/colors";
+
+$sky-map: (base: $sky, 25d: $sky25d, 75: $sky75, 50: $sky50, 25: $sky25, 10: $sky10, 6: $sky6);
+$ocean-map:(base: $ocean, 25d: $ocean25d, 75: $ocean75, 50: $ocean50, 25: $ocean25, 10: $ocean10, 6: $ocean6);
+$sun-map:(base: $sun, 25d: $sun25d, 75: $sun75, 50: $sun50, 25: $sun25, 10: $sun10, 6: $sun6);
+$forest-map:(base: $forest, 25d: $forest25d, 75: $forest75, 50: $forest50, 25: $forest25, 10: $forest10, 6: $forest6);
+$fire-map:(base: $fire, 25d: $fire25d, 75: $fire75, 50: $fire50, 25: $fire25, 10: $fire10, 6: $fire6);
+$map: (sky: $sky-map, ocean: $ocean-map, sun: $sun-map, forest: $forest-map, fire: $fire-map);
+
+@each $color, $value in $map {
+  @each $shade, $value in $value {
+    .#{$color}#{$shade} { 
+      background-color: #{$value};
+    }
+  }
+}

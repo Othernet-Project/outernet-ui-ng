@@ -1,0 +1,53 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "outernet/partial/fonts";
+@import "outernet/partial/hyperlinks";
+
+
+body {
+  @include regular_font;
+}
+
+i {
+  @include italic;
+}
+
+b {
+  @include bold;
+}
+
+u {
+  @include underline;
+}
+
+sub {
+  @include sub_text;
+}
+
+h1 {
+  @include heading_1;
+}
+
+h2 {
+  @include heading_2;
+}
+
+h3 {
+  @include heading_3;
+}
+
+h4 {
+  @include heading_4;
+}
+
+h5 {
+  @include heading_5;
+}
+
+h6 {
+  @include heading_6;
+}
+
+super {
+  @include heading_0;
+}

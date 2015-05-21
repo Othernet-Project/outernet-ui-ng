@@ -1,0 +1,104 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "outernet/partial/buttons.scss";
+
+.inactive-button-primary-regular {
+  @include button-regular;
+  @include inactive-button-primary;
+}
+
+.inactive-button-primary-large {
+  @include button-large;
+  @include inactive-button-primary;
+}
+
+.inactive-button-secondary-regular {
+  @include button-regular;
+  @include inactive-button-secondary;
+}
+
+.inactive-button-secondary-large {
+  @include button-large;
+  @include inactive-button-secondary;
+}
+
+.action-button-primary-regular {
+  @include button-regular;
+  @include action-button-primary;
+}
+
+.action-button-primary-large {
+  @include button-large;
+  @include action-button-primary;
+}
+
+.action-button-secondary-regular {
+  @include button-regular;
+  @include action-button-secondary;
+}
+
+.action-button-secondary-large {
+  @include button-large;
+  @include action-button-secondary;
+}
+
+.cta-button-primary-regular {
+  @include button-regular;
+  @include cta-button-primary;
+}
+
+.cta-button-primary-large {
+  @include button-large;
+  @include cta-button-primary;
+}
+
+.cta-button-secondary-regular {
+  @include button-regular;
+  @include cta-button-secondary;
+}
+
+.cta-button-secondary-large {
+  @include button-large;
+  @include cta-button-secondary;
+}
+
+.confirm-button-primary-regular {
+  @include button-regular;
+  @include confirm-button-primary;
+}
+
+.confirm-button-primary-large {
+  @include button-large;
+  @include confirm-button-primary;
+}
+
+.confirm-button-secondary-regular {
+  @include button-regular;
+  @include confirm-button-secondary;
+}
+
+.confirm-button-secondary-large {
+  @include button-large;
+  @include confirm-button-secondary;
+}
+
+.delete-button-primary-regular {
+  @include button-regular;
+  @include delete-button-primary;
+}
+
+.delete-button-primary-large {
+  @include button-large;
+  @include delete-button-primary;
+}
+
+.delete-button-secondary-regular {
+  @include button-regular;
+  @include delete-button-secondary;
+}
+
+.delete-button-secondary-large {
+  @include button-large;
+  @include delete-button-secondary;
+}
+
