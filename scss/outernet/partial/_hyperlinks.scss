@@ -1,36 +1,49 @@
 @import "outernet/partial/colors";
 @import "outernet/partial/fonts";
 
+$link-normal-color: sky;
+$link-cta-color: sun;
+$link-confirm-color: forest;
+$link-delete-color: fire;
 
-@mixin hyperlink_general {
-  color: $sky;
+@mixin link-base {
   text-decoration: none;
-  &:hover {
-    @include underline;
-    color: $sky25d;
-  }
-}
+  cursor: pointer;
 
-@mixin hyperlink_cta {
-  color: $sun;
-  text-decoration: none;
   &:hover {
     @include underline;
   }
 }
 
-@mixin hyperlink_confirm {
-  color: $forest;
-  text-decoration: none;
-  &:hover {
-    @include underline;
+@mixin link-visited-color($color, $visited-variant: 25d) {
+  color: color-by-name($color, $visited-variant);
+}
+
+@mixin link-color($color, $visited-variant: 25d) {
+  color: color-by-name($color);
+
+  &:visited {
+    @include link-visited-color($color, $visited-variant);
   }
 }
 
-@mixin hyperlink_delete {
-  color: $fire;
-  text-decoration: none;
-  &:hover {
-    @include underline;
-  }
+@mixin link-normal {
+  @include link-color($link-normal-color);
+}
+
+@mixin link-cta {
+  @include link-color($link-cta-color, 100);
+}
+
+@mixin link-confirm {
+  @include link-color($link-confirm-color, 100);
+}
+
+@mixin link-delete {
+  @include link-color($link-delete-color, 100);
+}
+
+a {
+  @include link-base;
+  @include link-normal;
 }
