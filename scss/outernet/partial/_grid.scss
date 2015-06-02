@@ -32,6 +32,10 @@ $col-width: 100% / $col-count;
   }
 }
 
+@mixin simple-row {
+  @include grid-padding;
+}
+
 @mixin col-span($span) {
   width: $span * $col-width;
   padding-left: $gutter / 2;
@@ -40,16 +44,16 @@ $col-width: 100% / $col-count;
   box-sizing: border-box;
 }
 
-@mixin col6() {
-  @include col-span(2)
+@mixin col6($span: 1) {
+  @include col-span($span * 2)
 }
 
-@mixin col4() {
-  @include col-span(3);
+@mixin col4($span: 1) {
+  @include col-span($span * 3);
 }
 
-@mixin col2($pos) {
-  @include col-span(6);
+@mixin col2($span: 1) {
+  @include col-span($span * 6);
 }
 
 @mixin col1() {
