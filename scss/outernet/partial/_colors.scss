@@ -65,3 +65,66 @@ $fire50: #e18988;
 $fire25: #f0c4c5;
 $fire10: #fae8e8;
 $fire6: #fbf1f0;
+
+$sky-colors: (
+  25d: $sky25d,
+  100: $sky,
+  75: $sky75,
+  50: $sky50,
+  25: $sky25,
+  10: $sky10,
+  6: $sky6
+);
+
+$ocean-colors:(
+  25d: $ocean25d,
+  100: $ocean,
+  75: $ocean75,
+  50: $ocean50,
+  25: $ocean25,
+  10: $ocean10,
+  6: $ocean6
+);
+
+$sun-colors:(
+  25d: $sun25d,
+  100: $sun,
+  75: $sun75,
+  50: $sun50,
+  25: $sun25,
+  10: $sun10,
+  6: $sun6
+);
+
+$forest-colors: (
+  25d: $forest25d,
+  100: $forest,
+  75: $forest75,
+  50: $forest50,
+  25: $forest25,
+  10: $forest10,
+  6: $forest6
+);
+
+$fire-colors: (
+  25d: $fire25d,
+  100: $fire, 
+  75: $fire75,
+  50: $fire50,
+  25: $fire25,
+  10: $fire10,
+  6: $fire6
+);
+
+$colors: (
+  sky: $sky-colors, 
+  ocean: $ocean-colors, 
+  sun: $sun-colors, 
+  forest: $forest-colors, 
+  fire: $fire-colors
+);
+
+@function color-by-name($name, $variant: 100) {
+  $color-map: map-get($colors, $name);
+  @return map-get($color-map, $variant);
+}
