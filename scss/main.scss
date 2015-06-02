@@ -1,0 +1,211 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "outernet/ui";
+
+body {
+  background: image-url('bg.png');
+}
+
+.section, header {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: $white;
+  margin-bottom: $base-size;
+}
+
+.section {
+  @include grid-container;
+
+  .section-title {
+    @include row;
+
+    h2 {
+      @include col1;
+    }
+  }
+}
+
+header {
+  @include grid-padding;
+
+  h1 { 
+    @include heading-0;
+  }
+}
+
+.swatches {
+  @include row;
+
+  .col { 
+    @include col6;
+  }
+
+  li {
+    margin-bottom: 1em;
+    text-transform: uppercase;
+
+    .swatch-label {
+      @include sub;
+
+      &.main {
+        @include bold;
+      }
+    }
+  }
+}
+
+.swatch {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: top;
+
+  @each $color, $value in $colors {
+    @each $shade, $value in $value {
+      &.#{$color}#{$shade} { 
+        background-color: #{$value};
+      }
+    }
+  }
+
+  &.universe {
+    background-color: $universe;
+  }
+
+  &.base {
+    background-color: $base;
+  }
+
+  &.sub {
+    background-color: $sub;
+  }
+
+  &.iconic {
+    background-color: $iconic;
+  }
+
+  &.border {
+    background-color: $border;
+  }
+
+  &.earth {
+    background-color: $earth;
+  }
+  
+  &.input {
+    background-color: $input;
+  }
+}
+
+
+.typography {
+  .section-title {
+    h2 {
+      @include col2;
+    }
+
+    .note {
+      @include col2;
+      color: $iconic;
+      margin-top: 36px;
+    }
+  }
+
+  .headings {
+    @include simple-row;
+  }
+
+  .heading-0 {
+    @include heading-0;
+  }
+
+  .heading-1 {
+    @include heading-1;
+  }
+
+  .heading-2 {
+    @include heading-2;
+  }
+
+  .heading-3 {
+    @include heading-3;
+  }
+
+  .heading-4 {
+    @include heading-4;
+  }
+
+  .heading-5 {
+    @include heading-5;
+  }
+
+  .heading-6 {
+    @include heading-6;
+  }
+
+  .body-text {
+    @include row;
+  }
+
+  .regular {
+    @include col2;
+  }
+
+  .sub {
+    @include col2;
+    @include sub;
+    color: $sub;
+  }
+
+  .links {
+    @include row;
+
+    .link-type {
+      @include col4;
+
+      .normal, .visited {
+        @include link-base;
+      }
+    }
+
+    .normal {
+      .normal {
+        @include link-normal;
+      }
+
+      .visited {
+        @include link-visited-color($link-normal-color);
+      }
+    }
+
+    .cta {
+      .normal {
+        @include link-cta;
+      }
+
+      .visited {
+        @include link-visited-color($link-cta-color, 100);
+      }
+    }
+
+    .confirm {
+      .normal {
+        @include link-confirm;
+      }
+
+      .visited {
+        @include link-visited-color($link-confirm-color, 100);
+      }
+    }
+
+    .delete {
+      .normal {
+        @include link-delete;
+      }
+
+      .visited {
+        @include link-visited-color($link-delete-color, 100);
+      }
+    }
+  }
+}

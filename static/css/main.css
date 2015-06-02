@@ -1,0 +1,768 @@
+/* line 5, /home/foxbunny/.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, /home/foxbunny/.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, /home/foxbunny/.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, /home/foxbunny/.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, /home/foxbunny/.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, /home/foxbunny/.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, /home/foxbunny/.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, /home/foxbunny/.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, /home/foxbunny/.gem/ruby/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/**
+ * _colors.scss: color definitions
+ *
+ * Copyright 2014-2015, Outernet Inc.
+ * Some rights reserved.
+ *
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _fonts.scss: typography definitions
+ * 
+ * Copyright 2015, Outernet Inc.
+ * Some rights reserved.
+ * 
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/* line 81, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h1 {
+  font-size: 175%;
+  line-height: 125%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 86, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h2 {
+  font-size: 162.5%;
+  line-height: 123%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 91, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h3 {
+  font-size: 150%;
+  line-height: 125%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 96, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h4 {
+  font-size: 137.5%;
+  line-height: 127%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 101, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h5 {
+  font-size: 125%;
+  line-height: 130%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 106, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h6 {
+  font-size: 112.5%;
+  line-height: 116%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 111, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+p {
+  margin-bottom: 1em;
+}
+
+/* line 115, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 119, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+i, em {
+  font-style: italic;
+}
+
+/**
+ * _colors.scss: color definitions
+ *
+ * Copyright 2014-2015, Outernet Inc.
+ * Some rights reserved.
+ *
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _fonts.scss: typography definitions
+ * 
+ * Copyright 2015, Outernet Inc.
+ * Some rights reserved.
+ * 
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/* line 81, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h1 {
+  font-size: 175%;
+  line-height: 125%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 86, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h2 {
+  font-size: 162.5%;
+  line-height: 123%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 91, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h3 {
+  font-size: 150%;
+  line-height: 125%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 96, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h4 {
+  font-size: 137.5%;
+  line-height: 127%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 101, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h5 {
+  font-size: 125%;
+  line-height: 130%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 106, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h6 {
+  font-size: 112.5%;
+  line-height: 116%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 111, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+p {
+  margin-bottom: 1em;
+}
+
+/* line 115, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 119, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+i, em {
+  font-style: italic;
+}
+
+/**
+ * _colors.scss: color definitions
+ *
+ * Copyright 2014-2015, Outernet Inc.
+ * Some rights reserved.
+ *
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _fonts.scss: typography definitions
+ * 
+ * Copyright 2015, Outernet Inc.
+ * Some rights reserved.
+ * 
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/* line 81, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h1 {
+  font-size: 175%;
+  line-height: 125%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 86, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h2 {
+  font-size: 162.5%;
+  line-height: 123%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 91, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h3 {
+  font-size: 150%;
+  line-height: 125%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 96, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h4 {
+  font-size: 137.5%;
+  line-height: 127%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 101, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h5 {
+  font-size: 125%;
+  line-height: 130%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 106, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h6 {
+  font-size: 112.5%;
+  line-height: 116%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 111, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+p {
+  margin-bottom: 1em;
+}
+
+/* line 115, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 119, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+i, em {
+  font-style: italic;
+}
+
+/* line 46, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_hyperlinks.scss */
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #3584cf;
+}
+/* line 13, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_hyperlinks.scss */
+a:hover {
+  text-decoration: underline;
+}
+/* line 25, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_hyperlinks.scss */
+a:visited {
+  color: #28639b;
+}
+
+/* line 8, ../../scss/outernet/_ui.scss */
+body {
+  font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
+  font-size: 16px;
+  line-height: 137.5%;
+  color: #333333;
+}
+
+/* line 5, ../../scss/main.scss */
+body {
+  background: url('/static/img/bg.png?1433247963');
+}
+
+/* line 9, ../../scss/main.scss */
+.section, header {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #ffffff;
+  margin-bottom: 16px;
+}
+
+/* line 16, ../../scss/main.scss */
+.section {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+/* line 19, ../../scss/main.scss */
+.section .section-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 27, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_grid.scss */
+.section .section-title:after {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: left;
+}
+/* line 22, ../../scss/main.scss */
+.section .section-title h2 {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  box-sizing: border-box;
+}
+
+/* line 28, ../../scss/main.scss */
+header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+/* line 31, ../../scss/main.scss */
+header h1 {
+  font-size: 437.5%;
+  line-height: 110%;
+}
+
+/* line 36, ../../scss/main.scss */
+.swatches {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 27, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_grid.scss */
+.swatches:after {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: left;
+}
+/* line 39, ../../scss/main.scss */
+.swatches .col {
+  width: 16.6666666667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  box-sizing: border-box;
+}
+/* line 43, ../../scss/main.scss */
+.swatches li {
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+/* line 47, ../../scss/main.scss */
+.swatches li .swatch-label {
+  font-size: 87.5%;
+  line-height: 137.5%;
+}
+/* line 50, ../../scss/main.scss */
+.swatches li .swatch-label.main {
+  font-weight: bold;
+}
+
+/* line 57, ../../scss/main.scss */
+.swatch {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: top;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.sky25d {
+  background-color: #28639b;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.sky100 {
+  background-color: #3584cf;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.sky75 {
+  background-color: #68a3db;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.sky50 {
+  background-color: #9ac2e6;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.sky25 {
+  background-color: #cddff3;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.sky10 {
+  background-color: #ebf2fa;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.sky6 {
+  background-color: #f3f8fc;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.ocean25d {
+  background-color: #0f3a65;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.ocean100 {
+  background-color: #134e87;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.ocean75 {
+  background-color: #4f7aa5;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.ocean50 {
+  background-color: #89a7c3;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.ocean25 {
+  background-color: #c3d3e2;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.ocean10 {
+  background-color: #e8edf3;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.ocean6 {
+  background-color: #f0f5f8;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.sun25d {
+  background-color: #a95902;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.sun100 {
+  background-color: #e17502;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.sun75 {
+  background-color: #ec973c;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.sun50 {
+  background-color: #f1ba81;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.sun25 {
+  background-color: #f7dcc1;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.sun10 {
+  background-color: #fbf1e5;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.sun6 {
+  background-color: #fef7f1;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.forest25d {
+  background-color: #056118;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.forest100 {
+  background-color: #058120;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.forest75 {
+  background-color: #45a158;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.forest50 {
+  background-color: #82c08f;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.forest25 {
+  background-color: #c1dfc7;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.forest10 {
+  background-color: #e7f3e9;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.forest6 {
+  background-color: #f1f8f1;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.fire25d {
+  background-color: #931010;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.fire100 {
+  background-color: #c41414;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.fire75 {
+  background-color: #d24f4f;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.fire50 {
+  background-color: #e18988;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.fire25 {
+  background-color: #f0c4c5;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.fire10 {
+  background-color: #fae8e8;
+}
+/* line 65, ../../scss/main.scss */
+.swatch.fire6 {
+  background-color: #fbf1f0;
+}
+/* line 71, ../../scss/main.scss */
+.swatch.universe {
+  background-color: #333333;
+}
+/* line 75, ../../scss/main.scss */
+.swatch.base {
+  background-color: #555555;
+}
+/* line 79, ../../scss/main.scss */
+.swatch.sub {
+  background-color: #888888;
+}
+/* line 83, ../../scss/main.scss */
+.swatch.iconic {
+  background-color: #bbbbbb;
+}
+/* line 87, ../../scss/main.scss */
+.swatch.border {
+  background-color: #dddddd;
+}
+/* line 91, ../../scss/main.scss */
+.swatch.earth {
+  background-color: #eeeeee;
+}
+/* line 95, ../../scss/main.scss */
+.swatch.input {
+  background-color: #fafafa;
+}
+
+/* line 103, ../../scss/main.scss */
+.typography .section-title h2 {
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  box-sizing: border-box;
+}
+/* line 107, ../../scss/main.scss */
+.typography .section-title .note {
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  box-sizing: border-box;
+  color: #bbbbbb;
+  margin-top: 36px;
+}
+/* line 114, ../../scss/main.scss */
+.typography .headings {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+/* line 118, ../../scss/main.scss */
+.typography .heading-0 {
+  font-size: 437.5%;
+  line-height: 110%;
+}
+/* line 122, ../../scss/main.scss */
+.typography .heading-1 {
+  font-size: 175%;
+  line-height: 125%;
+}
+/* line 126, ../../scss/main.scss */
+.typography .heading-2 {
+  font-size: 162.5%;
+  line-height: 123%;
+}
+/* line 130, ../../scss/main.scss */
+.typography .heading-3 {
+  font-size: 150%;
+  line-height: 125%;
+}
+/* line 134, ../../scss/main.scss */
+.typography .heading-4 {
+  font-size: 137.5%;
+  line-height: 127%;
+}
+/* line 138, ../../scss/main.scss */
+.typography .heading-5 {
+  font-size: 125%;
+  line-height: 130%;
+}
+/* line 142, ../../scss/main.scss */
+.typography .heading-6 {
+  font-size: 112.5%;
+  line-height: 116%;
+}
+/* line 146, ../../scss/main.scss */
+.typography .body-text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 27, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_grid.scss */
+.typography .body-text:after {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: left;
+}
+/* line 150, ../../scss/main.scss */
+.typography .regular {
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  box-sizing: border-box;
+}
+/* line 154, ../../scss/main.scss */
+.typography .sub {
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  box-sizing: border-box;
+  font-size: 87.5%;
+  line-height: 137.5%;
+  color: #888888;
+}
+/* line 160, ../../scss/main.scss */
+.typography .links {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 27, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_grid.scss */
+.typography .links:after {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: left;
+}
+/* line 163, ../../scss/main.scss */
+.typography .links .link-type {
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  box-sizing: border-box;
+}
+/* line 166, ../../scss/main.scss */
+.typography .links .link-type .normal, .typography .links .link-type .visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 13, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_hyperlinks.scss */
+.typography .links .link-type .normal:hover, .typography .links .link-type .visited:hover {
+  text-decoration: underline;
+}
+/* line 172, ../../scss/main.scss */
+.typography .links .normal .normal {
+  color: #3584cf;
+}
+/* line 25, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_hyperlinks.scss */
+.typography .links .normal .normal:visited {
+  color: #28639b;
+}
+/* line 176, ../../scss/main.scss */
+.typography .links .normal .visited {
+  color: #28639b;
+}
+/* line 182, ../../scss/main.scss */
+.typography .links .cta .normal {
+  color: #e17502;
+}
+/* line 25, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_hyperlinks.scss */
+.typography .links .cta .normal:visited {
+  color: #e17502;
+}
+/* line 186, ../../scss/main.scss */
+.typography .links .cta .visited {
+  color: #e17502;
+}
+/* line 192, ../../scss/main.scss */
+.typography .links .confirm .normal {
+  color: #058120;
+}
+/* line 25, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_hyperlinks.scss */
+.typography .links .confirm .normal:visited {
+  color: #058120;
+}
+/* line 196, ../../scss/main.scss */
+.typography .links .confirm .visited {
+  color: #058120;
+}
+/* line 202, ../../scss/main.scss */
+.typography .links .delete .normal {
+  color: #c41414;
+}
+/* line 25, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_hyperlinks.scss */
+.typography .links .delete .normal:visited {
+  color: #c41414;
+}
+/* line 206, ../../scss/main.scss */
+.typography .links .delete .visited {
+  color: #c41414;
+}

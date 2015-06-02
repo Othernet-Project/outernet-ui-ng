@@ -1,4 +1,11 @@
+// Grid setup
 @import "outernet/partial/colors";
 @import "outernet/partial/fonts";
 @import "outernet/partial/buttons";
 @import "outernet/partial/hyperlinks";
+@import "outernet/partial/grid";
+
+body {
+  @include regular;
+  color: $universe;
+}
