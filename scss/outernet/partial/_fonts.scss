@@ -34,49 +34,41 @@ $base-size: 16px;
 }
 
 @mixin sub {
-  font-family: $base-font;
   font-size: 87.5%;
   line-height: 137.5%;
 }
 
 @mixin heading_0 {
-  font-family: $base-font;
   font-size: 437.5%;
   line-height: 110%;
 }
 
 @mixin heading_1 {
-  font-family: $base-font;
   font-size: 175%;
   line-height: 125%;
 }
 
 @mixin heading_2 {
-  font-family: $base-font;
   font-size: 162.5%;
   line-height: 123%;
 }
 
 @mixin heading_3 {
-  font-family: $base-font;
   font-size: 150%;
   line-height: 125%;
 }
 
 @mixin heading_4 {
-  font-family: $base-font;
   font-size: 137.5%;
   line-height: 127%;
 }
 
 @mixin heading_5 {
-  font-family: $base-font;
   font-size: 125%;
   line-height: 130%;
 }
 
 @mixin heading_6 {
-  font-family: $base-font;
   font-size: 112.5%;
   line-height: 116%;
 }
