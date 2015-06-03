@@ -132,6 +132,106 @@
             </div>
         </div>
 
+        <div class="section forms">
+            <div class="section-title">
+                <h2>Forms</h2>
+            </div>
+
+            <div class="fields">
+                <div class="fields-demo col">
+                    <p class="field form-input">
+                        <label for="input1">Normal</label>
+                        <input id="input1" type="text" placeholder="Placeholder">
+                        <span class="field-help">This is some help text</span>
+                    </p>
+                    <p class="field form-input-value">
+                        <label for="input2">Normal (with value)</label>
+                        <input id="input2" type="text" value="Value">
+                    </p>
+                    <p class="field form-input-positive">
+                        <label for="input3">Positive</label>
+                        <input id="input3" type="text" value="Correct value" class="positive">
+                    </p>
+                    <p class="field form-input-negative">
+                        <label for="input4">Negative</label>
+                        <input id="input4" type="text" value="Wrong value" class="negative">
+                        <span class="field-error">Please fix this</span>
+                    </p>
+                    <p class="field form-input-required">
+                        <label for="input5" class="required">Required</label>
+                        <input id="input5" type="text" placeholder="This field is required">
+                    </p>
+                </div>
+                <div class="fields-complex col">
+                    <p class="field form-select">
+                        <label for="input6">Select normal</label>
+                        <select id="input6">
+                            <option>Please select something</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </p>
+                    <p class="field form-select">
+                        <label for="input7">Select negative</label>
+                        <select id="input7" class="negative">
+                            <option>Please select something</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                        <span class="field-error">Please fix this</span>
+                    </p>
+
+                    <p class="field form-checkbox">
+                        <label>Checkbox</label>
+                        <input type="checkbox" value="checkme" id="input8">
+                        <label for="input8" class="checkbox">
+                            Checkbox 1
+                        </label>
+                        <input type="checkbox" value="checkme" id="input9" checked>
+                        <label for="input9" class="checkbox">
+                            Checkbox 2
+                        </label>
+                    </p>
+                </div>
+            </div>
+
+            <div class="field-docs">
+                <h3>Normal field</h3>
+                <p>
+                Fields should be wrapped in a block element and the element 
+                should use the <code>input-container</code> mixin which sets 
+                the input container's bottom margin.
+                </p>
+                <p>
+                Normal fields do not require any special markup. The normal
+                and active states are handled using standard CSS2 and CSS3
+                rules, and placeholder text is styled using browser's
+                native styling.
+                </p>
+                <p>
+                To add help text to a field, use an element with 
+                <code>.field-help</code> class.
+                </p>
+                <h3>Positive field</h3>
+                <p>
+                Validated field are marked as positive. This is done by 
+                adding <code>.positive</code> class to the input element.
+                </p>
+                <h3>Netagive field</h3>
+                <p>
+                Fields with errors are marked as negative. This is done by
+                adding <code>.negative</code> class to the input element.
+                </p>
+                <p>
+                Additionally, an element with class 
+                <code>.field-error</code> can be inserted after the input
+                element, which contains error message for the field.
+                </p>
+            </div>
+        </div>
+
         <script src="/static/js/jquery.js"></script>
     </body>
 </html>

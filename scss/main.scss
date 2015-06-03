@@ -209,3 +209,22 @@ header {
     }
   }
 }
+
+.forms {
+  .fields {
+    @include row;
+
+    .col {
+      @include col2;
+    }
+  }
+
+  .field-docs {
+    @include simple-row;
+    color: $sub;
+  }
+
+  .field {
+    @include input-container;
+  }
+}
