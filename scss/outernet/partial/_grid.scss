@@ -18,12 +18,10 @@ $col-width: 100% / $col-count;
 }
 
 @mixin grid-container() {
-  @include grid-padding-horiz;
+  @include grid-padding;
 }
 
 @mixin row() {
-  @include grid-padding-vert;
-
   &:after {
     content: '';
     display: block;
@@ -37,6 +35,7 @@ $col-width: 100% / $col-count;
 }
 
 @mixin col-span($span) {
+  @include grid-padding-vert;
   width: $span * $col-width;
   padding-left: $gutter / 2;
   padding-right: $gutter / 2;
