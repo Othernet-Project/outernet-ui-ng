@@ -12,6 +12,7 @@
 
 $base-font: Arial, Helvetica, "Liberation Sans", sans-serif;
 $base-size: 16px;
+$line-height-em: 1.375em; // Size of base line-height in em
 
 //Styles (bold, underlined, and italicized)
 @mixin underline {
