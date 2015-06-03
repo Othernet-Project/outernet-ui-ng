@@ -1,2 +1,4 @@
-*.swp
+*.sw[op]
+*.py[co]
 /.sass-cache
+/.ropeproject
