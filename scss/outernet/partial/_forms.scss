@@ -165,6 +165,8 @@ label {
 input[type="text"],
 input[type="numeric"],
 input[type="email"],
+input[type="file"],
+textarea,
 select {
   @include input-normal;
   @include box-sizing(border-box);
@@ -218,6 +220,14 @@ input[type="checkbox"] {
   &:focus:checked + label:before {
     @include checkbox-active-checked-styling;
   }
+}
+
+textarea {
+  @include regular;
+  resize: vertical;
+  height: $line-height-em * 5; // 5 lines
+  min-height: $line-height-em * 3;
+  max-height: $line-height-em * 12;
 }
 
 select {
