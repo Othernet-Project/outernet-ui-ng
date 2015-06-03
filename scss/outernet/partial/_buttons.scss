@@ -1,17 +1,27 @@
 @import "outernet/partial/colors";
 @import "outernet/partial/fonts";
 
-@mixin button-label-base {
-  font-family: $base-font;
-}
-
 @mixin button-base {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  &:active {
-    background-color: transparent;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+@mixin button-color($text: $white, $background: $sky, $hover: $sky25d) {
+  color: $white;
+  background-color: $sky;
+
+  &:focus,
+  &:hover {
+    color: $white;
+    background-color: $sky25d;
   }
+}
+
+@mixin button-label-base {
+  @include regular;
 }
 
 @mixin button-label {
@@ -20,30 +30,40 @@
   line-height: 137.5%;
 }
 
-@mixin button {
-  @include button-base;
-  @include button-label;
-  padding: 0.5em 1.25em 0.5em 1.25em;
-  min-width: 8.125em;
-  border-radius: 3.125em;
-}
-
 @mixin button-label-l {
   @include button-label-base;
   font-size: 18px;
   line-height: 116%;
 }
 
-@mixin button-l {
-  @include button-base;
-  @include button-label-l;
+@mixin button-geometry {
+  padding: 0.5em 1.25em 0.5em 1.25em;
+  width: auto;
+  min-width: 8.125em;
+  border-radius: 3.125em;
+}
+
+@mixin button-geometry-l {
   padding: 0.722em 1.25em 0.722em 1.25em;
   min-width: 160px;
   border-radius: 2.778em;
 }
 
+@mixin button {
+  @include button-base;
+  @include button-label;
+  @include button-geometry;
+  @include button-color;
+}
+
+@mixin button-l {
+  @include button-base;
+  @include button-label-l;
+  @include button-geometry-l;
+  @include button-color;
+}
+
 @mixin button-inactive {
-  color: #fff;
   background-color: $iconic;
 }
 
@@ -54,8 +74,6 @@
 }
 
 @mixin button-action {
-  color: #fff;
-  background-color: $sky;
   &:hover {
     background-color:$sky25d;
   }
@@ -72,7 +90,6 @@
 }
 
 @mixin button-cta {
-  color: #fff;
   background-color: $sun;
   &:hover {
     background-color:$sun25d;
@@ -90,7 +107,6 @@
 }
 
 @mixin button-confirm {
-  color: #fff;
   background-color: $forest;
   &:hover {
     background-color:$forest25d;
@@ -108,7 +124,6 @@
 }
 
 @mixin button-delete {
-  color: #fff;
   background-color: $fire;
   &:hover {
     background-color:$fire25d;
@@ -133,7 +148,6 @@
 }
 
 @mixin button-inactive-s-r {
-  color: #fff;
   background-color: transparent;
   border: 1px solid #fff;
   opacity: 0.5;
@@ -149,7 +163,6 @@
 }
 
 @mixin button-action-s-r {
-  color: #fff;
   background-color: transparent;
   border: 1px solid #fff;
   &:hover {
