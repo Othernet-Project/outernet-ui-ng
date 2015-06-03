@@ -26,6 +26,11 @@ $base-size: 16px;
   font-style: italic;
 }
 
+@mixin plain {
+  font-style: none;
+  font-weight: normal;
+}
+
 //Fonts (sub, regular, and headers)
 @mixin regular {
   font-family: $base-font;
@@ -76,6 +81,12 @@ $base-size: 16px;
 @mixin heading-common {
   margin-top: 1em;
   margin-bottom: $base-size;
+}
+
+@mixin help-text {
+  @include sub;
+  color: $sub;
+  display: block;
 }
 
 h1 {
