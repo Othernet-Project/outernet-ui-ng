@@ -83,7 +83,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  * COPYING file that comes with the source code, or
  * http://www.gnu.org/licenses/gpl.txt.
  */
-/* line 92, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 93, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h1 {
   font-size: 175%;
   line-height: 125%;
@@ -91,7 +91,7 @@ h1 {
   margin-bottom: 16px;
 }
 
-/* line 97, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 98, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h2 {
   font-size: 162.5%;
   line-height: 123%;
@@ -99,7 +99,7 @@ h2 {
   margin-bottom: 16px;
 }
 
-/* line 102, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 103, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h3 {
   font-size: 150%;
   line-height: 125%;
@@ -107,7 +107,7 @@ h3 {
   margin-bottom: 16px;
 }
 
-/* line 107, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 108, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h4 {
   font-size: 137.5%;
   line-height: 127%;
@@ -115,7 +115,7 @@ h4 {
   margin-bottom: 16px;
 }
 
-/* line 112, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 113, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h5 {
   font-size: 125%;
   line-height: 130%;
@@ -123,7 +123,7 @@ h5 {
   margin-bottom: 16px;
 }
 
-/* line 117, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 118, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h6 {
   font-size: 112.5%;
   line-height: 116%;
@@ -131,17 +131,17 @@ h6 {
   margin-bottom: 16px;
 }
 
-/* line 122, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 123, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 p {
   margin-bottom: 1em;
 }
 
-/* line 126, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 127, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 130, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 131, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 i, em {
   font-style: italic;
 }
@@ -166,7 +166,7 @@ i, em {
  * COPYING file that comes with the source code, or
  * http://www.gnu.org/licenses/gpl.txt.
  */
-/* line 92, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 93, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h1 {
   font-size: 175%;
   line-height: 125%;
@@ -174,7 +174,7 @@ h1 {
   margin-bottom: 16px;
 }
 
-/* line 97, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 98, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h2 {
   font-size: 162.5%;
   line-height: 123%;
@@ -182,7 +182,7 @@ h2 {
   margin-bottom: 16px;
 }
 
-/* line 102, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 103, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h3 {
   font-size: 150%;
   line-height: 125%;
@@ -190,7 +190,7 @@ h3 {
   margin-bottom: 16px;
 }
 
-/* line 107, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 108, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h4 {
   font-size: 137.5%;
   line-height: 127%;
@@ -198,7 +198,7 @@ h4 {
   margin-bottom: 16px;
 }
 
-/* line 112, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 113, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h5 {
   font-size: 125%;
   line-height: 130%;
@@ -206,7 +206,7 @@ h5 {
   margin-bottom: 16px;
 }
 
-/* line 117, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 118, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h6 {
   font-size: 112.5%;
   line-height: 116%;
@@ -214,17 +214,17 @@ h6 {
   margin-bottom: 16px;
 }
 
-/* line 122, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 123, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 p {
   margin-bottom: 1em;
 }
 
-/* line 126, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 127, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 130, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 131, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 i, em {
   font-style: italic;
 }
@@ -249,7 +249,7 @@ i, em {
  * COPYING file that comes with the source code, or
  * http://www.gnu.org/licenses/gpl.txt.
  */
-/* line 92, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 93, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h1 {
   font-size: 175%;
   line-height: 125%;
@@ -257,7 +257,7 @@ h1 {
   margin-bottom: 16px;
 }
 
-/* line 97, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 98, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h2 {
   font-size: 162.5%;
   line-height: 123%;
@@ -265,7 +265,7 @@ h2 {
   margin-bottom: 16px;
 }
 
-/* line 102, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 103, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h3 {
   font-size: 150%;
   line-height: 125%;
@@ -273,7 +273,7 @@ h3 {
   margin-bottom: 16px;
 }
 
-/* line 107, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 108, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h4 {
   font-size: 137.5%;
   line-height: 127%;
@@ -281,7 +281,7 @@ h4 {
   margin-bottom: 16px;
 }
 
-/* line 112, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 113, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h5 {
   font-size: 125%;
   line-height: 130%;
@@ -289,7 +289,7 @@ h5 {
   margin-bottom: 16px;
 }
 
-/* line 117, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 118, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h6 {
   font-size: 112.5%;
   line-height: 116%;
@@ -297,17 +297,17 @@ h6 {
   margin-bottom: 16px;
 }
 
-/* line 122, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 123, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 p {
   margin-bottom: 1em;
 }
 
-/* line 126, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 127, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 130, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 131, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 i, em {
   font-style: italic;
 }
@@ -357,7 +357,7 @@ a:visited {
  * COPYING file that comes with the source code, or
  * http://www.gnu.org/licenses/gpl.txt.
  */
-/* line 92, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 93, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h1 {
   font-size: 175%;
   line-height: 125%;
@@ -365,7 +365,7 @@ h1 {
   margin-bottom: 16px;
 }
 
-/* line 97, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 98, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h2 {
   font-size: 162.5%;
   line-height: 123%;
@@ -373,7 +373,7 @@ h2 {
   margin-bottom: 16px;
 }
 
-/* line 102, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 103, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h3 {
   font-size: 150%;
   line-height: 125%;
@@ -381,7 +381,7 @@ h3 {
   margin-bottom: 16px;
 }
 
-/* line 107, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 108, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h4 {
   font-size: 137.5%;
   line-height: 127%;
@@ -389,7 +389,7 @@ h4 {
   margin-bottom: 16px;
 }
 
-/* line 112, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 113, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h5 {
   font-size: 125%;
   line-height: 130%;
@@ -397,7 +397,7 @@ h5 {
   margin-bottom: 16px;
 }
 
-/* line 117, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 118, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 h6 {
   font-size: 112.5%;
   line-height: 116%;
@@ -405,17 +405,17 @@ h6 {
   margin-bottom: 16px;
 }
 
-/* line 122, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 123, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 p {
   margin-bottom: 1em;
 }
 
-/* line 126, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 127, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 130, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+/* line 131, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 i, em {
   font-style: italic;
 }
@@ -446,6 +446,8 @@ input[type="checkbox"] + label, label.checkbox {
 input[type="text"],
 input[type="numeric"],
 input[type="email"],
+input[type="file"],
+textarea,
 select {
   width: 100%;
   max-width: 400px;
@@ -470,6 +472,8 @@ select {
 input[type="text"]:focus,
 input[type="numeric"]:focus,
 input[type="email"]:focus,
+input[type="file"]:focus,
+textarea:focus,
 select:focus {
   color: #555555;
   background-color: #f3f8fc;
@@ -480,10 +484,12 @@ select:focus {
   -webkit-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
-/* line 172, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 174, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="text"].positive,
 input[type="numeric"].positive,
 input[type="email"].positive,
+input[type="file"].positive,
+textarea.positive,
 select.positive {
   color: #058120;
   background-color: #f1f8f1;
@@ -494,10 +500,12 @@ select.positive {
   -webkit-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
-/* line 175, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 177, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="text"].positive:focus,
 input[type="numeric"].positive:focus,
 input[type="email"].positive:focus,
+input[type="file"].positive:focus,
+textarea.positive:focus,
 select.positive:focus {
   color: #555555;
   background-color: #f3f8fc;
@@ -508,10 +516,12 @@ select.positive:focus {
   -webkit-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
-/* line 180, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 182, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="text"].negative,
 input[type="numeric"].negative,
 input[type="email"].negative,
+input[type="file"].negative,
+textarea.negative,
 select.negative {
   color: #c41414;
   background-color: #fbf1f0;
@@ -522,10 +532,12 @@ select.negative {
   -webkit-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
-/* line 183, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 185, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="text"].negative:focus,
 input[type="numeric"].negative:focus,
 input[type="email"].negative:focus,
+input[type="file"].negative:focus,
+textarea.negative:focus,
 select.negative:focus {
   color: #555555;
   background-color: #f3f8fc;
@@ -537,7 +549,7 @@ select.negative:focus {
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
 
-/* line 189, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 191, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="checkbox"] {
   margin-left: 15px;
   margin-right: -18px;
@@ -547,7 +559,7 @@ input[type="checkbox"] {
   height: 0;
   display: inline-block;
 }
-/* line 197, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 199, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="checkbox"] + label:before {
   content: ' ';
   display: inline-block;
@@ -564,11 +576,11 @@ input[type="checkbox"] + label:before {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 202, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 204, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="checkbox"]:checked + label {
   color: #058120;
 }
-/* line 205, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 207, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="checkbox"]:checked + label:before {
   color: #058120;
   background-color: #f1f8f1;
@@ -582,11 +594,11 @@ input[type="checkbox"]:checked + label:before {
   background-position: center center;
   background-repeat: no-repeat;
 }
-/* line 210, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 212, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="checkbox"]:focus + label {
   color: #3584cf;
 }
-/* line 213, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 215, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="checkbox"]:focus + label:before {
   color: #555555;
   background-color: #f3f8fc;
@@ -597,14 +609,25 @@ input[type="checkbox"]:focus + label:before {
   -webkit-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
-/* line 218, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 220, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="checkbox"]:focus:checked + label:before {
   background-image: url('/static/img/icons/1x/checkmark_active.png?1433344278');
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-/* line 223, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 225, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+textarea {
+  font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
+  font-size: 16px;
+  line-height: 137.5%;
+  resize: vertical;
+  height: 6.875em;
+  min-height: 4.125em;
+  max-height: 16.5em;
+}
+
+/* line 233, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -620,7 +643,7 @@ select {
 select::-ms-expand {
   display: none;
 }
-/* line 230, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 240, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 select option {
   color: #888888;
   background: #fafafa;
@@ -632,12 +655,12 @@ select option[value] {
   color: #555555;
 }
 
-/* line 235, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 245, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 select::-ms-expand {
   display: none;
 }
 
-/* line 242, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 252, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 .field-help {
   font-size: 87.5%;
   line-height: 137.5%;
@@ -647,7 +670,7 @@ select::-ms-expand {
   padding-top: 6px;
 }
 
-/* line 247, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 257, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 .field-error {
   font-size: 87.5%;
   line-height: 137.5%;

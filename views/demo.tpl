@@ -201,10 +201,29 @@
                             Checkbox 2
                         </label>
                     </p>
+
+                    <div class="field textarea">
+                        <label for="input10">Textarea</label>
+                        <textarea id="input10" placeholder="Placeholder"></textarea>
+                        <p class="field-help">Textarea can be resized vertically</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="field-docs">
+            <div class="fields">
+                <div class="fields-demo col">
+                    <p class="field form-input-email">
+                        <label for="input11">Email</label>
+                        <input id="input11" type="email" placeholder="me@you.com">
+                    </p>
+                    <p class="field form-input-file">
+                        <label for="input12">File</label>
+                        <input id="input12" type="file" placeholder="me@you.com">
+                    </p>
+                </div>
+            </div>
+
+            <div class="docs">
                 <h3>Normal field</h3>
                 <p>
                 Fields should be wrapped in a block element and the element 
