@@ -15,6 +15,13 @@
 </div>
 </%def>
 
+<%def name="cell(text, cls='col')">
+    <div class="${cls}">
+        <div class="content">
+        <code>${text}</code>
+        </div>
+    </div>
+</%def>
 
 <html>
     <head>
@@ -229,6 +236,66 @@
                 <code>.field-error</code> can be inserted after the input
                 element, which contains error message for the field.
                 </p>
+            </div>
+        </div>
+
+        <div class="section grid">
+            <div class="section-title">
+            <h2>Grid system</h2>
+            </div>
+
+            <div class="intro">
+                <p>
+                Outernet UI NG uses a flexible grid with 12 columns and 20px 
+                guttter.
+                </p>
+                <p>
+                The outermost element is called the grid container, and is 
+                styled using the <code>grid-container</code> mixin.
+                </p>
+                <p>
+                Each row in the grid is styled using the <code>row</code> 
+                mixin, and inside it, there can be one or more columns. See 
+                examples below for mixins used by individual columns.
+                </p>
+                <p>
+                Grid containers can be freely nested.
+                </p>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-row cols1">
+                    ${cell('@include col1;')}
+                </div>
+
+                <div class="grid-row cols2">
+                    ${cell('@include col2;')}
+                    ${cell('@include col2;')}
+                </div>
+
+                <div class="grid-row cols4">
+                    ${cell('@include col4;')}
+                    ${cell('@include col4;')}
+                    ${cell('@include col4;')}
+                    ${cell('@include col4;')}
+                </div>
+                
+                <div class="grid-row cols6">
+                    ${cell('@include col6;')}
+                    ${cell('@include col6;')}
+                    ${cell('@include col6;')}
+                    ${cell('@include col6;')}
+                    ${cell('@include col6;')}
+                    ${cell('@include col6;')}
+                </div>
+
+                <div class="grid-row cols-mixed">
+                    ${cell('@include col4;', cls='col col4')}
+                    ${cell('@include col6;', cls='col col6')}
+                    ${cell('@include col6;', cls='col col6')}
+                    ${cell('@include col6;', cls='col col6')}
+                    ${cell('@include col4;', cls='col col4')}
+                </div>
             </div>
         </div>
 

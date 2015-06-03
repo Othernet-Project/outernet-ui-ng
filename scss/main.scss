@@ -228,3 +228,54 @@ header {
     @include input-container;
   }
 }
+
+.grid {
+  .intro {
+    @include simple-row;
+  }
+
+  .grid-container {
+    @include grid-container;
+    border: 1px solid $fire25;
+  }
+
+  .grid-row {
+    @include row;
+
+    .col {
+      border: 1px solid $sun25;
+      text-align: center;
+    }
+
+    .content {
+      background: $earth;
+      min-height: 50px;
+    }
+  }
+
+  .cols1 .col {
+    @include col1;
+  }
+
+  .cols2 .col {
+    @include col2;
+  }
+
+  .cols4 .col {
+    @include col4;
+  }
+
+  .cols6 .col {
+    @include col6;
+  }
+
+  .cols-mixed {
+    .col4 {
+      @include col4;
+    }
+
+    .col6 {
+      @include col6;
+    }
+  }
+}

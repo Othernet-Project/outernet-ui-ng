@@ -681,15 +681,12 @@ body {
 
 /* line 16, ../../scss/main.scss */
 .section {
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 19, ../../scss/main.scss */
-.section .section-title {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-/* line 27, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_grid.scss */
+/* line 25, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_grid.scss */
 .section .section-title:after {
   content: '';
   display: block;
@@ -698,6 +695,8 @@ body {
 }
 /* line 22, ../../scss/main.scss */
 .section .section-title h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -718,12 +717,7 @@ header h1 {
   line-height: 110%;
 }
 
-/* line 36, ../../scss/main.scss */
-.swatches {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-/* line 27, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_grid.scss */
+/* line 25, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_grid.scss */
 .swatches:after {
   content: '';
   display: block;
@@ -732,6 +726,8 @@ header h1 {
 }
 /* line 39, ../../scss/main.scss */
 .swatches .col {
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 16.6666666667%;
   padding-left: 10px;
   padding-right: 10px;
@@ -931,6 +927,8 @@ header h1 {
 
 /* line 103, ../../scss/main.scss */
 .typography .section-title h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 50%;
   padding-left: 10px;
   padding-right: 10px;
@@ -939,6 +937,8 @@ header h1 {
 }
 /* line 107, ../../scss/main.scss */
 .typography .section-title .note {
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 50%;
   padding-left: 10px;
   padding-right: 10px;
@@ -989,12 +989,7 @@ header h1 {
   font-size: 112.5%;
   line-height: 116%;
 }
-/* line 146, ../../scss/main.scss */
-.typography .body-text {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-/* line 27, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_grid.scss */
+/* line 25, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_grid.scss */
 .typography .body-text:after {
   content: '';
   display: block;
@@ -1003,6 +998,8 @@ header h1 {
 }
 /* line 150, ../../scss/main.scss */
 .typography .regular {
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 50%;
   padding-left: 10px;
   padding-right: 10px;
@@ -1011,6 +1008,8 @@ header h1 {
 }
 /* line 154, ../../scss/main.scss */
 .typography .sub {
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 50%;
   padding-left: 10px;
   padding-right: 10px;
@@ -1020,12 +1019,7 @@ header h1 {
   line-height: 137.5%;
   color: #888888;
 }
-/* line 160, ../../scss/main.scss */
-.typography .links {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-/* line 27, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_grid.scss */
+/* line 25, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_grid.scss */
 .typography .links:after {
   content: '';
   display: block;
@@ -1034,6 +1028,8 @@ header h1 {
 }
 /* line 163, ../../scss/main.scss */
 .typography .links .link-type {
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 25%;
   padding-left: 10px;
   padding-right: 10px;
@@ -1098,12 +1094,7 @@ header h1 {
   color: #c41414;
 }
 
-/* line 214, ../../scss/main.scss */
-.forms .fields {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-/* line 27, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_grid.scss */
+/* line 25, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_grid.scss */
 .forms .fields:after {
   content: '';
   display: block;
@@ -1112,6 +1103,8 @@ header h1 {
 }
 /* line 217, ../../scss/main.scss */
 .forms .fields .col {
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 50%;
   padding-left: 10px;
   padding-right: 10px;
@@ -1129,4 +1122,97 @@ header h1 {
 /* line 227, ../../scss/main.scss */
 .forms .field {
   margin-bottom: 1.25em;
+}
+
+/* line 233, ../../scss/main.scss */
+.grid .intro {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 237, ../../scss/main.scss */
+.grid .grid-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #f0c4c5;
+}
+/* line 25, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_grid.scss */
+.grid .grid-row:after {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: left;
+}
+/* line 245, ../../scss/main.scss */
+.grid .grid-row .col {
+  border: 1px solid #f7dcc1;
+  text-align: center;
+}
+/* line 250, ../../scss/main.scss */
+.grid .grid-row .content {
+  background: #eeeeee;
+  min-height: 50px;
+}
+/* line 256, ../../scss/main.scss */
+.grid .cols1 .col {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  box-sizing: border-box;
+}
+/* line 260, ../../scss/main.scss */
+.grid .cols2 .col {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  box-sizing: border-box;
+}
+/* line 264, ../../scss/main.scss */
+.grid .cols4 .col {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  box-sizing: border-box;
+}
+/* line 268, ../../scss/main.scss */
+.grid .cols6 .col {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 16.6666666667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  box-sizing: border-box;
+}
+/* line 273, ../../scss/main.scss */
+.grid .cols-mixed .col4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  box-sizing: border-box;
+}
+/* line 277, ../../scss/main.scss */
+.grid .cols-mixed .col6 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 16.6666666667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  box-sizing: border-box;
 }
