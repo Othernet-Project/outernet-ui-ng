@@ -25,6 +25,11 @@ body {
   }
 }
 
+.docs {
+  @include simple-row;
+  color: $sub;
+}
+
 header {
   @include grid-padding;
 
@@ -219,11 +224,6 @@ header {
     }
   }
 
-  .field-docs {
-    @include simple-row;
-    color: $sub;
-  }
-
   .field {
     @include input-container;
   }
@@ -276,6 +276,16 @@ header {
 
     .col6 {
       @include col6;
+    }
+  }
+
+  .cols-nested {
+    .col-left {
+      @include col6(2);
+    }
+
+    .col-right {
+      @include col6(4);
     }
   }
 }

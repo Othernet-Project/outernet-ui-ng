@@ -244,25 +244,6 @@
             <h2>Grid system</h2>
             </div>
 
-            <div class="intro">
-                <p>
-                Outernet UI NG uses a flexible grid with 12 columns and 20px 
-                guttter.
-                </p>
-                <p>
-                The outermost element is called the grid container, and is 
-                styled using the <code>grid-container</code> mixin.
-                </p>
-                <p>
-                Each row in the grid is styled using the <code>row</code> 
-                mixin, and inside it, there can be one or more columns. See 
-                examples below for mixins used by individual columns.
-                </p>
-                <p>
-                Grid containers can be freely nested.
-                </p>
-            </div>
-
             <div class="grid-container">
                 <div class="grid-row cols1">
                     ${cell('@include col1;')}
@@ -296,6 +277,52 @@
                     ${cell('@include col6;', cls='col col6')}
                     ${cell('@include col4;', cls='col col4')}
                 </div>
+
+                <div class="grid-row cols-nested">
+                    ${cell('@include col6(2);', cls='col col-left')}
+                    <div class="col col-right">
+                        <div class="content">
+                            <div class="nested-row">
+                                ${cell('@include col1;', cls='col')}
+                            </div>
+                            <div class="nested-row">
+                                ${cell('@include col1;', cls='col')}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="docs">
+                <h3>Using the grid</h3>
+                <p>
+                Outernet UI NG uses a flexible grid with 12 columns and 20px 
+                guttter. Each cell (called column for some reason) has its own 
+                padding of 10px on all sides. Neightboring paddings add up to
+                the 20px gutters. Outermost columns end up with 10px gutter, so
+                a container with 10px padding is used to compensate.
+                </p>
+                <p>
+                The row elements contain one or more columns, and they only 
+                serve the purpose of clearing the columns' floats. A row 
+                element should include a <code>row</code> mixin.
+                </p>
+                <p>
+                The outermost element is called the grid container, and is 
+                styled using the <code>grid-container</code> mixin.
+                </p>
+                <p>
+                Columns are styled using <code>col1</code>, <code>col2</code>,
+                <code>col4</code> and <code>col6</code> mixins. The numbers
+                represent the number of subdivisions (e.g., <code>col4</code>
+                is a column that represents 1/4th of the container's width). 
+                Each column mixin takes an optional argument that specifies 
+                the number of subdivisions to use. For instance, 
+                <code>col4(3)</code> gives us a 3/4-width column.
+                </p>
+                <p>
+                Grid containers can be freely nested.
+                </p>
             </div>
         </div>
 
