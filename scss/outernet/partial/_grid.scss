@@ -61,6 +61,10 @@ $col-width: 100% / $col-count;
   @include col-span($span * 3, $width-only);
 }
 
+@mixin col3($span: 1, $width-only: no) {
+  @include col-span($span * 4, $width-only);
+}
+
 @mixin col2($span: 1, $width-only: no) {
   @include col-span($span * 6, $width-only);
 }
