@@ -345,6 +345,91 @@
             </div>
         </div>
 
+        <div class="section buttons">
+            <div class="section-title">
+            <h2>Buttons</h2>
+
+            <h3>Normal size</h3>
+
+            <div class="buttons-demo">
+                <div class="buttons-normal">
+                    <p>
+                        <button disabled>Disabled</button>  
+                    </p>
+                    <p>
+                        <button>Normal</button>  
+                    </p>
+                    <p>
+                        <button class="cta">CTA</button>  
+                    </p>
+                    <p>
+                        <button class="delete">Delete</button>  
+                    </p>
+                    <p>
+                        <button class="confirm">Confirm</button>  
+                    </p>
+                </div>
+
+                <div class="buttons-reverse">
+                    <p>
+                        <button class="reverse" disabled>Disabled</button>  
+                    </p>
+                    <p>
+                        <button class="reverse" >Normal</button>  
+                    </p>
+                    <p>
+                        <button class="reverse cta">CTA</button>  
+                    </p>
+                    <p>
+                        <button class="reverse delete">Delete</button>  
+                    </p>
+                    <p>
+                        <button class="reverse confirm">Confirm</button>  
+                    </p>
+                </div>
+            </div>
+
+            <h3>Large</h3>
+
+            <div class="buttons-demo-large">
+                <div class="buttons-normal">
+                    <p>
+                        <button class="large" disabled>Disabled</button>  
+                    </p>
+                    <p>
+                        <button class="large" >Normal</button>  
+                    </p>
+                    <p>
+                        <button class="large cta">CTA</button>  
+                    </p>
+                    <p>
+                        <button class="large delete">Delete</button>  
+                    </p>
+                    <p>
+                        <button class="large confirm">Confirm</button>  
+                    </p>
+                </div>
+
+                <div class="buttons-reverse">
+                    <p>
+                        <button class="large reverse" disabled>Disabled</button>  
+                    </p>
+                    <p>
+                        <button class="large reverse">Normal</button>  
+                    </p>
+                    <p>
+                        <button class="large reverse cta">CTA</button>  
+                    </p>
+                    <p>
+                        <button class="large revese delete">Delete</button>  
+                    </p>
+                    <p>
+                        <button class="large reverse confirm">Confirm</button>  
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <script src="/static/js/jquery.js"></script>
     </body>
 </html>

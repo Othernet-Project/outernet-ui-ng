@@ -312,3 +312,27 @@ header {
     }
   }
 }
+
+
+.buttons {
+
+  h3 {
+    @include simple-row;
+  }
+
+  .buttons-demo, .buttons-demo-large {
+    @include row;
+
+    .buttons-normal, .buttons-reverse {
+      @include two-col-even;
+    }
+
+    .buttons-reverse {
+      background: $sky;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}

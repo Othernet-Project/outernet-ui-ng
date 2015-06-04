@@ -229,6 +229,169 @@ i, em {
   font-style: italic;
 }
 
+/* line 117, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button,
+.button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
+  font-size: 16px;
+  line-height: 137.5%;
+  line-height: 137.5%;
+  padding: 0.5em 20px;
+  width: auto;
+  min-width: 170px;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  color: #ffffff;
+  background-color: #3584cf;
+  border-color: #3584cf;
+}
+/* line 32, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button:focus, button:hover,
+.button:focus,
+.button:hover {
+  color: #ffffff;
+  background-color: #28639b;
+  border-color: #28639b;
+}
+/* line 121, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button.large,
+.button.large {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
+  font-size: 16px;
+  line-height: 137.5%;
+  font-size: 18px;
+  line-height: 116%;
+  padding: 0.722em 20px;
+  with: auto;
+  min-width: 200px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+}
+/* line 125, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button[disabled], button.disabled,
+.button[disabled],
+.button.disabled {
+  color: #ffffff;
+  background-color: #bbbbbb;
+  border-color: #bbbbbb;
+  cursor: default;
+}
+/* line 131, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button.cta,
+.button.cta {
+  color: #ffffff;
+  background-color: #e17502;
+  border-color: #e17502;
+}
+/* line 32, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button.cta:focus, button.cta:hover,
+.button.cta:focus,
+.button.cta:hover {
+  opacity: 0.75;
+}
+/* line 135, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button.delete,
+.button.delete {
+  color: #ffffff;
+  background-color: #c41414;
+  border-color: #c41414;
+}
+/* line 32, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button.delete:focus, button.delete:hover,
+.button.delete:focus,
+.button.delete:hover {
+  opacity: 0.75;
+}
+/* line 139, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button.confirm,
+.button.confirm {
+  color: #ffffff;
+  background-color: #058120;
+  border-color: #058120;
+}
+/* line 32, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button.confirm:focus, button.confirm:hover,
+.button.confirm:focus,
+.button.confirm:hover {
+  opacity: 0.75;
+}
+/* line 143, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button.reverse,
+.button.reverse {
+  color: #3584cf;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+/* line 32, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button.reverse:focus, button.reverse:hover,
+.button.reverse:focus,
+.button.reverse:hover {
+  opacity: 0.75;
+}
+/* line 146, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button.reverse[disabled], button.reverse.disabled,
+.button.reverse[disabled],
+.button.reverse.disabled {
+  color: #bbbbbb;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  opacity: 0.5;
+}
+/* line 152, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button.reverse.cta,
+.button.reverse.cta {
+  color: #e17502;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+/* line 32, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button.reverse.cta:focus, button.reverse.cta:hover,
+.button.reverse.cta:focus,
+.button.reverse.cta:hover {
+  opacity: 0.75;
+}
+/* line 156, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button.reverse.delete,
+.button.reverse.delete {
+  color: #c41414;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+/* line 32, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button.reverse.delete:focus, button.reverse.delete:hover,
+.button.reverse.delete:focus,
+.button.reverse.delete:hover {
+  opacity: 0.75;
+}
+/* line 160, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button.reverse.confirm,
+.button.reverse.confirm {
+  color: #058120;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+/* line 32, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button.reverse.confirm:focus, button.reverse.confirm:hover,
+.button.reverse.confirm:focus,
+.button.reverse.confirm:hover {
+  opacity: 0.75;
+}
+
 /**
  * _colors.scss: color definitions
  *
@@ -1377,4 +1540,47 @@ header h1 {
   -webkit-transition: width 0.5s;
   transition: width 0.5s;
   width: 100%;
+}
+
+/* line 319, ../../scss/main.scss */
+.buttons h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 25, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_grid.scss */
+.buttons .buttons-demo:after, .buttons .buttons-demo-large:after {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: left;
+}
+/* line 326, ../../scss/main.scss */
+.buttons .buttons-demo .buttons-normal, .buttons .buttons-demo .buttons-reverse, .buttons .buttons-demo-large .buttons-normal, .buttons .buttons-demo-large .buttons-reverse {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  float: left;
+  box-sizing: border-box;
+  -moz-transition: width 0.5s;
+  -o-transition: width 0.5s;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  width: 50%;
+}
+@media only screen and (max-width: 560px) {
+  /* line 326, ../../scss/main.scss */
+  .buttons .buttons-demo .buttons-normal, .buttons .buttons-demo .buttons-reverse, .buttons .buttons-demo-large .buttons-normal, .buttons .buttons-demo-large .buttons-reverse {
+    width: 100%;
+  }
+}
+/* line 330, ../../scss/main.scss */
+.buttons .buttons-demo .buttons-reverse, .buttons .buttons-demo-large .buttons-reverse {
+  background: #3584cf;
+}
+/* line 334, ../../scss/main.scss */
+.buttons .buttons-demo p, .buttons .buttons-demo-large p {
+  text-align: center;
 }
