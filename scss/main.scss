@@ -339,4 +339,8 @@ header {
   .widget {
     @include simple-row;
   }
+
+  .accordion {
+    @include accordion;
+  }
 }

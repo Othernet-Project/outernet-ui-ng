@@ -349,44 +349,45 @@
 
         <div class="section buttons">
             <div class="section-title">
-            <h2>Buttons</h2>
+                <h2>Buttons</h2>
+            </div>
 
             <h3>Normal size</h3>
 
             <div class="buttons-demo">
                 <div class="buttons-normal">
                     <p>
-                        <button disabled>Disabled</button>  
+                    <button disabled>Disabled</button>  
                     </p>
                     <p>
-                        <button>Normal</button>  
+                    <button>Normal</button>  
                     </p>
                     <p>
-                        <button class="cta">CTA</button>  
+                    <button class="cta">CTA</button>  
                     </p>
                     <p>
-                        <button class="delete">Delete</button>  
+                    <button class="delete">Delete</button>  
                     </p>
                     <p>
-                        <button class="confirm">Confirm</button>  
+                    <button class="confirm">Confirm</button>  
                     </p>
                 </div>
 
                 <div class="buttons-reverse">
                     <p>
-                        <button class="reverse" disabled>Disabled</button>  
+                    <button class="reverse" disabled>Disabled</button>  
                     </p>
                     <p>
-                        <button class="reverse" >Normal</button>  
+                    <button class="reverse" >Normal</button>  
                     </p>
                     <p>
-                        <button class="reverse cta">CTA</button>  
+                    <button class="reverse cta">CTA</button>  
                     </p>
                     <p>
-                        <button class="reverse delete">Delete</button>  
+                    <button class="reverse delete">Delete</button>  
                     </p>
                     <p>
-                        <button class="reverse confirm">Confirm</button>  
+                    <button class="reverse confirm">Confirm</button>  
                     </p>
                 </div>
             </div>
@@ -396,54 +397,96 @@
             <div class="buttons-demo-large">
                 <div class="buttons-normal">
                     <p>
-                        <button class="large" disabled>Disabled</button>  
+                    <button class="large" disabled>Disabled</button>  
                     </p>
                     <p>
-                        <button class="large" >Normal</button>  
+                    <button class="large" >Normal</button>  
                     </p>
                     <p>
-                        <button class="large cta">CTA</button>  
+                    <button class="large cta">CTA</button>  
                     </p>
                     <p>
-                        <button class="large delete">Delete</button>  
+                    <button class="large delete">Delete</button>  
                     </p>
                     <p>
-                        <button class="large confirm">Confirm</button>  
+                    <button class="large confirm">Confirm</button>  
                     </p>
                 </div>
 
                 <div class="buttons-reverse">
                     <p>
-                        <button class="large reverse" disabled>Disabled</button>  
+                    <button class="large reverse" disabled>Disabled</button>  
                     </p>
                     <p>
-                        <button class="large reverse">Normal</button>  
+                    <button class="large reverse">Normal</button>  
                     </p>
                     <p>
-                        <button class="large reverse cta">CTA</button>  
+                    <button class="large reverse cta">CTA</button>  
                     </p>
                     <p>
-                        <button class="large revese delete">Delete</button>  
+                    <button class="large revese delete">Delete</button>  
                     </p>
                     <p>
-                        <button class="large reverse confirm">Confirm</button>  
+                    <button class="large reverse confirm">Confirm</button>  
                     </p>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="section widgets">
-            <div class="section-title">
+    <div class="section widgets">
+        <div class="section-title">
             <h2>Widgets</h2>
-            </div>
+        </div>
 
             <div class="loader-demo widget">
                 ${widgets.progress('Progress', 'progress', 30, '30%', 30)}
+            </div>
+
+            <div class="accordion-demo widget">
+                <div class="accordion" id="accordion">
+                    <%widgets:accordion expanded="${True}">
+                        <h3>Expanded by default</h3>
+                        <div>
+                            <p>
+                            This section is expanded by default. This is
+                            achieved by using the 
+                            <code>expanded="${'${True}'}"</code> argument.
+                            </p>
+                        </div>
+                    </%widgets:accordion>
+                    <%widgets:accordion collapsible="${False}">
+                        <h3>Non-collapsible</h3>
+                        <div>
+                            <p>
+                            This section is not collapsible. This is achived
+                            by using the 
+                            <code>collapsible="${'${False}'}</code> argument.
+                        </div>
+                    </%widgets:accordion>
+                    <%widgets:accordion>
+                        <h3>Normal section</h3>
+                        <div>
+                            <p>
+                            This is a normal section.
+                            </p>
+                        </div>
+                    </%widgets:accordion>
+                    <%widgets:accordion>
+                        <h3>Normal section</h3>
+                        <div>
+                            <p>
+                            This is a normal section.
+                            </p>
+                        </div>
+                    </%widgets:accordion>
+                </div>
             </div>
         </div>
 
         <script src="/static/js/jquery.js"></script>
         <script src="/static/js/widgets/progress.js"></script>
+        <script src="/static/js/widgets/accordion.js"></script>
         <script type="text/javascript">
             var progress = $('#progress').progress();
 
@@ -457,7 +500,9 @@
             function rndval() {
                 return Math.floor(Math.random() * 100);
             }
-
+        </script>
+        <script type="text/javascript">
+            $('#accordion').accordion();
         </script>
     </body>
 </html>

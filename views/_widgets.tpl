@@ -7,3 +7,9 @@
     </span>
 </span>
 </%def>
+
+<%def name="accordion(id=None, collapsible=True, expanded=False)">
+<section class="accordion-section ${'collapsible' if collapsible else 'non-collapsible'} ${'expanded' if (expanded and collapsible) else ''}" ${ 'id="%s"' % id if id else ''}>
+    ${caller.body()}
+</section>
+</%def>

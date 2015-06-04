@@ -146,6 +146,18 @@ i, em {
   font-style: italic;
 }
 
+/* line 135, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+pre, code {
+  display: inline-block;
+  font-family: monospace;
+  background: #dddddd;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 0 0.4em;
+  font-size: 90%;
+}
+
 /**
  * _colors.scss: color definitions
  *
@@ -227,6 +239,18 @@ b, strong {
 /* line 131, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 i, em {
   font-style: italic;
+}
+
+/* line 135, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+pre, code {
+  display: inline-block;
+  font-family: monospace;
+  background: #dddddd;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 0 0.4em;
+  font-size: 90%;
 }
 
 /* line 117, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
@@ -475,6 +499,18 @@ i, em {
   font-style: italic;
 }
 
+/* line 135, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+pre, code {
+  display: inline-block;
+  font-family: monospace;
+  background: #dddddd;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 0 0.4em;
+  font-size: 90%;
+}
+
 /* line 46, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_hyperlinks.scss */
 a {
   text-decoration: none;
@@ -581,6 +617,18 @@ b, strong {
 /* line 131, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
 i, em {
   font-style: italic;
+}
+
+/* line 135, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+pre, code {
+  display: inline-block;
+  font-family: monospace;
+  background: #dddddd;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 0 0.4em;
+  font-size: 90%;
 }
 
 /* line 152, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
@@ -753,7 +801,7 @@ input[type="checkbox"]:checked + label:before {
   -o-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   -webkit-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
-  background-image: url('/static/img/icons/1x/checkmark.png?1433342935');
+  background-image: url('/static/img/icons/1x/checkmark.png');
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -774,7 +822,7 @@ input[type="checkbox"]:focus + label:before {
 }
 /* line 220, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="checkbox"]:focus:checked + label:before {
-  background-image: url('/static/img/icons/1x/checkmark_active.png?1433344278');
+  background-image: url('/static/img/icons/1x/checkmark_active.png');
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -801,7 +849,7 @@ select {
   text-indent: 0.01px;
   text-overflow: "";
   padding-right: 50px;
-  background-image: url('/static/img/icons/1x/arrow_down_sky.png?1432117154');
+  background-image: url('/static/img/icons/1x/arrow_down_sky.png');
   background-repeat: no-repeat;
   background-position: right 10px top 50%;
 }
@@ -930,6 +978,18 @@ i, em {
   font-style: italic;
 }
 
+/* line 135, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+pre, code {
+  display: inline-block;
+  font-family: monospace;
+  background: #dddddd;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 0 0.4em;
+  font-size: 90%;
+}
+
 /* line 4, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_progress.scss */
 .progress {
   position: relative;
@@ -980,6 +1040,146 @@ i, em {
   background: #e17502;
 }
 
+/**
+ * _colors.scss: color definitions
+ *
+ * Copyright 2014-2015, Outernet Inc.
+ * Some rights reserved.
+ *
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _colors.scss: color definitions
+ *
+ * Copyright 2014-2015, Outernet Inc.
+ * Some rights reserved.
+ *
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _fonts.scss: typography definitions
+ * 
+ * Copyright 2015, Outernet Inc.
+ * Some rights reserved.
+ * 
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/* line 93, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h1 {
+  font-size: 175%;
+  line-height: 125%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 98, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h2 {
+  font-size: 162.5%;
+  line-height: 123%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 103, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h3 {
+  font-size: 150%;
+  line-height: 125%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 108, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h4 {
+  font-size: 137.5%;
+  line-height: 127%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 113, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h5 {
+  font-size: 125%;
+  line-height: 130%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 118, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h6 {
+  font-size: 112.5%;
+  line-height: 116%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 123, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+p {
+  margin-bottom: 1em;
+}
+
+/* line 127, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 131, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+i, em {
+  font-style: italic;
+}
+
+/* line 135, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+pre, code {
+  display: inline-block;
+  font-family: monospace;
+  background: #dddddd;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 0 0.4em;
+  font-size: 90%;
+}
+
+/* line 46, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_hyperlinks.scss */
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #3584cf;
+}
+/* line 13, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_hyperlinks.scss */
+a:hover {
+  text-decoration: underline;
+}
+/* line 25, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_hyperlinks.scss */
+a:visited {
+  color: #28639b;
+}
+
+/**
+ * _sprites.scss: sprite images with high-dpi display support
+ *
+ * Copyright 2014-2015, Outernet Inc.
+ * Some rights reserved.
+ *
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _hdpi_images.scss: helpers for high-dpi display support
+ *
+ * Copyright 2014-2015, Outernet Inc.
+ * Some rights reserved.
+ *
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
 /* line 10, ../../scss/outernet/_ui.scss */
 body {
   font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
@@ -1724,4 +1924,144 @@ header h1 {
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
+}
+/* line 15, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+.widgets .accordion .accordion-section {
+  background: #fafafa;
+}
+/* line 19, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+.widgets .accordion .accordion-section > :nth-child(1) {
+  background: #ffffff;
+  line-height: 50px;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  margin: 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+/* line 30, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+.widgets .accordion .accordion-section > :nth-child(2) {
+  padding: 20px;
+  overflow: hidden;
+  margin: 0;
+}
+/* line 41, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+.widgets .accordion.active .accordion-section > :nth-child(1) a {
+  position: relative;
+  top: 2px;
+}
+/* line 46, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+.widgets .accordion.active .accordion-section > :nth-child(1) .accordion-icon {
+  display: inline-block;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url('/static/img/icons/1x-s8396a60b09.png');
+  background-position: 0 -110px;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin: 0 12.5px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
+  /* line 46, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+  .widgets .accordion.active .accordion-section > :nth-child(1) .accordion-icon {
+    background-image: url('/static/img/icons/2x-s50007ac9a8.png');
+    background-position: 0 -110px;
+    -moz-background-size: 25px 1125px;
+    -o-background-size: 25px 1125px;
+    -webkit-background-size: 25px 1125px;
+    background-size: 25px 1125px;
+  }
+}
+/* line 53, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+.widgets .accordion.active .accordion-section > :nth-child(1):hover {
+  background: #fafafa;
+}
+/* line 56, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+.widgets .accordion.active .accordion-section > :nth-child(1):hover .accordion-icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url('/static/img/icons/1x-s8396a60b09.png');
+  background-position: 0 -165px;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
+  /* line 56, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+  .widgets .accordion.active .accordion-section > :nth-child(1):hover .accordion-icon {
+    background-image: url('/static/img/icons/2x-s50007ac9a8.png');
+    background-position: 0 -165px;
+    -moz-background-size: 25px 1125px;
+    -o-background-size: 25px 1125px;
+    -webkit-background-size: 25px 1125px;
+    background-size: 25px 1125px;
+  }
+}
+/* line 63, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+.widgets .accordion.active .accordion-section > :nth-child(2) {
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  -moz-transition: padding-top 0.3s, max-height 0.5s, padding-bottom 0.3s;
+  -o-transition: padding-top 0.3s, max-height 0.5s, padding-bottom 0.3s;
+  -webkit-transition: padding-top 0.3s, max-height 0.5s, padding-bottom 0.3s;
+  transition: padding-top 0.3s, max-height 0.5s, padding-bottom 0.3s;
+}
+/* line 77, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+.widgets .accordion.active .non-collapsible > :nth-child(1) .accordion-icon {
+  opacity: 0.3;
+}
+/* line 87, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+.widgets .accordion.active .non-collapsible > :nth-child(1) .accordion-icon,
+.widgets .accordion.active .expanded > :nth-child(1) .accordion-icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url('/static/img/icons/1x-s8396a60b09.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
+  /* line 87, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+  .widgets .accordion.active .non-collapsible > :nth-child(1) .accordion-icon,
+  .widgets .accordion.active .expanded > :nth-child(1) .accordion-icon {
+    background-image: url('/static/img/icons/2x-s50007ac9a8.png');
+    background-position: 0 0;
+    -moz-background-size: 25px 1125px;
+    -o-background-size: 25px 1125px;
+    -webkit-background-size: 25px 1125px;
+    background-size: 25px 1125px;
+  }
+}
+/* line 92, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+.widgets .accordion.active .non-collapsible > :nth-child(1):hover .accordion-icon,
+.widgets .accordion.active .expanded > :nth-child(1):hover .accordion-icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url('/static/img/icons/1x-s8396a60b09.png');
+  background-position: 0 -55px;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
+  /* line 92, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+  .widgets .accordion.active .non-collapsible > :nth-child(1):hover .accordion-icon,
+  .widgets .accordion.active .expanded > :nth-child(1):hover .accordion-icon {
+    background-image: url('/static/img/icons/2x-s50007ac9a8.png');
+    background-position: 0 -55px;
+    -moz-background-size: 25px 1125px;
+    -o-background-size: 25px 1125px;
+    -webkit-background-size: 25px 1125px;
+    background-size: 25px 1125px;
+  }
+}
+/* line 99, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+.widgets .accordion.active .non-collapsible > :nth-child(2),
+.widgets .accordion.active .expanded > :nth-child(2) {
+  max-height: 500px;
+  padding: 20px;
 }
