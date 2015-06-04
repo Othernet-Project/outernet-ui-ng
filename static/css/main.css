@@ -847,7 +847,140 @@ select::-ms-expand {
   color: #c41414;
 }
 
-/* line 9, ../../scss/outernet/_ui.scss */
+/**
+ * _colors.scss: color definitions
+ *
+ * Copyright 2014-2015, Outernet Inc.
+ * Some rights reserved.
+ *
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _fonts.scss: typography definitions
+ * 
+ * Copyright 2015, Outernet Inc.
+ * Some rights reserved.
+ * 
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/* line 93, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h1 {
+  font-size: 175%;
+  line-height: 125%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 98, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h2 {
+  font-size: 162.5%;
+  line-height: 123%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 103, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h3 {
+  font-size: 150%;
+  line-height: 125%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 108, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h4 {
+  font-size: 137.5%;
+  line-height: 127%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 113, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h5 {
+  font-size: 125%;
+  line-height: 130%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 118, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+h6 {
+  font-size: 112.5%;
+  line-height: 116%;
+  margin-top: 1em;
+  margin-bottom: 16px;
+}
+
+/* line 123, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+p {
+  margin-bottom: 1em;
+}
+
+/* line 127, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 131, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
+i, em {
+  font-style: italic;
+}
+
+/* line 4, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_progress.scss */
+.progress {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+/* line 11, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_progress.scss */
+.progress span {
+  display: inline-block;
+}
+/* line 15, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_progress.scss */
+.progress .label, .progress .value {
+  font-size: 125%;
+  line-height: 130%;
+}
+/* line 19, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_progress.scss */
+.progress .label {
+  float: left;
+}
+/* line 23, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_progress.scss */
+.progress .value {
+  float: right;
+}
+/* line 27, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_progress.scss */
+.progress .indicator {
+  position: relative;
+  clear: both;
+  height: 5px;
+  background: #dddddd;
+  width: 100%;
+}
+/* line 34, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_progress.scss */
+.progress .indicator .bar {
+  position: absolute;
+  height: 5px;
+  left: 0;
+  top: 0;
+  background: #058120;
+  -moz-transition: width 300ms;
+  -o-transition: width 300ms;
+  -webkit-transition: width 300ms;
+  transition: width 300ms;
+}
+/* line 44, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_progress.scss */
+.progress.low .bar {
+  background: #e17502;
+}
+
+/* line 10, ../../scss/outernet/_ui.scss */
 body {
   font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
   font-size: 16px;
@@ -1542,7 +1675,7 @@ header h1 {
   width: 100%;
 }
 
-/* line 319, ../../scss/main.scss */
+/* line 317, ../../scss/main.scss */
 .buttons h3 {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1556,7 +1689,7 @@ header h1 {
   width: 100%;
   clear: left;
 }
-/* line 326, ../../scss/main.scss */
+/* line 324, ../../scss/main.scss */
 .buttons .buttons-demo .buttons-normal, .buttons .buttons-demo .buttons-reverse, .buttons .buttons-demo-large .buttons-normal, .buttons .buttons-demo-large .buttons-reverse {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1571,16 +1704,24 @@ header h1 {
   width: 50%;
 }
 @media only screen and (max-width: 560px) {
-  /* line 326, ../../scss/main.scss */
+  /* line 324, ../../scss/main.scss */
   .buttons .buttons-demo .buttons-normal, .buttons .buttons-demo .buttons-reverse, .buttons .buttons-demo-large .buttons-normal, .buttons .buttons-demo-large .buttons-reverse {
     width: 100%;
   }
 }
-/* line 330, ../../scss/main.scss */
+/* line 328, ../../scss/main.scss */
 .buttons .buttons-demo .buttons-reverse, .buttons .buttons-demo-large .buttons-reverse {
   background: #3584cf;
 }
-/* line 334, ../../scss/main.scss */
+/* line 332, ../../scss/main.scss */
 .buttons .buttons-demo p, .buttons .buttons-demo-large p {
   text-align: center;
+}
+
+/* line 339, ../../scss/main.scss */
+.widgets .widget {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }

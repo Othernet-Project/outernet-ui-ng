@@ -1,5 +1,7 @@
 <!doctype html>
 
+<%namespace name="widgets" file="_widgets.tpl"/>
+
 <%def name="swatch(name)">
 <li>
     <span class="swatch ${name}"></span>
@@ -430,6 +432,32 @@
             </div>
         </div>
 
+        <div class="section widgets">
+            <div class="section-title">
+            <h2>Widgets</h2>
+            </div>
+
+            <div class="loader-demo widget">
+                ${widgets.progress('Progress', 'progress', 30, '30%', 30)}
+            </div>
+        </div>
+
         <script src="/static/js/jquery.js"></script>
+        <script src="/static/js/widgets/progress.js"></script>
+        <script type="text/javascript">
+            var progress = $('#progress').progress();
+
+            setInterval(updateProgress, 2000);
+
+            function updateProgress() {
+                var v = rndval();
+                progress.updateValues(v, v + '%');
+            }
+
+            function rndval() {
+                return Math.floor(Math.random() * 100);
+            }
+
+        </script>
     </body>
 </html>
