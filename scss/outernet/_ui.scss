@@ -1,4 +1,3 @@
-// Grid setup
 @import "outernet/partial/colors";
 @import "outernet/partial/fonts";
 @import "outernet/partial/buttons";
@@ -6,6 +5,7 @@
 @import "outernet/partial/forms";
 @import "outernet/partial/grid";
 @import "outernet/widgets/progress";
+@import "outernet/widgets/accordion";
 
 body {
   @include regular;

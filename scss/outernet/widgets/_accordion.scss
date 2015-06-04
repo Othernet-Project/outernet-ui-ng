@@ -1,0 +1,105 @@
+@import "outernet/partial/colors";
+@import "outernet/partial/hyperlinks";
+@import "outernet/mixins/sprites";
+
+@mixin accordion-header {
+  background: $white;
+  line-height: 50px;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  margin: 0;
+}
+
+@mixin accordion {
+
+  .accordion-section {
+    background: $input;
+
+    // HEADER
+    & > :nth-child(1) {
+      background: $white;
+      line-height: 50px;
+      border-top: 1px solid $border;
+      border-bottom: 1px solid $border;
+      margin: 0;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    // CONTENT
+    & > :nth-child(2) {
+      padding: 20px;
+      overflow: hidden;
+      margin: 0;
+    }
+  }
+
+  &.active {
+    .accordion-section {
+      // HEADER
+      & > :nth-child(1) {
+        a {
+          position: relative;
+          top: 2px;
+        }
+
+        .accordion-icon {
+          display: inline-block;
+          @include icon(accordion_open_sky);
+          vertical-align: middle;
+          margin: 0 12.5px;
+        }
+
+        &:hover {
+          background: $input;
+
+          .accordion-icon {
+            @include icon(accordion_open_sky25d);
+          }
+        }
+      }
+
+      // CONTENT
+      & > :nth-child(2) {
+        max-height: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        @include transition(
+          padding-top 0.3s,
+          max-height 0.5s, 
+          padding-bottom 0.3s);
+      }
+    }
+
+    .non-collapsible {
+      // HEADER
+      & > :nth-child(1) {
+        .accordion-icon {
+          opacity: 0.3;
+        }
+      }
+    }
+
+    .non-collapsible,
+    .expanded {
+      // HEADER
+      & > :nth-child(1) {
+        .accordion-icon {
+          @include icon(accordion_close_sky);
+        }
+
+        &:hover {
+          .accordion-icon {
+            @include icon(accordion_close_sky25d);
+          }
+        }
+      }
+
+      // CONTENT
+      & > :nth-child(2) {
+        max-height: 500px;
+        padding: 20px;
+      }
+    }
+  }
+}
