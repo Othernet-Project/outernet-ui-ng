@@ -7,16 +7,39 @@
   text-align: center;
   cursor: pointer;
   vertical-align: middle;
+  border: 1px solid transparent;
 }
 
-@mixin button-color($text: $white, $background: $sky, $hover: $sky25d) {
-  color: $white;
-  background-color: $sky;
-
-  &:focus,
-  &:hover {
+@mixin button-color($color: $sky, $hover: $sky25d, $style: normal) {
+  @if $style == reverse {
+    color: $color;
+    background-color: $white;
+    border-color: $white;
+  } 
+  @else if $style == outline {
+    color: $color;
+    background-color: transparent;
+    border-color: $white;
+  } 
+  @else {
     color: $white;
-    background-color: $sky25d;
+    background-color: $color;
+    border-color: $color;
+  }
+
+
+  @if $hover != no {
+    &:focus,
+    &:hover {
+      @if $style == normal {
+        color: $white;
+        background-color: $hover;
+        border-color: $hover;
+
+      } @else {
+        opacity: 0.75;
+      }
+    }
   }
 }
 
@@ -26,7 +49,6 @@
 
 @mixin button-label {
   @include button-label-base;
-  font-size: $base-size;
   line-height: 137.5%;
 }
 
@@ -37,164 +59,106 @@
 }
 
 @mixin button-geometry {
-  padding: 0.5em 1.25em 0.5em 1.25em;
+  padding: 0.5em 20px;
   width: auto;
-  min-width: 8.125em;
-  border-radius: 3.125em;
+  min-width: 170px;
+  border-radius: 100px;
+  @include border-radius(100px);  // make button fully rounded
 }
 
 @mixin button-geometry-l {
-  padding: 0.722em 1.25em 0.722em 1.25em;
-  min-width: 160px;
-  border-radius: 2.778em;
+  padding: 0.722em 20px;
+  with: auto;
+  min-width: 200px;
+  @include border-radius(100px);  // make button fully rounded
 }
 
-@mixin button {
+// Default buttons
+
+@mixin button-base-styling {
   @include button-base;
   @include button-label;
   @include button-geometry;
+}
+
+@mixin button {
+  @include button-base-styling;
   @include button-color;
 }
 
-@mixin button-l {
+@mixin button-l-base-styling {
   @include button-base;
   @include button-label-l;
   @include button-geometry-l;
-  @include button-color;
 }
 
-@mixin button-inactive {
-  background-color: $iconic;
+// Colors
+
+@mixin button-normal-color($style: no) {
+  @include button-color($style: $style) 
 }
 
-@mixin button-inactive-s {
-  color: $iconic;
-  background-color: transparent;
-  border: 1px solid $iconic;
+@mixin button-inactive-color($style: no) {
+  @include button-color($color: $iconic, $hover: no, $style: $style) 
 }
 
-@mixin button-action {
-  &:hover {
-    background-color:$sky25d;
+@mixin button-cta-color($style: no) {
+  @include button-color($color: $sun, $hover: $sun25d, $style: $style);
+}
+
+@mixin button-delete-color($style: no) {
+  @include button-color($color: $fire, $hover: $fire25d, $style: $style);
+}
+
+@mixin button-confirm-color($style: no) {
+  @include button-color($color: $forest, $hover: $forest25d, $style: $style);
+}
+
+button,
+.button { 
+  @include button;
+
+  &.large {
+    @include button-l-base-styling;
   }
-}
 
-@mixin button-action-s {
-  color: $sky;
-  background-color: transparent;
-  border: 1px solid $sky;
-  &:hover {
-    color:$sky25d;
-    border: 1px solid $sky25d;
+  &[disabled],
+  &.disabled {
+    @include button-inactive-color;
+    cursor: default;
   }
-}
 
-@mixin button-cta {
-  background-color: $sun;
-  &:hover {
-    background-color:$sun25d;
+  &.cta {
+    @include button-cta-color;
   }
-}
 
-@mixin button-cta-s {
-  color: $sun;
-  background-color: transparent;
-  border: 1px solid $sun;
-  &:hover {
-    color:$sun25d;
-    border: 1px solid $sun25d;
+  &.delete {
+    @include button-delete-color;
   }
-}
 
-@mixin button-confirm {
-  background-color: $forest;
-  &:hover {
-    background-color:$forest25d;
+  &.confirm {
+    @include button-confirm-color;
   }
-}
 
-@mixin button-confirm-s {
-  color: $forest;
-  background-color: transparent;
-  border: 1px solid $forest;
-  &:hover {
-    color:$forest25d;
-    border: 1px solid $forest25d;
-  }
-}
+  &.reverse {
+    @include button-color($style: reverse); 
 
-@mixin button-delete {
-  background-color: $fire;
-  &:hover {
-    background-color:$fire25d;
-  }
-}
+    &[disabled],
+    &.disabled {
+      @include button-inactive-color($style: reverse);
+      opacity: 0.5;
+    }
 
-@mixin button-delete-s {
-  color: $fire;
-  background-color: transparent;
-  border: 1px solid $fire;
-  &:hover {
-    border: 1px solid $fire25d;
-    color:$fire25d;
-  }
-}
+    &.cta {
+      @include button-cta-color($style: reverse);
+    }
 
-//Reverse Buttons
-@mixin button-inactive-r {
-  color: $sky;
-  background-color: #fff;
-  opacity: 0.5;
-}
+    &.delete {
+      @include button-delete-color($style: reverse);
+    }
 
-@mixin button-inactive-s-r {
-  background-color: transparent;
-  border: 1px solid #fff;
-  opacity: 0.5;
-}
-
-@mixin button-action-r {
-  color: $sky;
-  background-color: #fff;
-  &:hover {
-    color: $sky25d;
-    opacity: 0.75;
-  }
-}
-
-@mixin button-action-s-r {
-  background-color: transparent;
-  border: 1px solid #fff;
-  &:hover {
-    color: $sky25d;
-    background-color: #fff;
-    opacity: 0.75;
-  }
-}
-
-@mixin button-cta-r {
-  color: $sun;
-  background-color: #fff;
-  &:hover {
-    color: $sun25d;
-    opacity: 0.75;
-  }
-}
-
-@mixin button-confirm-r {
-  background-color: #fff;
-  color: $forest;
-  &:hover {
-    color:$forest25d;
-    opacity: 0.75;
-  }
-}
-
-@mixin button-delete-r {
-  background-color: #fff;
-  color: $fire;
-  &:hover {
-    color: $fire25d;
-    opacity: 0.75;
+    &.confirm {
+      @include button-confirm-color($style: reverse);
+    }
   }
 }
