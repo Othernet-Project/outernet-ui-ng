@@ -1,6 +1,28 @@
 @import "compass/reset";
 @import "compass/css3";
 @import "outernet/ui";
+@import "outernet/mixins/media_query";
+
+$wide: 976px;
+$medium: 728px;
+$narrow: 560px;
+
+@mixin six-col-even {
+  @include col6; 
+  @include narrower-than($wide) { @include col3($width-only: yes); }
+  @include narrower-than($medium) { @include col1($width-only: yes); }
+}
+
+@mixin four-col-even {
+  @include col4; 
+  @include narrower-than($medium) { @include col2($width-only: yes) }
+  @include narrower-than($narrow) { @include col1($width-only: yes) }
+}
+
+@mixin two-col-even {
+  @include col2; 
+  @include narrower-than($narrow) { @include col1($width-only: yes) }
+}
 
 body {
   background: image-url('bg.png');
@@ -40,10 +62,7 @@ header {
 
 .swatches {
   @include row;
-
-  .col { 
-    @include col6;
-  }
+  .col { @include six-col-even; }
 
   li {
     margin-bottom: 1em;
@@ -105,12 +124,9 @@ header {
 
 .typography {
   .section-title {
-    h2 {
-      @include col2;
-    }
+    h2, .note { @include two-col-even; }
 
     .note {
-      @include col2;
       color: $iconic;
       margin-top: 36px;
     }
@@ -150,14 +166,13 @@ header {
 
   .body-text {
     @include row;
-  }
 
-  .regular {
-    @include col2;
+    .regular, .sub {
+      @include two-col-even;
+    }
   }
 
   .sub {
-    @include col2;
     @include sub;
     color: $sub;
   }
@@ -166,7 +181,7 @@ header {
     @include row;
 
     .link-type {
-      @include col4;
+      @include four-col-even;
 
       .normal, .visited {
         @include link-base;
@@ -220,7 +235,7 @@ header {
     @include row;
 
     .col {
-      @include col2;
+      @include two-col-even;
     }
   }
 
@@ -286,6 +301,14 @@ header {
 
     .col-right {
       @include col6(4);
+
+      .nested-row {
+        @include row;
+      }
+
+      .col {
+        @include col1;
+      }
     }
   }
 }
