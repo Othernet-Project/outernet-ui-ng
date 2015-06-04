@@ -40,6 +40,7 @@ $col-width: 100% / $col-count;
   padding-left: $gutter / 2;
   float: left;
   box-sizing: border-box;
+  @include transition(width 0.5s);
 }
 
 @mixin col-width($span) {
