@@ -131,3 +131,12 @@ b, strong {
 i, em {
   @include italic;
 }
+
+pre, code {
+  display: inline-block;
+  font-family: monospace;
+  background: $border;
+  @include border-radius(4px);
+  padding: 0 0.4em;
+  font-size: 90%;
+}
