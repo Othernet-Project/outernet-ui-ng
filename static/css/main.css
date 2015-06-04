@@ -625,9 +625,12 @@ textarea {
   height: 6.875em;
   min-height: 4.125em;
   max-height: 16.5em;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-/* line 233, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 234, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -643,7 +646,7 @@ select {
 select::-ms-expand {
   display: none;
 }
-/* line 240, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 241, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 select option {
   color: #888888;
   background: #fafafa;
@@ -655,12 +658,12 @@ select option[value] {
   color: #555555;
 }
 
-/* line 245, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 246, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 select::-ms-expand {
   display: none;
 }
 
-/* line 252, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 253, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 .field-help {
   font-size: 87.5%;
   line-height: 137.5%;
@@ -670,7 +673,7 @@ select::-ms-expand {
   padding-top: 6px;
 }
 
-/* line 257, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 258, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 .field-error {
   font-size: 87.5%;
   line-height: 137.5%;

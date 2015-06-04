@@ -228,6 +228,7 @@ textarea {
   height: $line-height-em * 5; // 5 lines
   min-height: $line-height-em * 3;
   max-height: $line-height-em * 12;
+  @include border-bottom-right-radius(0);
 }
 
 select {
