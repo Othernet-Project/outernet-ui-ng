@@ -12,6 +12,7 @@
 @import "compass/css3";
 @import "colors";
 @import "fonts";
+@import "outernet/mixins/hdpi_images";
 
 
 $form-text-offset: 15px;
@@ -234,9 +235,10 @@ textarea {
 select {
   @include select-styling;
   padding-right: 50px;
-  background-image: image-url('icons/1x/arrow_down_sky.png');
   background-repeat: no-repeat;
   background-position: right 10px top 50%;
+
+  @include with-hdpi(icons, dropdown_open_sky);
 
   option {
     @include select-option-styling;
