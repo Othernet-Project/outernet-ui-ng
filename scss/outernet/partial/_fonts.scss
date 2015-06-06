@@ -132,11 +132,34 @@ i, em {
   @include italic;
 }
 
-pre, code {
+pre {
+  overflow: hidden;
+  margin-bottom: 1em;
+  background: $border;
+  @include border-radius(4px);
+  padding: 0.4em;
+
+  &:hover {
+    overflow: visible;
+    position: relative;
+    z-index: 1000;
+  }
+}
+
+code {
   display: inline-block;
   font-family: monospace;
   background: $border;
   @include border-radius(4px);
   padding: 0 0.4em;
-  font-size: 90%;
+  font-size: 80%;
+}
+
+ul.bullets {
+  margin-bottom: 1em;
+
+  li {
+    list-style: disc;
+    margin-left: 1em;
+  }
 }
