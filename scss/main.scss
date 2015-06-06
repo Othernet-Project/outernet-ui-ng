@@ -48,8 +48,14 @@ body {
 }
 
 .docs {
+  display: block;
   @include simple-row;
+  @include sub;
   color: $sub;
+
+  strong {
+    color: $forest;
+  }
 }
 
 header {
@@ -167,7 +173,7 @@ header {
   .body-text {
     @include row;
 
-    .regular, .sub {
+    .regular, .sub, .code, .misc {
       @include two-col-even;
     }
   }
@@ -179,6 +185,10 @@ header {
 
   .links {
     @include row;
+
+    .docs {
+      padding: 0;
+    }
 
     .link-type {
       @include four-col-even;
@@ -241,6 +251,10 @@ header {
 
   .field {
     @include input-container;
+  }
+
+  .form-input-custom-icon input {
+    @include input-icon('lock');
   }
 }
 
@@ -314,23 +328,24 @@ header {
 }
 
 .buttons {
-  h3 {
+  h3.subsection {
     @include simple-row;
   }
 
-  .buttons-demo, .buttons-demo-large {
-    @include row;
+  .buttons-demo {
+    @include simple-row;
+  }
 
-    .buttons-normal, .buttons-reverse {
-      @include two-col-even;
-    }
+  .buttons-reverse {
+    background: $sky;
+    padding: 10px;
 
-    .buttons-reverse {
-      background: $sky;
-    }
+    .docs {
+      color: $sky10;
 
-    p {
-      text-align: center;
+      code {
+        color: $base;
+      }
     }
   }
 }
