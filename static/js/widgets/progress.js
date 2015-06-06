@@ -12,6 +12,7 @@
 
     return {
       updateValues: function(p, v) {
+        if (!v) { v = p + '%'; }
         value.text(v);
         bar.width(p + '%');
         el.toggleClass('low', p < threshold);

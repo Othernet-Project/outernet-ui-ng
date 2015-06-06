@@ -1,7 +1,7 @@
-<%def name="progress(label, id, percentage, value, threshold=10)">
-<span class="progress${ ' low' if percentage < threshold else ''}" data-threshold="${threshold}" id="${id}">
+<%def name="progress(label, percentage, value=None, threshold=10, id=None)">
+<span class="progress${ ' low' if percentage < threshold else ''}" data-threshold="${threshold}" ${'id="%s"' % id if id else ''}>
     <span class="label">${label}</span>
-    <span class="value">${value}</span>
+    <span class="value">${value if value else '%s%%' % percentage}</span>
     <span class="indicator">
         <span class="bar" style="width: ${percentage}%"></span>
     </span>
