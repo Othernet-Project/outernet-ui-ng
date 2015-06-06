@@ -66,13 +66,6 @@
   @include border-radius(100px);  // make button fully rounded
 }
 
-@mixin button-geometry-l {
-  padding: 0.722em 20px;
-  with: auto;
-  min-width: 200px;
-  @include border-radius(100px);  // make button fully rounded
-}
-
 // Default buttons
 
 @mixin button-base-styling {
@@ -84,12 +77,6 @@
 @mixin button {
   @include button-base-styling;
   @include button-color;
-}
-
-@mixin button-l-base-styling {
-  @include button-base;
-  @include button-label-l;
-  @include button-geometry-l;
 }
 
 // Colors
@@ -118,16 +105,6 @@ button,
 .button { 
   @include button;
 
-  &.large {
-    @include button-l-base-styling;
-  }
-
-  &[disabled],
-  &.disabled {
-    @include button-inactive-color;
-    cursor: default;
-  }
-
   &.cta {
     @include button-cta-color;
   }
@@ -143,12 +120,6 @@ button,
   &.reverse {
     @include button-color($style: reverse); 
 
-    &[disabled],
-    &.disabled {
-      @include button-inactive-color($style: reverse);
-      opacity: 0.5;
-    }
-
     &.cta {
       @include button-cta-color($style: reverse);
     }
@@ -160,5 +131,18 @@ button,
     &.confirm {
       @include button-confirm-color($style: reverse);
     }
+
+    &[disabled],
+    &.disabled {
+      @include button-inactive-color($style: reverse);
+      opacity: 0.5;
+    }
   }
+
+  &[disabled],
+  &.disabled {
+    @include button-inactive-color;
+    cursor: default;
+  }
+
 }
