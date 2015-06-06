@@ -1,5 +1,6 @@
-@import "outernet/partial/colors";
-@import "outernet/partial/fonts";
+@import "colors";
+@import "fonts";
+@import "outernet/mixins/media_query";
 
 @mixin button-base {
   display: inline-block;
@@ -60,7 +61,7 @@
 
 @mixin button-label {
   @include button-label-base;
-  line-height: 137.5%;
+  line-height: 100%;
 }
 
 @mixin button-label-l {
@@ -70,11 +71,15 @@
 }
 
 @mixin button-geometry {
-  padding: 0.5em 20px;
+  padding: 0.6em 20px;
   width: auto;
   min-width: 170px;
   border-radius: 100px;
   @include border-radius(100px);  // make button fully rounded
+
+  @include narrower-than(320px) {
+    width: 100%;
+  }
 }
 
 // Default buttons
