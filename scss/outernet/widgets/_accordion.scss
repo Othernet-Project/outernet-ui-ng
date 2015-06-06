@@ -1,5 +1,5 @@
-@import "outernet/partial/colors";
-@import "outernet/partial/hyperlinks";
+@import "outernet/mixins/colors";
+@import "outernet/mixins/hyperlinks";
 @import "outernet/mixins/sprites";
 
 @mixin accordion-header {
