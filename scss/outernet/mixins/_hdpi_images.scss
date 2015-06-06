@@ -18,9 +18,9 @@
   }
 }
 
-@mixin with-hdpi($image, $include-size: no, $extension: png) {
-  $filename: "#{$image}.#{$extension}";
-  $filename2x: "#{$image}_2x.#{$extension}";
+@mixin with-hdpi($dir, $image, $include-size: no, $extension: png) {
+  $filename: "#{$dir}/1x/#{$image}.#{$extension}";
+  $filename2x: "#{$dir}/2x/#{$image}.#{$extension}";
   $width: image-width($filename);
   $height: image-height($filename);
 
