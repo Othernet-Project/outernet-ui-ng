@@ -19,8 +19,13 @@
   @else if $style == outline {
     color: $color;
     background-color: transparent;
-    border-color: $white;
+    border-color: $color;
   } 
+  @else if $style == reverse-outline {
+    color: $white;
+    background-color: transparent;
+    border-color: $white;
+  }
   @else {
     color: $white;
     background-color: $color;
@@ -31,12 +36,18 @@
   @if $hover != no {
     &:focus,
     &:hover {
-      @if $style == normal {
+      @if $style == normal or $style == outline {
         color: $white;
         background-color: $hover;
         border-color: $hover;
-
-      } @else {
+      }
+      @else if $style == reverse-outline {
+        color: $color;
+        background-color: $white;
+        border-color: $white;
+        opacity: 0.75;
+      }
+      @else {
         opacity: 0.75;
       }
     }
@@ -81,23 +92,23 @@
 
 // Colors
 
-@mixin button-normal-color($style: no) {
+@mixin button-normal-color($style: norman) {
   @include button-color($style: $style) 
 }
 
-@mixin button-inactive-color($style: no) {
+@mixin button-inactive-color($style: normal) {
   @include button-color($color: $iconic, $hover: no, $style: $style) 
 }
 
-@mixin button-cta-color($style: no) {
+@mixin button-cta-color($style: normal) {
   @include button-color($color: $sun, $hover: $sun25d, $style: $style);
 }
 
-@mixin button-delete-color($style: no) {
+@mixin button-delete-color($style: normal) {
   @include button-color($color: $fire, $hover: $fire25d, $style: $style);
 }
 
-@mixin button-confirm-color($style: no) {
+@mixin button-confirm-color($style: normal) {
   @include button-color($color: $forest, $hover: $forest25d, $style: $style);
 }
 
@@ -105,31 +116,63 @@ button,
 .button { 
   @include button;
 
+  &.secondary {
+    @include button-normal-color(outline);
+  }
+
   &.cta {
     @include button-cta-color;
+
+    &.secondary {
+      @include button-cta-color(outline);
+    }
   }
 
   &.delete {
     @include button-delete-color;
+
+    &.secondary {
+      @include button-delete-color(outline);
+    }
   }
 
   &.confirm {
     @include button-confirm-color;
+
+    &.secondary {
+      @include button-confirm-color(outline);
+    }
   }
 
   &.reverse {
     @include button-color($style: reverse); 
 
+    &.secondary {
+      @include button-color($style: reverse-outline);
+    }
+
     &.cta {
       @include button-cta-color($style: reverse);
+
+      &.secondary {
+        @include button-cta-color($style: reverse-outline);
+      }
     }
 
     &.delete {
       @include button-delete-color($style: reverse);
+
+      &.secondary {
+        @include button-delete-color($style: reverse-outline);
+      }
     }
 
     &.confirm {
       @include button-confirm-color($style: reverse);
+
+      &.secondary {
+        @include button-confirm-color($style: reverse-outline);
+      }
     }
 
     &[disabled],
@@ -143,6 +186,9 @@ button,
   &.disabled {
     @include button-inactive-color;
     cursor: default;
-  }
 
+    &.secondary {
+      @include button-inactive-color($style: outline);
+    }
+  }
 }
