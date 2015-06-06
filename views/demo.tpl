@@ -706,11 +706,51 @@ prog.updateValue(20, '-30db');</code></pre>
                         </div>
                     </%widgets:accordion>
                     <%widgets:accordion>
-                        <h3>Normal section</h3>
-                        <div>
-                            <p>
-                            This is a normal section.
-                            </p>
+                        <h3>Embedded form</h3>
+                        <div div="split">
+                            <div class="row">
+                                <div class="col">
+                                    ${widgets.progress('Signal strength', 20)}
+                                    <form>
+                                        <p>
+                                        <select name="lnb">
+                                            <option>Select LNB type</option>
+                                            <option value="u">Universal LNB</option>
+                                            <option value="k">North America Ku-band</option>
+                                            <option value="c">C-band</option>
+                                        </select>
+                                        </p>
+                                        <p>
+                                        <select name="preset">
+                                            <option>Select satellite</option>
+                                            <option value="is10">Intelsat 10</option>
+                                            <option value="hb13">HotBird 13.0E</option>
+                                        </select>
+                                        </p>
+                                        <p>
+                                        <input type="text" placeholder="type in your note">
+                                        <p>
+                                        <button>Tune in</button>
+                                        </p>
+                                    </form>
+                                </div>
+                                <div class="col">
+                                    <h4 class="first">Coverage</h4>
+                                    <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Donec a diam lectus. Sed
+                                    sit amet ipsum mauris. Maecenas congue
+                                    ligula ac quam viverra nec consectetur ante
+                                    hendrerit. Donec et mollis dolor. Praesent
+                                    et diam eget libero egestas mattis sit amet
+                                    vitae augue. Nam tincidunt congue enim, ut
+                                    porta lorem lacinia consectetur. Donec ut
+                                    libero sed arcu vehicula ultricies a non
+                                    tortor. Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </%widgets:accordion>
                     <%widgets:accordion>

@@ -357,5 +357,13 @@ header {
 
   .accordion {
     @include accordion;
+
+    .row {
+      @include row;
+    }
+
+    .col {
+      @include two-col-even;
+    }
   }
 }
