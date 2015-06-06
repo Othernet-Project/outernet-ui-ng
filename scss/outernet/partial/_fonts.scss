@@ -90,6 +90,12 @@ $line-height-em: 1.375em; // Size of base line-height in em
   display: block;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  &.first {
+    margin-top: 0;
+  }
+}
+
 h1 {
   @include heading-1;
   @include heading-common;
