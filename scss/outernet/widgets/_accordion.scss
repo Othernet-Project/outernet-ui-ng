@@ -15,6 +15,16 @@
   .accordion-section {
     background: $input;
 
+    input[type="text"],
+    input[type="numeric"],
+    input[type="email"],
+    input[type="file"],
+    input[type="password"],
+    textarea,
+    select {
+      background-color: $earth;
+    }
+
     // HEADER
     & > :nth-child(1) {
       background: $white;
@@ -97,7 +107,7 @@
 
       // CONTENT
       & > :nth-child(2) {
-        max-height: 500px;
+        max-height: 1500px;
         padding: 20px;
       }
     }
