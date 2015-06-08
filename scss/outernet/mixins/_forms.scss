@@ -45,8 +45,9 @@ $form-animation-delay: 0.3s;
   width: 100%;
   max-width: 400px;
   padding: 8px $form-text-offset 9px;
-  @include border-radius(7px);
   border: 1px solid transparent;
+  @include border-radius(7px);
+  @include box-sizing(border-box);
 }
 
 @mixin input-styling($text, $background, $border) {
