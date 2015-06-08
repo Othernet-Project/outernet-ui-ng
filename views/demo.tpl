@@ -333,8 +333,6 @@
                         <label for="input5" class="required">Required</label>
                         <input id="input5" type="text" placeholder="This field is required">
                     </p>
-                </div>
-                <div class="fields-complex col">
                     <p class="field form-select">
                         <label for="input6">Select normal</label>
                         <select id="input6">
@@ -372,16 +370,13 @@
                         <textarea id="input10" placeholder="Placeholder"></textarea>
                         <p class="field-help">Textarea can be resized vertically</p>
                     </div>
-                </div>
-            </div>
 
-            <div class="fields">
-                <div class="fields-demo col">
                     <p class="field form-input-custom-icon">
                         <label for="input11">Custom icon</label>
                         <input id="input11" type="password">
                         <span class="field-help">Custom icons can be given to any text input by using the <code>input-icon($name)</code> SASS mixin. Icons must be placed in <code>$IMAGE_DIR/1x/$name</code> and <code>$IMAGE_DIR/2x/$name</code> in 100% and 200% size respectively. Icon file must be 25x25px at 100% size.</span>
                     </p>
+
                     <p class="field form-input-file">
                         <label for="input12">File</label>
                         <input id="input12" type="file">
@@ -408,7 +403,6 @@
                     </p>
                 </div>
             </div>
-
             <div class="docs">
                 <h3>Normal field</h3>
                 <p>
