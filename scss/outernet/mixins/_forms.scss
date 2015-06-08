@@ -44,7 +44,7 @@ $form-animation-delay: 0.3s;
 @mixin input-geometry {
   width: 100%;
   max-width: 400px;
-  padding: 8px $form-text-offset 9px;
+  padding: 8px $form-text-offset 8px;
   border: 1px solid transparent;
   @include border-radius(7px);
   @include box-sizing(border-box);
@@ -101,7 +101,7 @@ $form-animation-delay: 0.3s;
 
 @mixin select-styling {
   @include appearance(none);
-  padding: 8px $form-text-offset 9px;
+  padding: 8px $form-text-offset 8px;
 
   // Remove arrow in older versions of Firefox
   text-indent: 0.01px;
