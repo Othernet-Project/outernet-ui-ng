@@ -22,14 +22,10 @@ def static(path):
 
 
 def dump():
-    if os.path.isdir('out'):
-        shutil.rmtree('out')
     rendered = bottle.mako_template('demo')
     rendered = rendered.replace('/static/', 'static/')
-    os.makedirs('out')
-    with open('out/index.html', 'w') as f:
+    with open('index.html', 'w') as f:
         f.write(rendered)
-    shutil.copytree(STATICDIR, 'out/static')
 
 
 def main():
