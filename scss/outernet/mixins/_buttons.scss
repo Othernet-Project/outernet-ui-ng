@@ -75,10 +75,10 @@
   line-height: 100%;
 }
 
-@mixin button-label-l {
+@mixin button-label-s {
   @include button-label-base;
-  font-size: 18px;
-  line-height: 116%;
+  @include sub;
+  line-height: 100%;
 }
 
 @mixin button-geometry {
@@ -91,6 +91,12 @@
   @include narrower-than(320px) {
     width: 100%;
   }
+}
+
+@mixin button-geometry-s {
+  padding: 0.2em 20px;
+  width: auto;
+  min-width: 0;
 }
 
 // Default buttons

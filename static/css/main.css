@@ -148,7 +148,7 @@ body {
   font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
   font-size: 16px;
   line-height: 137.5%;
-  color: #333333;
+  color: #555555;
 }
 
 /* line 20, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_fonts.scss */
@@ -348,6 +348,19 @@ button:focus, button:hover,
   border-color: #28639b;
 }
 /* line 18, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+button.small,
+.button.small {
+  font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
+  font-size: 16px;
+  line-height: 137.5%;
+  font-size: 87.5%;
+  line-height: 137.5%;
+  line-height: 100%;
+  padding: 0.2em 20px;
+  width: auto;
+  min-width: 0;
+}
+/* line 23, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button.secondary,
 .button.secondary {
   color: #3584cf;
@@ -362,7 +375,7 @@ button.secondary:focus, button.secondary:hover,
   background-color: #28639b;
   border-color: #28639b;
 }
-/* line 22, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+/* line 27, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button.cta,
 .button.cta {
   color: #ffffff;
@@ -377,7 +390,7 @@ button.cta:focus, button.cta:hover,
   background-color: #a95902;
   border-color: #a95902;
 }
-/* line 25, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+/* line 30, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button.cta.secondary,
 .button.cta.secondary {
   color: #e17502;
@@ -392,7 +405,7 @@ button.cta.secondary:focus, button.cta.secondary:hover,
   background-color: #a95902;
   border-color: #a95902;
 }
-/* line 30, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+/* line 35, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button.delete,
 .button.delete {
   color: #ffffff;
@@ -407,7 +420,7 @@ button.delete:focus, button.delete:hover,
   background-color: #931010;
   border-color: #931010;
 }
-/* line 33, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+/* line 38, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button.delete.secondary,
 .button.delete.secondary {
   color: #c41414;
@@ -422,7 +435,7 @@ button.delete.secondary:focus, button.delete.secondary:hover,
   background-color: #931010;
   border-color: #931010;
 }
-/* line 38, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+/* line 43, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button.confirm,
 .button.confirm {
   color: #ffffff;
@@ -437,7 +450,7 @@ button.confirm:focus, button.confirm:hover,
   background-color: #056118;
   border-color: #056118;
 }
-/* line 41, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+/* line 46, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button.confirm.secondary,
 .button.confirm.secondary {
   color: #058120;
@@ -452,7 +465,7 @@ button.confirm.secondary:focus, button.confirm.secondary:hover,
   background-color: #056118;
   border-color: #056118;
 }
-/* line 46, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+/* line 51, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button.reverse,
 .button.reverse {
   color: #3584cf;
@@ -465,7 +478,7 @@ button.reverse:focus, button.reverse:hover,
 .button.reverse:hover {
   opacity: 0.75;
 }
-/* line 49, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+/* line 54, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button.reverse.secondary,
 .button.reverse.secondary {
   color: #ffffff;
@@ -481,7 +494,7 @@ button.reverse.secondary:focus, button.reverse.secondary:hover,
   border-color: #ffffff;
   opacity: 0.75;
 }
-/* line 53, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+/* line 58, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button.reverse.cta,
 .button.reverse.cta {
   color: #e17502;
@@ -494,7 +507,7 @@ button.reverse.cta:focus, button.reverse.cta:hover,
 .button.reverse.cta:hover {
   opacity: 0.75;
 }
-/* line 56, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+/* line 61, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button.reverse.cta.secondary,
 .button.reverse.cta.secondary {
   color: #ffffff;
@@ -510,7 +523,7 @@ button.reverse.cta.secondary:focus, button.reverse.cta.secondary:hover,
   border-color: #ffffff;
   opacity: 0.75;
 }
-/* line 61, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+/* line 66, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button.reverse.delete,
 .button.reverse.delete {
   color: #c41414;
@@ -523,7 +536,7 @@ button.reverse.delete:focus, button.reverse.delete:hover,
 .button.reverse.delete:hover {
   opacity: 0.75;
 }
-/* line 64, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+/* line 69, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button.reverse.delete.secondary,
 .button.reverse.delete.secondary {
   color: #ffffff;
@@ -539,7 +552,7 @@ button.reverse.delete.secondary:focus, button.reverse.delete.secondary:hover,
   border-color: #ffffff;
   opacity: 0.75;
 }
-/* line 69, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+/* line 74, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button.reverse.confirm,
 .button.reverse.confirm {
   color: #058120;
@@ -552,7 +565,7 @@ button.reverse.confirm:focus, button.reverse.confirm:hover,
 .button.reverse.confirm:hover {
   opacity: 0.75;
 }
-/* line 72, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+/* line 77, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button.reverse.confirm.secondary,
 .button.reverse.confirm.secondary {
   color: #ffffff;
@@ -568,7 +581,7 @@ button.reverse.confirm.secondary:focus, button.reverse.confirm.secondary:hover,
   border-color: #ffffff;
   opacity: 0.75;
 }
-/* line 77, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+/* line 82, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button.reverse[disabled], button.reverse.disabled,
 .button.reverse[disabled],
 .button.reverse.disabled {
@@ -577,7 +590,7 @@ button.reverse[disabled], button.reverse.disabled,
   border-color: #ffffff;
   opacity: 0.5;
 }
-/* line 84, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+/* line 89, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button[disabled], button.disabled,
 .button[disabled],
 .button.disabled {
@@ -586,7 +599,7 @@ button[disabled], button.disabled,
   border-color: #bbbbbb;
   cursor: default;
 }
-/* line 89, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+/* line 94, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
 button[disabled].secondary, button.disabled.secondary,
 .button[disabled].secondary,
 .button.disabled.secondary {
@@ -752,7 +765,35 @@ select {
   -webkit-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
-/* line 92, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+/* line 34, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+input[type="text"].small,
+input[type="numeric"].small,
+input[type="email"].small,
+input[type="file"].small,
+input[type="password"].small,
+textarea.small,
+select.small {
+  padding: 2px 7.5px 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  width: auto;
+  max-width: 100%;
+  font-size: 87.5%;
+  line-height: 137.5%;
+}
+/* line 75, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+input[type="text"].small:focus,
+input[type="numeric"].small:focus,
+input[type="email"].small:focus,
+input[type="file"].small:focus,
+input[type="password"].small:focus,
+textarea.small:focus,
+select.small:focus {
+  font-size: 87.5%;
+  line-height: 137.5%;
+}
+/* line 107, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
 input[type="text"]:focus,
 input[type="numeric"]:focus,
 input[type="email"]:focus,
@@ -772,7 +813,7 @@ select:focus {
   -webkit-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
-/* line 36, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 41, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="text"].positive,
 input[type="numeric"].positive,
 input[type="email"].positive,
@@ -792,7 +833,7 @@ select.positive {
   -webkit-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
-/* line 39, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 44, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="text"].positive:focus,
 input[type="numeric"].positive:focus,
 input[type="email"].positive:focus,
@@ -812,7 +853,7 @@ select.positive:focus {
   -webkit-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
-/* line 44, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 49, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="text"].negative,
 input[type="numeric"].negative,
 input[type="email"].negative,
@@ -832,7 +873,7 @@ select.negative {
   -webkit-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
-/* line 47, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 52, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="text"].negative:focus,
 input[type="numeric"].negative:focus,
 input[type="email"].negative:focus,
@@ -853,7 +894,7 @@ select.negative:focus {
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
 
-/* line 58, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 63, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="text"].positive,
 input[type="numeric"].positive,
 input[type="email"].positive,
@@ -865,7 +906,7 @@ input[type="file"].positive {
   background-image: url('../img/icons/1x/form_positive.png?1433410592');
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
-  /* line 58, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+  /* line 63, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
   input[type="text"].positive,
   input[type="numeric"].positive,
   input[type="email"].positive,
@@ -878,7 +919,7 @@ input[type="file"].positive {
     background-size: 25px, 25px;
   }
 }
-/* line 62, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="text"].negative,
 input[type="numeric"].negative,
 input[type="email"].negative,
@@ -890,7 +931,7 @@ input[type="file"].negative {
   background-image: url('../img/icons/1x/form_negative.png?1433410635');
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
-  /* line 62, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+  /* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
   input[type="text"].negative,
   input[type="numeric"].negative,
   input[type="email"].negative,
@@ -904,7 +945,7 @@ input[type="file"].negative {
   }
 }
 
-/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 72, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="checkbox"] {
   margin-left: 15px;
   margin-right: -18px;
@@ -914,7 +955,7 @@ input[type="checkbox"] {
   height: 0;
   display: inline-block;
 }
-/* line 75, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 80, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="checkbox"] + label:before {
   content: ' ';
   display: inline-block;
@@ -931,11 +972,11 @@ input[type="checkbox"] + label:before {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 80, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 85, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="checkbox"]:checked + label {
   color: #058120;
 }
-/* line 83, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 88, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="checkbox"]:checked + label:before {
   color: #058120;
   background-color: #f1f8f1;
@@ -953,7 +994,7 @@ input[type="checkbox"]:checked + label:before {
   background-image: url('../img/icons/1x/checkmark.png?1433442569');
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
-  /* line 83, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+  /* line 88, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
   input[type="checkbox"]:checked + label:before {
     background-image: url('../img/icons/2x/checkmark.png?1433442569');
     -moz-background-size: 13px, 11px;
@@ -962,11 +1003,11 @@ input[type="checkbox"]:checked + label:before {
     background-size: 13px, 11px;
   }
 }
-/* line 88, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 93, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="checkbox"]:focus + label {
   color: #3584cf;
 }
-/* line 91, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 96, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="checkbox"]:focus + label:before {
   color: #555555;
   background-color: #f3f8fc;
@@ -980,14 +1021,14 @@ input[type="checkbox"]:focus + label:before {
   -webkit-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
   transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
-/* line 96, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 101, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 input[type="checkbox"]:focus:checked + label:before {
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url('../img/icons/1x/checkmark_active.png?1433442569');
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
-  /* line 96, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+  /* line 101, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
   input[type="checkbox"]:focus:checked + label:before {
     background-image: url('../img/icons/2x/checkmark_active.png?1433442569');
     -moz-background-size: 13px, 11px;
@@ -997,7 +1038,7 @@ input[type="checkbox"]:focus:checked + label:before {
   }
 }
 
-/* line 101, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 106, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 textarea {
   font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
   font-size: 16px;
@@ -1011,7 +1052,7 @@ textarea {
   border-bottom-right-radius: 0;
 }
 
-/* line 110, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 115, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -1023,12 +1064,12 @@ select {
   background-position: right 10px top 50%;
   background-image: url('../img/icons/1x/dropdown_open_sky.png?1433410616');
 }
-/* line 110, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+/* line 125, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
 select::-ms-expand {
   display: none;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
-  /* line 110, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+  /* line 115, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
   select {
     background-image: url('../img/icons/2x/dropdown_open_sky.png?1433407909');
     -moz-background-size: 25px, 25px;
@@ -1037,24 +1078,24 @@ select::-ms-expand {
     background-size: 25px, 25px;
   }
 }
-/* line 118, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 123, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 select option {
   color: #888888;
   background: #fafafa;
   border-radius: 2px;
   padding: 0 15px;
 }
-/* line 122, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+/* line 137, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
 select option[value] {
   color: #555555;
 }
 
-/* line 123, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 128, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 select::-ms-expand {
   display: none;
 }
 
-/* line 130, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 135, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 .field-help {
   font-size: 87.5%;
   line-height: 137.5%;
@@ -1064,7 +1105,7 @@ select::-ms-expand {
   padding-top: 6px;
 }
 
-/* line 135, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 140, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 .field-error {
   font-size: 87.5%;
   line-height: 137.5%;
@@ -1075,14 +1116,14 @@ select::-ms-expand {
   color: #c41414;
 }
 
-/* line 141, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 146, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 .form-errors {
   background: #fbf1f0;
   border: 1px solid #f0c4c5;
   padding: 15px;
   margin-bottom: 1em;
 }
-/* line 147, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
+/* line 152, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_forms.scss */
 .form-errors li {
   font-size: 87.5%;
   line-height: 137.5%;
@@ -1093,6 +1134,284 @@ select::-ms-expand {
   color: #c41414;
   font-weight: bold;
   padding-left: 0.2em;
+}
+
+/**
+ * _tables.scss: table and table cell content styling
+ * 
+ * Copyright 2015, Outernet Inc.
+ * Some rights reserved.
+ * 
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _fonts.scss: typography definitions
+ * 
+ * Copyright 2015, Outernet Inc.
+ * Some rights reserved.
+ * 
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _buttons.scss: button styling
+ * 
+ * Copyright 2015, Outernet Inc.
+ * Some rights reserved.
+ * 
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _colors.scss: color definitions
+ *
+ * Copyright 2014-2015, Outernet Inc.
+ * Some rights reserved.
+ *
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _fonts.scss: typography definitions
+ * 
+ * Copyright 2015, Outernet Inc.
+ * Some rights reserved.
+ * 
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _media_query.scss: media query support
+ *
+ * Copyright 2014-2015, Outernet Inc.
+ * Some rights reserved.
+ *
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _forms.scss: form control definitions
+ * 
+ * Copyright 2015, Outernet Inc.
+ * Some rights reserved.
+ * 
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _colors.scss: color definitions
+ *
+ * Copyright 2014-2015, Outernet Inc.
+ * Some rights reserved.
+ *
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _fonts.scss: typography definitions
+ * 
+ * Copyright 2015, Outernet Inc.
+ * Some rights reserved.
+ * 
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _hdpi_images.scss: helpers for high-dpi display support
+ *
+ * Copyright 2014-2015, Outernet Inc.
+ * Some rights reserved.
+ *
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/* line 16, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+table {
+  width: 100%;
+}
+/* line 19, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+table p {
+  margin: 0;
+}
+/* line 23, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+table th {
+  font-weight: bold;
+}
+/* line 27, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+table tr {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+/* line 31, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+table tr:hover {
+  background: #fafafa;
+}
+/* line 36, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+table th, table td {
+  vertical-align: middle;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+/* line 43, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+table th:nth-child(1), table td:nth-child(1) {
+  padding-left: 10px;
+}
+/* line 48, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+table button, table .button {
+  font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
+  font-size: 16px;
+  line-height: 137.5%;
+  font-size: 87.5%;
+  line-height: 137.5%;
+  line-height: 100%;
+  padding: 0.2em 20px;
+  width: auto;
+  min-width: 0;
+}
+/* line 53, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+table input[type="text"],
+table input[type="numeric"],
+table input[type="email"],
+table input[type="file"],
+table input[type="password"],
+table select {
+  padding: 2px 7.5px 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  width: auto;
+  max-width: 100%;
+  font-size: 87.5%;
+  line-height: 137.5%;
+}
+/* line 75, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+table input[type="text"]:focus,
+table input[type="numeric"]:focus,
+table input[type="email"]:focus,
+table input[type="file"]:focus,
+table input[type="password"]:focus,
+table select:focus {
+  font-size: 87.5%;
+  line-height: 137.5%;
+}
+/* line 63, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+table form {
+  display: inline-block;
+  border: 1px solid #dddddd;
+  background: #fafafa;
+  -moz-border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+  border-radius: 1000px;
+  padding: 2px;
+  position: relative;
+  white-space: nowrap;
+}
+/* line 200, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+table form input[type="text"],
+table form input[type="numeric"],
+table form input[type="email"],
+table form input[type="file"],
+table form input[type="password"] {
+  display: inline-block;
+  max-width: none;
+  border: 0;
+  background-color: transparent;
+  vertical-align: middle;
+  -moz-border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+  border-radius: 1000px;
+}
+/* line 212, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+table form input[type="text"]:focus,
+table form input[type="numeric"]:focus,
+table form input[type="email"]:focus,
+table form input[type="file"]:focus,
+table form input[type="password"]:focus {
+  background-color: #f3f8fc;
+}
+/* line 178, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+table form input[type="text"],
+table form input[type="numeric"],
+table form input[type="email"],
+table form input[type="file"],
+table form input[type="password"] {
+  width: 100px;
+}
+/* line 220, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+table form label {
+  display: inline-block;
+  padding-bottom: 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+/* line 227, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+table form button {
+  display: inline-block;
+}
+/* line 235, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+table form label {
+  font-size: 87.5%;
+  line-height: 137.5%;
+}
+/* line 239, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+table form input[type="text"],
+table form input[type="numeric"],
+table form input[type="email"],
+table form input[type="file"],
+table form input[type="password"] {
+  padding: 2px 7.5px 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  width: auto;
+  max-width: 100%;
+  font-size: 87.5%;
+  line-height: 137.5%;
+  -moz-border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+  border-radius: 1000px;
+}
+/* line 75, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+table form input[type="text"]:focus,
+table form input[type="numeric"]:focus,
+table form input[type="email"]:focus,
+table form input[type="file"]:focus,
+table form input[type="password"]:focus {
+  font-size: 87.5%;
+  line-height: 137.5%;
+}
+/* line 178, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+table form input[type="text"],
+table form input[type="numeric"],
+table form input[type="email"],
+table form input[type="file"],
+table form input[type="password"] {
+  width: 100px;
+}
+/* line 251, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+table form button {
+  padding: 0.2em 20px;
+  width: auto;
+  min-width: 0;
+  font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
+  font-size: 16px;
+  line-height: 137.5%;
+  font-size: 87.5%;
+  line-height: 137.5%;
+  line-height: 100%;
 }
 
 /**
@@ -1255,12 +1574,12 @@ select::-ms-expand {
  * COPYING file that comes with the source code, or
  * http://www.gnu.org/licenses/gpl.txt.
  */
-/* line 27, ../../scss/main.scss */
+/* line 25, ../../scss/main.scss */
 body {
   background: url('../img/bg.png?1433247963');
 }
 
-/* line 31, ../../scss/main.scss */
+/* line 29, ../../scss/main.scss */
 .section, header {
   max-width: 1200px;
   margin: 0 auto;
@@ -1268,7 +1587,7 @@ body {
   margin-bottom: 16px;
 }
 
-/* line 38, ../../scss/main.scss */
+/* line 36, ../../scss/main.scss */
 .section {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1282,7 +1601,7 @@ body {
   width: 100%;
   clear: left;
 }
-/* line 44, ../../scss/main.scss */
+/* line 42, ../../scss/main.scss */
 .section .section-title h2 {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1297,7 +1616,7 @@ body {
   width: 100%;
 }
 
-/* line 50, ../../scss/main.scss */
+/* line 48, ../../scss/main.scss */
 .docs {
   display: block;
   padding-top: 10px;
@@ -1308,19 +1627,19 @@ body {
   line-height: 137.5%;
   color: #888888;
 }
-/* line 56, ../../scss/main.scss */
+/* line 54, ../../scss/main.scss */
 .docs strong {
   color: #058120;
 }
 
-/* line 61, ../../scss/main.scss */
+/* line 59, ../../scss/main.scss */
 header {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 64, ../../scss/main.scss */
+/* line 62, ../../scss/main.scss */
 header h1 {
   font-size: 437.5%;
   line-height: 110%;
@@ -1333,7 +1652,7 @@ header h1 {
   width: 100%;
   clear: left;
 }
-/* line 71, ../../scss/main.scss */
+/* line 69, ../../scss/main.scss */
 .swatches .col {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1348,209 +1667,209 @@ header h1 {
   width: 16.6666666667%;
 }
 @media only screen and (max-width: 976px) {
-  /* line 71, ../../scss/main.scss */
+  /* line 69, ../../scss/main.scss */
   .swatches .col {
     width: 33.3333333333%;
   }
 }
 @media only screen and (max-width: 728px) {
-  /* line 71, ../../scss/main.scss */
+  /* line 69, ../../scss/main.scss */
   .swatches .col {
     width: 100%;
   }
 }
-/* line 73, ../../scss/main.scss */
+/* line 71, ../../scss/main.scss */
 .swatches li {
   margin-bottom: 1em;
   text-transform: uppercase;
 }
-/* line 77, ../../scss/main.scss */
+/* line 75, ../../scss/main.scss */
 .swatches li .swatch-label {
   font-size: 87.5%;
   line-height: 137.5%;
 }
-/* line 80, ../../scss/main.scss */
+/* line 78, ../../scss/main.scss */
 .swatches li .swatch-label.main {
   font-weight: bold;
 }
 
-/* line 87, ../../scss/main.scss */
+/* line 85, ../../scss/main.scss */
 .swatch {
   display: inline-block;
   width: 50px;
   height: 50px;
   vertical-align: top;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.sky25d {
   background-color: #28639b;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.sky100 {
   background-color: #3584cf;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.sky75 {
   background-color: #68a3db;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.sky50 {
   background-color: #9ac2e6;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.sky25 {
   background-color: #cddff3;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.sky10 {
   background-color: #ebf2fa;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.sky6 {
   background-color: #f3f8fc;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.ocean25d {
   background-color: #0f3a65;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.ocean100 {
   background-color: #134e87;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.ocean75 {
   background-color: #4f7aa5;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.ocean50 {
   background-color: #89a7c3;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.ocean25 {
   background-color: #c3d3e2;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.ocean10 {
   background-color: #e8edf3;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.ocean6 {
   background-color: #f0f5f8;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.sun25d {
   background-color: #a95902;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.sun100 {
   background-color: #e17502;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.sun75 {
   background-color: #ec973c;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.sun50 {
   background-color: #f1ba81;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.sun25 {
   background-color: #f7dcc1;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.sun10 {
   background-color: #fbf1e5;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.sun6 {
   background-color: #fef7f1;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.forest25d {
   background-color: #056118;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.forest100 {
   background-color: #058120;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.forest75 {
   background-color: #45a158;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.forest50 {
   background-color: #82c08f;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.forest25 {
   background-color: #c1dfc7;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.forest10 {
   background-color: #e7f3e9;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.forest6 {
   background-color: #f1f8f1;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.fire25d {
   background-color: #931010;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.fire100 {
   background-color: #c41414;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.fire75 {
   background-color: #d24f4f;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.fire50 {
   background-color: #e18988;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.fire25 {
   background-color: #f0c4c5;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.fire10 {
   background-color: #fae8e8;
 }
-/* line 95, ../../scss/main.scss */
+/* line 93, ../../scss/main.scss */
 .swatch.fire6 {
   background-color: #fbf1f0;
 }
-/* line 101, ../../scss/main.scss */
+/* line 99, ../../scss/main.scss */
 .swatch.universe {
   background-color: #333333;
 }
-/* line 105, ../../scss/main.scss */
+/* line 103, ../../scss/main.scss */
 .swatch.base {
   background-color: #555555;
 }
-/* line 109, ../../scss/main.scss */
+/* line 107, ../../scss/main.scss */
 .swatch.sub {
   background-color: #888888;
 }
-/* line 113, ../../scss/main.scss */
+/* line 111, ../../scss/main.scss */
 .swatch.iconic {
   background-color: #bbbbbb;
 }
-/* line 117, ../../scss/main.scss */
+/* line 115, ../../scss/main.scss */
 .swatch.border {
   background-color: #dddddd;
 }
-/* line 121, ../../scss/main.scss */
+/* line 119, ../../scss/main.scss */
 .swatch.earth {
   background-color: #eeeeee;
 }
-/* line 125, ../../scss/main.scss */
+/* line 123, ../../scss/main.scss */
 .swatch.input {
   background-color: #fafafa;
 }
 
-/* line 133, ../../scss/main.scss */
+/* line 131, ../../scss/main.scss */
 .typography .section-title h2, .typography .section-title .note {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1565,54 +1884,54 @@ header h1 {
   width: 50%;
 }
 @media only screen and (max-width: 560px) {
-  /* line 133, ../../scss/main.scss */
+  /* line 131, ../../scss/main.scss */
   .typography .section-title h2, .typography .section-title .note {
     width: 100%;
   }
 }
-/* line 135, ../../scss/main.scss */
+/* line 133, ../../scss/main.scss */
 .typography .section-title .note {
   color: #bbbbbb;
   margin-top: 36px;
 }
-/* line 141, ../../scss/main.scss */
+/* line 139, ../../scss/main.scss */
 .typography .headings {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 145, ../../scss/main.scss */
+/* line 143, ../../scss/main.scss */
 .typography .heading-0 {
   font-size: 437.5%;
   line-height: 110%;
 }
-/* line 149, ../../scss/main.scss */
+/* line 147, ../../scss/main.scss */
 .typography .heading-1 {
   font-size: 175%;
   line-height: 125%;
 }
-/* line 153, ../../scss/main.scss */
+/* line 151, ../../scss/main.scss */
 .typography .heading-2 {
   font-size: 162.5%;
   line-height: 123%;
 }
-/* line 157, ../../scss/main.scss */
+/* line 155, ../../scss/main.scss */
 .typography .heading-3 {
   font-size: 150%;
   line-height: 125%;
 }
-/* line 161, ../../scss/main.scss */
+/* line 159, ../../scss/main.scss */
 .typography .heading-4 {
   font-size: 137.5%;
   line-height: 127%;
 }
-/* line 165, ../../scss/main.scss */
+/* line 163, ../../scss/main.scss */
 .typography .heading-5 {
   font-size: 125%;
   line-height: 130%;
 }
-/* line 169, ../../scss/main.scss */
+/* line 167, ../../scss/main.scss */
 .typography .heading-6 {
   font-size: 112.5%;
   line-height: 116%;
@@ -1624,7 +1943,7 @@ header h1 {
   width: 100%;
   clear: left;
 }
-/* line 176, ../../scss/main.scss */
+/* line 174, ../../scss/main.scss */
 .typography .body-text .regular, .typography .body-text .sub, .typography .body-text .code, .typography .body-text .misc {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1639,12 +1958,12 @@ header h1 {
   width: 50%;
 }
 @media only screen and (max-width: 560px) {
-  /* line 176, ../../scss/main.scss */
+  /* line 174, ../../scss/main.scss */
   .typography .body-text .regular, .typography .body-text .sub, .typography .body-text .code, .typography .body-text .misc {
     width: 100%;
   }
 }
-/* line 181, ../../scss/main.scss */
+/* line 179, ../../scss/main.scss */
 .typography .sub {
   font-size: 87.5%;
   line-height: 137.5%;
@@ -1657,11 +1976,11 @@ header h1 {
   width: 100%;
   clear: left;
 }
-/* line 189, ../../scss/main.scss */
+/* line 187, ../../scss/main.scss */
 .typography .links .docs {
   padding: 0;
 }
-/* line 193, ../../scss/main.scss */
+/* line 191, ../../scss/main.scss */
 .typography .links .link-type {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1676,18 +1995,18 @@ header h1 {
   width: 25%;
 }
 @media only screen and (max-width: 728px) {
-  /* line 193, ../../scss/main.scss */
+  /* line 191, ../../scss/main.scss */
   .typography .links .link-type {
     width: 50%;
   }
 }
 @media only screen and (max-width: 560px) {
-  /* line 193, ../../scss/main.scss */
+  /* line 191, ../../scss/main.scss */
   .typography .links .link-type {
     width: 100%;
   }
 }
-/* line 196, ../../scss/main.scss */
+/* line 194, ../../scss/main.scss */
 .typography .links .link-type .normal, .typography .links .link-type .visited {
   text-decoration: none;
   cursor: pointer;
@@ -1696,7 +2015,7 @@ header h1 {
 .typography .links .link-type .normal:hover, .typography .links .link-type .visited:hover {
   text-decoration: underline;
 }
-/* line 202, ../../scss/main.scss */
+/* line 200, ../../scss/main.scss */
 .typography .links .normal .normal {
   color: #3584cf;
 }
@@ -1704,11 +2023,11 @@ header h1 {
 .typography .links .normal .normal:visited {
   color: #28639b;
 }
-/* line 206, ../../scss/main.scss */
+/* line 204, ../../scss/main.scss */
 .typography .links .normal .visited {
   color: #28639b;
 }
-/* line 212, ../../scss/main.scss */
+/* line 210, ../../scss/main.scss */
 .typography .links .cta .normal {
   color: #e17502;
 }
@@ -1716,11 +2035,11 @@ header h1 {
 .typography .links .cta .normal:visited {
   color: #e17502;
 }
-/* line 216, ../../scss/main.scss */
+/* line 214, ../../scss/main.scss */
 .typography .links .cta .visited {
   color: #e17502;
 }
-/* line 222, ../../scss/main.scss */
+/* line 220, ../../scss/main.scss */
 .typography .links .confirm .normal {
   color: #058120;
 }
@@ -1728,11 +2047,11 @@ header h1 {
 .typography .links .confirm .normal:visited {
   color: #058120;
 }
-/* line 226, ../../scss/main.scss */
+/* line 224, ../../scss/main.scss */
 .typography .links .confirm .visited {
   color: #058120;
 }
-/* line 232, ../../scss/main.scss */
+/* line 230, ../../scss/main.scss */
 .typography .links .delete .normal {
   color: #c41414;
 }
@@ -1740,11 +2059,18 @@ header h1 {
 .typography .links .delete .normal:visited {
   color: #c41414;
 }
-/* line 236, ../../scss/main.scss */
+/* line 234, ../../scss/main.scss */
 .typography .links .delete .visited {
   color: #c41414;
 }
 
+/* line 242, ../../scss/main.scss */
+.forms h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 /* line 36, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_grid.scss */
 .forms .fields:after {
   content: '';
@@ -1752,7 +2078,7 @@ header h1 {
   width: 100%;
   clear: left;
 }
-/* line 247, ../../scss/main.scss */
+/* line 249, ../../scss/main.scss */
 .forms .fields .col {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1767,16 +2093,248 @@ header h1 {
   width: 50%;
 }
 @media only screen and (max-width: 560px) {
-  /* line 247, ../../scss/main.scss */
+  /* line 249, ../../scss/main.scss */
   .forms .fields .col {
     width: 100%;
   }
 }
-/* line 252, ../../scss/main.scss */
+/* line 254, ../../scss/main.scss */
+.forms .single-input, .forms .single-input-inline {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 1em;
+  background: #fafafa;
+}
+/* line 261, ../../scss/main.scss */
+.forms .single-input {
+  padding: 1em 0;
+  text-align: center;
+}
+/* line 265, ../../scss/main.scss */
+.forms .single-input .search {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url('../img/icons/1x-s29813784c9.png');
+  background-position: 0 -1182px;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
+  /* line 265, ../../scss/main.scss */
+  .forms .single-input .search {
+    background-image: url('../img/icons/2x-sc18f287ed7.png');
+    background-position: 0 -1182px;
+    -moz-background-size: 25px 1317px;
+    -o-background-size: 25px 1317px;
+    -webkit-background-size: 25px 1317px;
+    background-size: 25px 1317px;
+  }
+}
+/* line 270, ../../scss/main.scss */
+.forms .single-input form {
+  display: inline-block;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  -moz-border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+  border-radius: 1000px;
+  padding: 2px;
+  position: relative;
+  white-space: nowrap;
+}
+/* line 200, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+.forms .single-input form input[type="text"],
+.forms .single-input form input[type="numeric"],
+.forms .single-input form input[type="email"],
+.forms .single-input form input[type="file"],
+.forms .single-input form input[type="password"] {
+  display: inline-block;
+  max-width: none;
+  border: 0;
+  background-color: transparent;
+  vertical-align: middle;
+  -moz-border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+  border-radius: 1000px;
+}
+/* line 212, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+.forms .single-input form input[type="text"]:focus,
+.forms .single-input form input[type="numeric"]:focus,
+.forms .single-input form input[type="email"]:focus,
+.forms .single-input form input[type="file"]:focus,
+.forms .single-input form input[type="password"]:focus {
+  background-color: #f3f8fc;
+}
+/* line 178, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+.forms .single-input form input[type="text"],
+.forms .single-input form input[type="numeric"],
+.forms .single-input form input[type="email"],
+.forms .single-input form input[type="file"],
+.forms .single-input form input[type="password"] {
+  width: 600px;
+}
+/* line 220, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+.forms .single-input form label {
+  display: inline-block;
+  padding-bottom: 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+/* line 227, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+.forms .single-input form button {
+  display: inline-block;
+}
+@media only screen and (max-width: 860px) {
+  /* line 178, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+  .forms .single-input form input[type="text"],
+  .forms .single-input form input[type="numeric"],
+  .forms .single-input form input[type="email"],
+  .forms .single-input form input[type="file"],
+  .forms .single-input form input[type="password"] {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 728px) {
+  /* line 178, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+  .forms .single-input form input[type="text"],
+  .forms .single-input form input[type="numeric"],
+  .forms .single-input form input[type="email"],
+  .forms .single-input form input[type="file"],
+  .forms .single-input form input[type="password"] {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  /* line 178, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+  .forms .single-input form input[type="text"],
+  .forms .single-input form input[type="numeric"],
+  .forms .single-input form input[type="email"],
+  .forms .single-input form input[type="file"],
+  .forms .single-input form input[type="password"] {
+    width: 120px;
+  }
+}
+/* line 287, ../../scss/main.scss */
+.forms .single-input-inline {
+  padding: 0.5em 20px;
+  text-align: right;
+}
+/* line 291, ../../scss/main.scss */
+.forms .single-input-inline form {
+  display: inline-block;
+  border: 1px solid #dddddd;
+  background: #ffffff;
+  -moz-border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+  border-radius: 1000px;
+  padding: 2px;
+  position: relative;
+  white-space: nowrap;
+}
+/* line 200, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+.forms .single-input-inline form input[type="text"],
+.forms .single-input-inline form input[type="numeric"],
+.forms .single-input-inline form input[type="email"],
+.forms .single-input-inline form input[type="file"],
+.forms .single-input-inline form input[type="password"] {
+  display: inline-block;
+  max-width: none;
+  border: 0;
+  background-color: transparent;
+  vertical-align: middle;
+  -moz-border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+  border-radius: 1000px;
+}
+/* line 212, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+.forms .single-input-inline form input[type="text"]:focus,
+.forms .single-input-inline form input[type="numeric"]:focus,
+.forms .single-input-inline form input[type="email"]:focus,
+.forms .single-input-inline form input[type="file"]:focus,
+.forms .single-input-inline form input[type="password"]:focus {
+  background-color: #f3f8fc;
+}
+/* line 178, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+.forms .single-input-inline form input[type="text"],
+.forms .single-input-inline form input[type="numeric"],
+.forms .single-input-inline form input[type="email"],
+.forms .single-input-inline form input[type="file"],
+.forms .single-input-inline form input[type="password"] {
+  width: 100px;
+}
+/* line 220, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+.forms .single-input-inline form label {
+  display: inline-block;
+  padding-bottom: 0;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+/* line 227, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+.forms .single-input-inline form button {
+  display: inline-block;
+}
+/* line 235, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+.forms .single-input-inline form label {
+  font-size: 87.5%;
+  line-height: 137.5%;
+}
+/* line 239, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+.forms .single-input-inline form input[type="text"],
+.forms .single-input-inline form input[type="numeric"],
+.forms .single-input-inline form input[type="email"],
+.forms .single-input-inline form input[type="file"],
+.forms .single-input-inline form input[type="password"] {
+  padding: 2px 7.5px 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  width: auto;
+  max-width: 100%;
+  font-size: 87.5%;
+  line-height: 137.5%;
+  -moz-border-radius: 1000px;
+  -webkit-border-radius: 1000px;
+  border-radius: 1000px;
+}
+/* line 75, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+.forms .single-input-inline form input[type="text"]:focus,
+.forms .single-input-inline form input[type="numeric"]:focus,
+.forms .single-input-inline form input[type="email"]:focus,
+.forms .single-input-inline form input[type="file"]:focus,
+.forms .single-input-inline form input[type="password"]:focus {
+  font-size: 87.5%;
+  line-height: 137.5%;
+}
+/* line 178, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+.forms .single-input-inline form input[type="text"],
+.forms .single-input-inline form input[type="numeric"],
+.forms .single-input-inline form input[type="email"],
+.forms .single-input-inline form input[type="file"],
+.forms .single-input-inline form input[type="password"] {
+  width: 100px;
+}
+/* line 251, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
+.forms .single-input-inline form button {
+  padding: 0.2em 20px;
+  width: auto;
+  min-width: 0;
+  font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
+  font-size: 16px;
+  line-height: 137.5%;
+  font-size: 87.5%;
+  line-height: 137.5%;
+  line-height: 100%;
+}
+/* line 296, ../../scss/main.scss */
 .forms .field {
   margin-bottom: 1.25em;
 }
-/* line 256, ../../scss/main.scss */
+/* line 300, ../../scss/main.scss */
 .forms .form-input-custom-icon input {
   padding-right: 50px;
   background-position: right 12.5px top 50%;
@@ -1784,7 +2342,7 @@ header h1 {
   background-image: url('../img/icons/1x/lock.png?1433590418');
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
-  /* line 256, ../../scss/main.scss */
+  /* line 300, ../../scss/main.scss */
   .forms .form-input-custom-icon input {
     background-image: url('../img/icons/2x/lock.png?1433590427');
     -moz-background-size: 25px, 25px;
@@ -1794,14 +2352,14 @@ header h1 {
   }
 }
 
-/* line 262, ../../scss/main.scss */
+/* line 306, ../../scss/main.scss */
 .grid .intro {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 266, ../../scss/main.scss */
+/* line 310, ../../scss/main.scss */
 .grid .grid-container {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1816,17 +2374,17 @@ header h1 {
   width: 100%;
   clear: left;
 }
-/* line 274, ../../scss/main.scss */
+/* line 318, ../../scss/main.scss */
 .grid .grid-row .col {
   border: 1px solid #f7dcc1;
   text-align: center;
 }
-/* line 279, ../../scss/main.scss */
+/* line 323, ../../scss/main.scss */
 .grid .grid-row .content {
   background: #eeeeee;
   min-height: 50px;
 }
-/* line 285, ../../scss/main.scss */
+/* line 329, ../../scss/main.scss */
 .grid .cols1 .col {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1840,7 +2398,7 @@ header h1 {
   transition: width 0.5s;
   width: 100%;
 }
-/* line 289, ../../scss/main.scss */
+/* line 333, ../../scss/main.scss */
 .grid .cols2 .col {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1854,7 +2412,7 @@ header h1 {
   transition: width 0.5s;
   width: 50%;
 }
-/* line 293, ../../scss/main.scss */
+/* line 337, ../../scss/main.scss */
 .grid .cols4 .col {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1868,7 +2426,7 @@ header h1 {
   transition: width 0.5s;
   width: 25%;
 }
-/* line 297, ../../scss/main.scss */
+/* line 341, ../../scss/main.scss */
 .grid .cols6 .col {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1882,7 +2440,7 @@ header h1 {
   transition: width 0.5s;
   width: 16.6666666667%;
 }
-/* line 302, ../../scss/main.scss */
+/* line 346, ../../scss/main.scss */
 .grid .cols-mixed .col4 {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1896,7 +2454,7 @@ header h1 {
   transition: width 0.5s;
   width: 25%;
 }
-/* line 306, ../../scss/main.scss */
+/* line 350, ../../scss/main.scss */
 .grid .cols-mixed .col6 {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1910,7 +2468,7 @@ header h1 {
   transition: width 0.5s;
   width: 16.6666666667%;
 }
-/* line 312, ../../scss/main.scss */
+/* line 356, ../../scss/main.scss */
 .grid .cols-nested .col-left {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1924,7 +2482,7 @@ header h1 {
   transition: width 0.5s;
   width: 33.3333333333%;
 }
-/* line 316, ../../scss/main.scss */
+/* line 360, ../../scss/main.scss */
 .grid .cols-nested .col-right {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1945,7 +2503,7 @@ header h1 {
   width: 100%;
   clear: left;
 }
-/* line 323, ../../scss/main.scss */
+/* line 367, ../../scss/main.scss */
 .grid .cols-nested .col-right .col {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1960,35 +2518,35 @@ header h1 {
   width: 100%;
 }
 
-/* line 331, ../../scss/main.scss */
+/* line 375, ../../scss/main.scss */
 .buttons h3.subsection {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 335, ../../scss/main.scss */
+/* line 379, ../../scss/main.scss */
 .buttons .buttons-demo {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 339, ../../scss/main.scss */
+/* line 383, ../../scss/main.scss */
 .buttons .buttons-reverse {
   background: #3584cf;
   padding: 10px;
 }
-/* line 343, ../../scss/main.scss */
+/* line 387, ../../scss/main.scss */
 .buttons .buttons-reverse .docs {
   color: #ebf2fa;
 }
-/* line 346, ../../scss/main.scss */
+/* line 390, ../../scss/main.scss */
 .buttons .buttons-reverse .docs code {
   color: #555555;
 }
 
-/* line 354, ../../scss/main.scss */
+/* line 398, ../../scss/main.scss */
 .widgets .widget {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2049,7 +2607,7 @@ header h1 {
   display: inline-block;
   display: inline-block;
   vertical-align: middle;
-  background-image: url('../img/icons/1x-s62d810095e.png');
+  background-image: url('../img/icons/1x-s29813784c9.png');
   background-position: 0 -110px;
   background-repeat: no-repeat;
   width: 25px;
@@ -2060,12 +2618,12 @@ header h1 {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
   /* line 74, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
   .widgets .accordion.active .accordion-section > :nth-child(1) .accordion-icon {
-    background-image: url('../img/icons/2x-s260dc8b508.png');
+    background-image: url('../img/icons/2x-sc18f287ed7.png');
     background-position: 0 -110px;
-    -moz-background-size: 25px 1262px;
-    -o-background-size: 25px 1262px;
-    -webkit-background-size: 25px 1262px;
-    background-size: 25px 1262px;
+    -moz-background-size: 25px 1317px;
+    -o-background-size: 25px 1317px;
+    -webkit-background-size: 25px 1317px;
+    background-size: 25px 1317px;
   }
 }
 /* line 81, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
@@ -2076,7 +2634,7 @@ header h1 {
 .widgets .accordion.active .accordion-section > :nth-child(1):hover .accordion-icon {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('../img/icons/1x-s62d810095e.png');
+  background-image: url('../img/icons/1x-s29813784c9.png');
   background-position: 0 -165px;
   background-repeat: no-repeat;
   width: 25px;
@@ -2085,12 +2643,12 @@ header h1 {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
   /* line 84, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
   .widgets .accordion.active .accordion-section > :nth-child(1):hover .accordion-icon {
-    background-image: url('../img/icons/2x-s260dc8b508.png');
+    background-image: url('../img/icons/2x-sc18f287ed7.png');
     background-position: 0 -165px;
-    -moz-background-size: 25px 1262px;
-    -o-background-size: 25px 1262px;
-    -webkit-background-size: 25px 1262px;
-    background-size: 25px 1262px;
+    -moz-background-size: 25px 1317px;
+    -o-background-size: 25px 1317px;
+    -webkit-background-size: 25px 1317px;
+    background-size: 25px 1317px;
   }
 }
 /* line 91, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
@@ -2120,7 +2678,7 @@ header h1 {
 .widgets .accordion.active .non-collapsible > :nth-child(1):hover span.accordion-icon {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('../img/icons/1x-s62d810095e.png');
+  background-image: url('../img/icons/1x-s29813784c9.png');
   background-position: 0 0;
   background-repeat: no-repeat;
   width: 25px;
@@ -2129,12 +2687,12 @@ header h1 {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
   /* line 116, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
   .widgets .accordion.active .non-collapsible > :nth-child(1):hover span.accordion-icon {
-    background-image: url('../img/icons/2x-s260dc8b508.png');
+    background-image: url('../img/icons/2x-sc18f287ed7.png');
     background-position: 0 0;
-    -moz-background-size: 25px 1262px;
-    -o-background-size: 25px 1262px;
-    -webkit-background-size: 25px 1262px;
-    background-size: 25px 1262px;
+    -moz-background-size: 25px 1317px;
+    -o-background-size: 25px 1317px;
+    -webkit-background-size: 25px 1317px;
+    background-size: 25px 1317px;
   }
 }
 /* line 121, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
@@ -2151,7 +2709,7 @@ header h1 {
 .widgets .accordion.active .expanded > :nth-child(1) .accordion-icon {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('../img/icons/1x-s62d810095e.png');
+  background-image: url('../img/icons/1x-s29813784c9.png');
   background-position: 0 0;
   background-repeat: no-repeat;
   width: 25px;
@@ -2161,12 +2719,12 @@ header h1 {
   /* line 136, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
   .widgets .accordion.active .non-collapsible > :nth-child(1) .accordion-icon,
   .widgets .accordion.active .expanded > :nth-child(1) .accordion-icon {
-    background-image: url('../img/icons/2x-s260dc8b508.png');
+    background-image: url('../img/icons/2x-sc18f287ed7.png');
     background-position: 0 0;
-    -moz-background-size: 25px 1262px;
-    -o-background-size: 25px 1262px;
-    -webkit-background-size: 25px 1262px;
-    background-size: 25px 1262px;
+    -moz-background-size: 25px 1317px;
+    -o-background-size: 25px 1317px;
+    -webkit-background-size: 25px 1317px;
+    background-size: 25px 1317px;
   }
 }
 /* line 141, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
@@ -2174,7 +2732,7 @@ header h1 {
 .widgets .accordion.active .expanded > :nth-child(1):hover .accordion-icon {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('../img/icons/1x-s62d810095e.png');
+  background-image: url('../img/icons/1x-s29813784c9.png');
   background-position: 0 -55px;
   background-repeat: no-repeat;
   width: 25px;
@@ -2184,12 +2742,12 @@ header h1 {
   /* line 141, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
   .widgets .accordion.active .non-collapsible > :nth-child(1):hover .accordion-icon,
   .widgets .accordion.active .expanded > :nth-child(1):hover .accordion-icon {
-    background-image: url('../img/icons/2x-s260dc8b508.png');
+    background-image: url('../img/icons/2x-sc18f287ed7.png');
     background-position: 0 -55px;
-    -moz-background-size: 25px 1262px;
-    -o-background-size: 25px 1262px;
-    -webkit-background-size: 25px 1262px;
-    background-size: 25px 1262px;
+    -moz-background-size: 25px 1317px;
+    -o-background-size: 25px 1317px;
+    -webkit-background-size: 25px 1317px;
+    background-size: 25px 1317px;
   }
 }
 /* line 148, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
@@ -2206,7 +2764,7 @@ header h1 {
   width: 100%;
   clear: left;
 }
-/* line 365, ../../scss/main.scss */
+/* line 409, ../../scss/main.scss */
 .widgets .accordion .col {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2221,7 +2779,7 @@ header h1 {
   width: 50%;
 }
 @media only screen and (max-width: 560px) {
-  /* line 365, ../../scss/main.scss */
+  /* line 409, ../../scss/main.scss */
   .widgets .accordion .col {
     width: 100%;
   }
