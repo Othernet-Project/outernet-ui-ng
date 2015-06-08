@@ -497,6 +497,69 @@
                 <h2 id="forms">Forms</h2>
             </div>
 
+            <h3>Single-input forms</h3>
+
+            <div class="fields single-input">
+                <form>
+                    <label for="input-single">
+                    <span class="icon search">Search:</span>
+                    </label>
+                    <input type="text" id="input-single" placeholder="Search the library">
+                    <button>Search</button>
+                </form>
+            </div>
+
+            <div class="docs">
+                <p>
+                <strong>Single input forms</strong> are forms that contain a
+                single label, input box and a button. The style is selectable
+                only using <code>single-input-form($width, $background,
+                $focus)</code> SASS mixin. The <code>$width</code> argument 
+                specifies the width of the <em>input</em> (not whole form).
+                The <code>$background</code> and <code>$focus</code> are used 
+                to specify the background color of the entire form, and input
+                when focused, respectively.
+                </p>
+                <p>
+                Because of the need to specify fixed width for the input, the
+                single-input forms do not readily adapt to parent element's
+                width. To support different screen sizes, we must employ <a
+                href="#responsive">media queries</a>. When using media queries,
+                the width of the input can be changed using the 
+                <code>single-input-form-width($width)</code> SASS mixin. Here 
+                is an example for the above form:
+                </p>
+                <pre><code>form {
+  @include single-input-form(600px, $white);
+  @include narrower-than(860px) {   @include single-input-form-width(400px); }
+  @include narrower-than($medium) { @include single-input-form-width(300px); }
+  @include narrower-than($narrow) { @include single-input-form-width(120px); }
+}</code></pre>
+            </div>
+
+            <h3>Inline single-input form</h3>
+
+            <div class="fields single-input-inline">
+                <form>
+                    <input type="text" id="input-single" placeholder="keywords...">
+                    <button>Search</button>
+                </form>
+            </div>
+
+            <div class="docs">
+                <p>
+                <strong>Single-input inline form</strong> is a variant of the
+                single-input form, which uses smaller-sized input and button
+                to address space-constrained situations such as usage within a 
+                table. This style is selected in a similar way as regular 
+                single-input form, by augmenting the
+                <code>single-input-form()</code> SASS mixin with a 
+                <code>single-input-inline()</code> SASS mixin.
+                </p>
+            </div>
+
+            <h3>Form controls</h3>
+
             <ul class="form-errors">
                 <li>Form-wide errors must appear above the form</li>
                 <li>
@@ -638,6 +701,517 @@
                 <code>.field-error</code> can be inserted after the input
                 element, which contains error message for the field.
                 </p>
+            </div>
+        </div>
+
+        <div class="section tables">
+            <div class="section-title">
+            <h2 id="tables">Tables</h2>
+            </div>
+
+            <h3>Regular table</h3>
+
+            <div class="tables-demo table-normal-demo">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Embedded form</th>
+                            <th>Embedded link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>
+                            <p>Data 2</p>
+                            </td>
+                            <td>
+                                <form>
+                                <input type="text" placeholder="Some text">
+                                <button>Click me</button>
+                                </form>
+                                <button class="delete">Delete</button>
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)" class="table-link">Link</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>
+                            <p>Data 2</p>
+                            </td>
+                            <td>
+                                <form>
+                                <input type="text" placeholder="Some text">
+                                <button>Click me</button>
+                                </form>
+                                <button class="delete">Delete</button>
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)" class="table-link">Link</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>
+                            <p>Data 2</p>
+                            </td>
+                            <td>No form</td>
+                            <td>No link</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="docs">
+                <p>
+                Tables require no special markup to select the styling shown in
+                this guide. Please note, though, that tables have no built-in
+                responsive features. Look at <a href="#responsive">Designing for
+                mobile screens</a> section for more information.
+                </p>
+
+                <p>
+                Tables using the base Outernet UI NG stylesheet are laid out 
+                using <code>table-layout: fixed</code>. This means that the 
+                table columns' width is calculated using the widths of the 
+                very first row in the table. This increases the rendering 
+                performance (layout is not recalculated for every row 
+                downloaded), but requires the developer to fine-tune the 
+                widths of the columns in order to set the correct column width
+                for all rows. The helper SASS mixin 
+                <code>table-col-width($col, $width)</code> can be used for 
+                this purpose. This mixin is included in the table element
+                or one of the parents.
+                </p>
+
+                <pre><code>table {
+  @include table-col-width(1, 200px);  // 1st column is 200px wide
+  @include table-col-width(3, 20%);  // 3rd column is 20% wide
+}</code></pre>
+
+                <p>
+                We can also manually set the width by giving the first row's
+                <code>&lt;th&gt;</code> or <code>&lt;td&gt;</code> elements a
+                specific width (it has to be the first row). Usually we give
+                those cells a <code>class</code> attribute in order to select
+                them.
+                </p>
+            </div>
+
+            <h3>Flat table</h3>
+
+            <div class="table-demo table-flat-demo">
+                <table>
+                        <thead>
+                            <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Embedded form</th>
+                            <th>Embedded link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>
+                            <p>Data 2</p>
+                            </td>
+                            <td>
+                                <form>
+                                <input type="text" placeholder="Some text">
+                                <button>Click me</button>
+                                </form>
+                                <button class="delete">Delete</button>
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)" class="table-link">Link</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>
+                            <p>Data 2</p>
+                            </td>
+                            <td>
+                                <form>
+                                <input type="text" placeholder="Some text">
+                                <button>Click me</button>
+                                </form>
+                                <button class="delete">Delete</button>
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)" class="table-link">Link</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>
+                            <p>Data 2</p>
+                            </td>
+                            <td>No form</td>
+                            <td>No link</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="docs">
+                <p>
+                Flat tables use the normal table HTML markup, but lay the
+                table cells out as block elements. This style is selected 
+                using <code>table-flat()</code> SASS mixin. This style can be
+                useful for layout out tables for smaller screens.
+                </p>
+            </div>
+        </div>
+
+        <div class="section buttons">
+            <div class="section-title">
+                <h2 id="buttons">Buttons</h2>
+            </div>
+
+            <p class="docs">
+            Buttons styling is applied to all <code>&lt;button&gt;</code>
+            elements, as well as inline elements that have <code>button</code>
+            class.
+            </p>
+
+
+            <h3 class="subsection">Normal</h3>
+
+            <div class="buttons-demo">
+                <div class="buttons-normal">
+                    <p>
+                    <button>Action</button>
+                    <button class="secondary">Secondary</button>
+                    <span class="docs">
+                    Action button initiates a new action. This button is used
+                    to signify <strong>user actions that have no special
+                    emphasis</strong>.  When multiple buttons are present in a
+                    button group, then the secondary style is used. Action
+                    button is the default style for all buttons. Secondary
+                    style is selected using <code>secondary</code> class.
+                    </span>
+                    </p>
+
+                    <p>
+                    <button class="delete">Delete</button>
+                    <button class="delete secondary">Delete secondary</button>
+                    <span class="docs">
+                    Delete buttons are used for action that <strong>negate
+                    previous actions or have irreversible destructive
+                    effect</strong> (e.g., removal of persisted data). In a
+                    button group where delete action is not the most
+                    significant action, secondary style is used. This also
+                    applies to cases where there are multiple delete actions in
+                    a single group. Delete style is selected using
+                    <code>delete</code> class, and its secondary counterpart is
+                    selected using <code>delete secondary</code> class.
+                    </span>
+                    </p>
+
+                    <p>
+                    <button class="confirm">Confirm</button>
+                    <span class="docs">
+                    Confirm buttons are used to <strong>confirm execution of
+                    previously selected actions or dismiss confirmation
+                    messages</strong>. There can only ever be one confirmation
+                    button in a button group, and the secondary style is
+                    therefore never used. Confirm button style is selected by
+                    using <code>confirm</code> class.
+                    </span>
+                    </p>
+
+                    <p>
+                    <button class="cta">CTA</button>
+                    <button class="cta secondary">CTA secondary</button>
+                    <span class="docs">
+                    CTA buttons are used to call user's attention to actions
+                    that reveal new sections of a site, usually containing an
+                    <strong>entry point to activity funnels</strong>. In case
+                    there are more than one CTA buttons in a button group, only
+                    one can be significant, and others must use the secondary
+                    style.  CTA buttons must not appear in the same group as
+                    other button types. CTA button style is selected using
+                    <code>cta</code> class, and its secondary counterpart by
+                    using <code>cta secondary</code> class.
+                    </span>
+                    </p>
+
+                    <p>
+                    <button disabled>Disabled</button>
+                    <button class="secondary" disabled>Disabled secondary</button>
+                    <span class="docs">
+                    Buttons that <strong>cannot be used at a given
+                    moment</strong> (e.g., conditions for performing the action
+                    are not met) must always be disabled. In case of
+                    <code>&lt;button&gt;</code> elements, adding the
+                    <code>disabled</code> attribute selects this style. In case
+                    of other elements, adding a <code>disabled</code> class has
+                    the same <em>visual</em> effect, but the functionality of
+                    the element (e.g., click event handling) must be handled
+                    in backend or frontend code.
+                    </span>
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="subsection">Small</h3>
+        
+            <div class="buttons-demo">
+                <div class="buttons-small">
+                    <p>
+                    <button class="small">Action</button>
+                    <button class="small secondary">Action secondary</button>
+                    <span class="docs">
+                    Small buttons are used as part of more complex widgets 
+                    <strong>where space constraints do not allow placement of 
+                    normal-sized buttons</strong>. This includes use of buttons
+                    within table cells. The button styling is selected the same
+                    way as with normal-sized buttons with addition of
+                    <code>small</code> class. Within tables, this style is 
+                    automatically selected. <strong>CTA buttons should never be
+                    used in the small variant.</strong>
+                    </span>
+                    </p>
+                    <p>
+                    <button class="delete small">Delete</button>
+                    <button class="delete small secondary">Delete secondary</button>
+                    </p>
+                    <p>
+                    <button class="confirm small">Confirm</button>
+                    </p>
+                    <p>
+                    <button class="small" disabled>Disabled</button>
+                    <button class="small secondary" disabled>Disabled secondary</button>
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="subsection">Reverse</h3>
+
+            <div class="buttons-demo">
+                <div class="buttons-reverse">
+                    <p>
+                    <button class="cta reverse">CTA</button>
+                    <button class="cta reverse secondary">Secondary</button>
+                    <span class="docs">
+                    Reverse video buttons are typically used on surfaces that
+                    are delibrately designed to stand out from the rest of the
+                    page (hero boxes, banners, etc). These areas may contain
+                    only CTA buttons. The secondary style is used if there is
+                    more than one button in the same button group. Reverse
+                    video CTA button is selected by using <code>cta
+                    reverse</code> class, and the secondary style by using
+                    <code>cta reverse secondary</code> style.
+                    </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section widgets">
+        <div class="section-title">
+            <h2 id="widgets">Widgets</h2>
+        </div>
+
+            <div class="loader-demo widget">
+                
+<span class="progress" data-threshold="30" id="progress">
+    <span class="label">Progress</span>
+    <span class="value">30%</span>
+    <span class="indicator">
+        <span class="bar" style="width: 30%"></span>
+    </span>
+</span>
+
+                <div class="docs">
+                    <p>
+                    The progress widget is deifined in <code>_widgets.tpl</code>
+                    Mako module. This module is imported using the <a
+                    href="http://docs.makotemplates.org/en/latest/defs.html#calling-defs-from-other-files">namespaces</a>:
+                    </p> 
+                    <pre><code>&lt;%namespace name="widgets" file="relative/path/to/_widgets.tpl"/&gt;</code></pre>
+                    <p>
+                    The <code>progress(label, percentage, value=None,
+                    threshold=10, id=None)</code> def is used to render the 
+                    progress widget.
+                    </p>
+                    <p>
+                    <code>label</code> is rquired, and is shown above the bar,
+                    to the left. <code>percentage</code> defines the portion of
+                    the bar that will be filled in. It must be an integer
+                    between 0 and 100 inclusive. Third argument is the
+                    <code>value</code>. If it is passed, it will be shown above
+                    the bar on the right. Otherwise, the value is calculated 
+                    from the percentage by appending the percent symbol (%) to
+                    the <code>percentage</code> value. The
+                    <code>threshold</code> is the integer that represents the
+                    percentage below which the bar has 'low value' styling 
+                    (default styling is for the bar to turn SUN). If 
+                    <code>id</code> is specified, the widget's outernet element
+                    will have an <code>id</code> attribute.
+                    </p>
+                    <p>
+                    Progress widget has a static value when rendered. This
+                    value can be updated using the jQuery plugin defined in the
+                    <code>widgets/progress.js</code> module:
+                    </p>
+                    <pre><code>var prog = $('#my-progress').progress();
+prog.updateLabel('New label');
+prog.updateValue(20, '-30db');</code></pre>
+                </div>
+            </div>
+
+            <div class="accordion-demo widget">
+                <div class="accordion" id="accordion">
+                    
+<section class="accordion-section collapsible " >
+    
+                        <h3>Using the accordion widget</h3>
+                        <div>
+                            <p>
+                            Accordion sections are enclosed in specially
+                            crafted markup that can be generated using the
+                            <code>_widgets.tpl</code> Mako module. This module
+                            is imported using the <a
+                            href="http://docs.makotemplates.org/en/latest/defs.html#calling-defs-from-other-files">namespaces</a>:
+                            </p>
+                            <pre><code>&lt;%namespace name="widgets" file="relative/path/to/_widgets.tpl"/&gt;</code></pre>
+                            <p>
+                            The accordion section widget is then created using
+                            the following pattern:
+                            </p>
+                            <pre><code>&lt;%widgets:accordion&gt
+    &lt;element&gt;Header element&lt;/element&gt;
+    &lt;element&gt;content...&lt;/element&gt;
+&lt;/%widgets:accordion&gt;</code></pre>
+                            <p>
+                            Important thing to note is that there should be 
+                            exactly two elements inside the widget. The first
+                            one will be used as a header and should not contain
+                            nested block elements.
+                            </p>
+                            <p>
+                            Second element should be a block element which may
+                            or may not contain arbitrary HTML structures.
+                            </p>
+                            <p>
+                            JavaScript that makes the accordion widget work
+                            is defined in the <code>widgets/accordion.js</code>
+                            module. When this module is absent, or JavaScript
+                            is disabled, the accordion only has basic styling
+                            that delineates the sections.
+                            </p>
+                        </div>
+                    
+</section>
+
+                    
+<section class="accordion-section collapsible expanded" >
+    
+                        <h3>Expanded by default</h3>
+                        <div>
+                            <p>
+                            This section is expanded by default. This is
+                            achieved by using the
+                            <code>expanded="${True}"</code> argument.
+                            </p>
+                        </div>
+                    
+</section>
+
+                    
+<section class="accordion-section non-collapsible " >
+    
+                        <h3>Non-collapsible</h3>
+                        <div>
+                            <p>
+                            This section is not collapsible. This is achived
+                            by using the
+                            <code>collapsible="${False}"</code> argument.
+                        </div>
+                    
+</section>
+
+                    
+<section class="accordion-section collapsible " >
+    
+                        <h3>Embedded form</h3>
+                        <div div="split">
+                            <div class="row">
+                                <div class="col">
+                                    
+<span class="progress" data-threshold="10" >
+    <span class="label">Signal strength</span>
+    <span class="value">20%</span>
+    <span class="indicator">
+        <span class="bar" style="width: 20%"></span>
+    </span>
+</span>
+
+                                    <form>
+                                        <p>
+                                        <select name="lnb">
+                                            <option>Select LNB type</option>
+                                            <option value="u">Universal LNB</option>
+                                            <option value="k">North America Ku-band</option>
+                                            <option value="c">C-band</option>
+                                        </select>
+                                        </p>
+                                        <p>
+                                        <select name="preset">
+                                            <option>Select satellite</option>
+                                            <option value="is10">Intelsat 10</option>
+                                            <option value="hb13">HotBird 13.0E</option>
+                                        </select>
+                                        </p>
+                                        <p>
+                                        <input type="text" placeholder="type in your note">
+                                        <p>
+                                        <button>Tune in</button>
+                                        </p>
+                                    </form>
+                                </div>
+                                <div class="col">
+                                    <h4 class="first">Coverage</h4>
+                                    <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Donec a diam lectus. Sed
+                                    sit amet ipsum mauris. Maecenas congue
+                                    ligula ac quam viverra nec consectetur ante
+                                    hendrerit. Donec et mollis dolor. Praesent
+                                    et diam eget libero egestas mattis sit amet
+                                    vitae augue. Nam tincidunt congue enim, ut
+                                    porta lorem lacinia consectetur. Donec ut
+                                    libero sed arcu vehicula ultricies a non
+                                    tortor. Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+</section>
+
+                    
+<section class="accordion-section collapsible " >
+    
+                        <h3>Normal section</h3>
+                        <div>
+                            <p>
+                            This is a normal section.
+                            </p>
+                        </div>
+                    
+</section>
+
+                </div>
             </div>
         </div>
 
@@ -870,320 +1444,6 @@
                 a typical usage, see the demo's source code, and refer to the
                 <a href="#responsive">Designing for mobile screens</a> section.
                 </p>
-            </div>
-        </div>
-
-        <div class="section buttons">
-            <div class="section-title">
-                <h2 id="buttons">Buttons</h2>
-            </div>
-
-            <p class="docs">
-            Buttons styling is applied to all <code>&lt;button&gt;</code>
-            elements, as well as inline elements that have <code>button</code>
-            class.
-            </p>
-
-
-            <h3 class="subsection">Normal</h3>
-
-            <div class="buttons-demo">
-                <div class="buttons-normal">
-                    <p>
-                    <button>Action</button>
-                    <button class="secondary">Secondary</button>
-                    <span class="docs">
-                    Action button initiates a new action. This button is used
-                    to signify <strong>user actions that have no special
-                    emphasis</strong>.  When multiple buttons are present in a
-                    button group, then the secondary style is used. Action
-                    button is the default style for all buttons. Secondary
-                    style is selected using <code>secondary</code> class.
-                    </span>
-                    </p>
-
-                    <p>
-                    <button class="delete">Delete</button>
-                    <button class="delete secondary">Delete secondary</button>
-                    <span class="docs">
-                    Delete buttons are used for action that <strong>negate
-                    previous actions or have irreversible destructive
-                    effect</strong> (e.g., removal of persisted data). In a
-                    button group where delete action is not the most
-                    significant action, secondary style is used. This also
-                    applies to cases where there are multiple delete actions in
-                    a single group. Delete style is selected using
-                    <code>delete</code> class, and its secondary counterpart is
-                    selected using <code>delete secondary</code> class.
-                    </span>
-                    </p>
-
-                    <p>
-                    <button class="confirm">Confirm</button>
-                    <span class="docs">
-                    Confirm buttons are used to <strong>confirm execution of
-                    previously selected actions or dismiss confirmation
-                    messages</strong>. There can only ever be one confirmation
-                    button in a button group, and the secondary style is
-                    therefore never used. Confirm button style is selected by
-                    using <code>confirm</code> class.
-                    </span>
-                    </p>
-
-                    <p>
-                    <button class="cta">CTA</button>
-                    <button class="cta secondary">CTA secondary</button>
-                    <span class="docs">
-                    CTA buttons are used to call user's attention to actions
-                    that reveal new sections of a site, usually containing an
-                    <strong>entry point to activity funnels</strong>. In case
-                    there are more than one CTA buttons in a button group, only
-                    one can be significant, and others must use the secondary
-                    style.  CTA buttons must not appear in the same group as
-                    other button types. CTA button style is selected using
-                    <code>cta</code> class, and its secondary counterpart by
-                    using <code>cta secondary</code> class.
-                    </span>
-                    </p>
-
-                    <p>
-                    <button disabled>Disabled</button>
-                    <button class="secondary" disabled>Disabled secondary</button>
-                    <span class="docs">
-                    Buttons that <strong>cannot be used at a given
-                    moment</strong> (e.g., conditions for performing the action
-                    are not met) must always be disabled. In case of
-                    <code>&lt;button&gt;</code> elements, adding the
-                    <code>disabled</code> attribute selects this style. In case
-                    of other elements, adding a <code>disabled</code> class has
-                    the same <em>visual</em> effect, but the functionality of
-                    the element (e.g., click event handling) must be handled
-                    in backend or frontend code.
-                    </span>
-                    </p>
-                </div>
-            </div>
-
-            <h3 class="subsection">Reverse</h3>
-
-            <div class="buttons-demo">
-                <div class="buttons-reverse">
-                    <p>
-                    <button class="cta reverse">CTA</button>
-                    <button class="cta reverse secondary">Secondary</button>
-                    <span class="docs">
-                    Reverse video buttons are typically used on surfaces that
-                    are delibrately designed to stand out from the rest of the
-                    page (hero boxes, banners, etc). These areas may contain
-                    only CTA buttons. The secondary style is used if there is
-                    more than one button in the same button group. Reverse
-                    video CTA button is selected by using <code>cta
-                    reverse</code> class, and the secondary style by using
-                    <code>cta reverse secondary</code> style.
-                    </span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section widgets">
-        <div class="section-title">
-            <h2 id="widgets">Widgets</h2>
-        </div>
-
-            <div class="loader-demo widget">
-                
-<span class="progress" data-threshold="30" id="progress">
-    <span class="label">Progress</span>
-    <span class="value">30%</span>
-    <span class="indicator">
-        <span class="bar" style="width: 30%"></span>
-    </span>
-</span>
-
-                <div class="docs">
-                    <p>
-                    The progress widget is deifined in <code>_widgets.tpl</code>
-                    Mako module. This module is imported using the <a
-                    href="http://docs.makotemplates.org/en/latest/defs.html#calling-defs-from-other-files">namespaces</a>:
-                    </p> 
-                    <pre><code>&lt;%namespace name="widgets" file="relative/path/to/_widgets.tpl"/&gt;</code></pre>
-                    <p>
-                    The <code>progress(label, percentage, value=None,
-                    threshold=10, id=None)</code> def is used to render the 
-                    progress widget.
-                    </p>
-                    <p>
-                    <code>label</code> is rquired, and is shown above the bar,
-                    to the left. <code>percentage</code> defines the portion of
-                    the bar that will be filled in. It must be an integer
-                    between 0 and 100 inclusive. Third argument is the
-                    <code>value</code>. If it is passed, it will be shown above
-                    the bar on the right. Otherwise, the value is calculated 
-                    from the percentage by appending the percent symbol (%) to
-                    the <code>percentage</code> value. The
-                    <code>threshold</code> is the integer that represents the
-                    percentage below which the bar has 'low value' styling 
-                    (default styling is for the bar to turn SUN). If 
-                    <code>id</code> is specified, the widget's outernet element
-                    will have an <code>id</code> attribute.
-                    </p>
-                    <p>
-                    Progress widget has a static value when rendered. This
-                    value can be updated using the jQuery plugin defined in the
-                    <code>widgets/progress.js</code> module:
-                    </p>
-                    <pre><code>var prog = $('#my-progress').progress();
-prog.updateLabel('New label');
-prog.updateValue(20, '-30db');</code></pre>
-                </div>
-            </div>
-
-            <div class="accordion-demo widget">
-                <div class="accordion" id="accordion">
-                    
-<section class="accordion-section collapsible " >
-    
-                        <h3>Using the accordion widget</h3>
-                        <div>
-                            <p>
-                            Accordion sections are enclosed in specially
-                            crafted markup that can be generated using the
-                            <code>_widgets.tpl</code> Mako module. This module
-                            is imported using the <a
-                            href="http://docs.makotemplates.org/en/latest/defs.html#calling-defs-from-other-files">namespaces</a>:
-                            </p>
-                            <pre><code>&lt;%namespace name="widgets" file="relative/path/to/_widgets.tpl"/&gt;</code></pre>
-                            <p>
-                            The accordion section widget is then created using
-                            the following pattern:
-                            </p>
-                            <pre><code>&lt;%widgets:accordion&gt
-    &lt;element&gt;Header element&lt;/element&gt;
-    &lt;element&gt;content...&lt;/element&gt;
-&lt;/%widgets:accordion&gt;</code></pre>
-                            <p>
-                            Important thing to note is that there should be 
-                            exactly two elements inside the widget. The first
-                            one will be used as a header and should not contain
-                            nested block elements.
-                            </p>
-                            <p>
-                            Second element should be a block element which may
-                            or may not contain arbitrary HTML structures.
-                            </p>
-                            <p>
-                            JavaScript that makes the accordion widget work
-                            is defined in the <code>widgets/accordion.js</code>
-                            module. When this module is absent, or JavaScript
-                            is disabled, the accordion only has basic styling
-                            that delineates the sections.
-                            </p>
-                        </div>
-                    
-</section>
-
-                    
-<section class="accordion-section collapsible expanded" >
-    
-                        <h3>Expanded by default</h3>
-                        <div>
-                            <p>
-                            This section is expanded by default. This is
-                            achieved by using the
-                            <code>expanded="${True}"</code> argument.
-                            </p>
-                        </div>
-                    
-</section>
-
-                    
-<section class="accordion-section non-collapsible " >
-    
-                        <h3>Non-collapsible</h3>
-                        <div>
-                            <p>
-                            This section is not collapsible. This is achived
-                            by using the
-                            <code>collapsible="${False}"</code> argument.
-                        </div>
-                    
-</section>
-
-                    
-<section class="accordion-section collapsible " >
-    
-                        <h3>Embedded form</h3>
-                        <div div="split">
-                            <div class="row">
-                                <div class="col">
-                                    
-<span class="progress" data-threshold="10" >
-    <span class="label">Signal strength</span>
-    <span class="value">20%</span>
-    <span class="indicator">
-        <span class="bar" style="width: 20%"></span>
-    </span>
-</span>
-
-                                    <form>
-                                        <p>
-                                        <select name="lnb">
-                                            <option>Select LNB type</option>
-                                            <option value="u">Universal LNB</option>
-                                            <option value="k">North America Ku-band</option>
-                                            <option value="c">C-band</option>
-                                        </select>
-                                        </p>
-                                        <p>
-                                        <select name="preset">
-                                            <option>Select satellite</option>
-                                            <option value="is10">Intelsat 10</option>
-                                            <option value="hb13">HotBird 13.0E</option>
-                                        </select>
-                                        </p>
-                                        <p>
-                                        <input type="text" placeholder="type in your note">
-                                        <p>
-                                        <button>Tune in</button>
-                                        </p>
-                                    </form>
-                                </div>
-                                <div class="col">
-                                    <h4 class="first">Coverage</h4>
-                                    <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Donec a diam lectus. Sed
-                                    sit amet ipsum mauris. Maecenas congue
-                                    ligula ac quam viverra nec consectetur ante
-                                    hendrerit. Donec et mollis dolor. Praesent
-                                    et diam eget libero egestas mattis sit amet
-                                    vitae augue. Nam tincidunt congue enim, ut
-                                    porta lorem lacinia consectetur. Donec ut
-                                    libero sed arcu vehicula ultricies a non
-                                    tortor. Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    
-</section>
-
-                    
-<section class="accordion-section collapsible " >
-    
-                        <h3>Normal section</h3>
-                        <div>
-                            <p>
-                            This is a normal section.
-                            </p>
-                        </div>
-                    
-</section>
-
-                </div>
             </div>
         </div>
 
