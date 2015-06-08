@@ -104,8 +104,22 @@
     .non-collapsible {
       // HEADER
       & > :nth-child(1) {
+        cursor: default;
+
         .accordion-icon {
           opacity: 0.3;
+        }
+
+        &:hover {
+          background: $white;
+        }
+
+        a {
+          cursor: default;
+
+          &:hover {
+            text-decoration: none;
+          }
         }
       }
     }
