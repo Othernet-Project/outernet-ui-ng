@@ -44,9 +44,10 @@ $form-animation-delay: 0.3s;
 @mixin input-geometry {
   width: 100%;
   max-width: 400px;
-  padding: 8px $form-text-offset 9px;
-  @include border-radius(7px);
+  padding: 8px $form-text-offset 8px;
   border: 1px solid transparent;
+  @include border-radius(7px);
+  @include box-sizing(border-box);
 }
 
 @mixin input-styling($text, $background, $border) {
@@ -54,6 +55,7 @@ $form-animation-delay: 0.3s;
   background-color: $background;
   border-color: $border;
   outline: none;  // removes boxy outline when field is focused in Chrome
+  @include regular;
   @include transition(
     color $form-animation-delay, 
     background-color $form-animation-delay, 
@@ -99,7 +101,7 @@ $form-animation-delay: 0.3s;
 
 @mixin select-styling {
   @include appearance(none);
-  padding: 8px $form-text-offset 9px;
+  padding: 8px $form-text-offset 8px;
 
   // Remove arrow in older versions of Firefox
   text-indent: 0.01px;
@@ -138,9 +140,9 @@ $form-animation-delay: 0.3s;
 
 @mixin checkbox-checked-styling {
   @include input-positive-styling;
-  background-image: image-url('icons/1x/checkmark.png');
   background-position: center center;
   background-repeat: no-repeat;
+  @include with-hdpi('icons', 'checkmark');
 }
 
 @mixin checkbox-active-styling {
@@ -148,9 +150,9 @@ $form-animation-delay: 0.3s;
 }
 
 @mixin checkbox-active-checked-styling {
-  background-image: image-url('icons/1x/checkmark_active.png');
   background-position: center center;
   background-repeat: no-repeat;
+  @include with-hdpi('icons', 'checkmark_active');
 }
 
 @mixin input-container {

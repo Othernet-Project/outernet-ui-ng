@@ -34,6 +34,10 @@
     textarea,
     select {
       background-color: $earth;
+
+      &:focus {
+        background-color: $sky6;
+      }
     }
 
     // HEADER
@@ -41,7 +45,6 @@
       background: $white;
       line-height: 50px;
       border-top: 1px solid $border;
-      border-bottom: 1px solid $border;
       margin: 0;
       cursor: pointer;
       font-size: 20px;
@@ -49,6 +52,7 @@
 
     // CONTENT
     & > :nth-child(2) {
+      border-top: 1px solid $border;
       padding: 20px;
       overflow: hidden;
       margin: 0;
@@ -57,6 +61,9 @@
 
   &.active {
     .accordion-section {
+      &:last-child > :nth-child(2) {
+        border-bottom: 1px solid $border;
+      }
       // HEADER
       & > :nth-child(1) {
         a {
@@ -85,7 +92,9 @@
         max-height: 0;
         padding-top: 0;
         padding-bottom: 0;
+        border-top-width: 0;
         @include transition(
+          border-top-width 0.3s,
           padding-top 0.3s,
           max-height 0.5s, 
           padding-bottom 0.3s);
@@ -118,6 +127,7 @@
 
       // CONTENT
       & > :nth-child(2) {
+        border-top-width: 1px;
         max-height: 1500px;
         padding: 20px;
       }

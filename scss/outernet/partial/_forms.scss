@@ -32,7 +32,6 @@ input[type="password"],
 textarea,
 select {
   @include input-normal;
-  @include box-sizing(border-box);
 
   &.positive {
     @include input-positive-styling;
