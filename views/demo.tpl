@@ -578,6 +578,38 @@
                 </div>
             </div>
 
+            <h3 class="subsection">Small</h3>
+        
+            <div class="buttons-demo">
+                <div class="buttons-small">
+                    <p>
+                    <button class="small">Action</button>
+                    <button class="small secondary">Action secondary</button>
+                    <span class="docs">
+                    Small buttons are used as part of more complex widgets 
+                    <strong>where space constraints do not allow placement of 
+                    normal-sized buttons</strong>. This includes use of buttons
+                    within table cells. The button styling is selected the same
+                    way as with normal-sized buttons with addition of
+                    <code>small</code> class. Within tables, this style is 
+                    automatically selected. <strong>CTA buttons should never be
+                    used in the small variant.</strong>
+                    </span>
+                    </p>
+                    <p>
+                    <button class="delete small">Delete</button>
+                    <button class="delete small secondary">Delete secondary</button>
+                    </p>
+                    <p>
+                    <button class="confirm small">Confirm</button>
+                    </p>
+                    <p>
+                    <button class="small" disabled>Disabled</button>
+                    <button class="small secondary" disabled>Disabled secondary</button>
+                    </p>
+                </div>
+            </div>
+
             <h3 class="subsection">Reverse</h3>
 
             <div class="buttons-demo">
