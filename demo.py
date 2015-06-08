@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import os
+import shutil
 
 import bottle
 
@@ -20,6 +21,41 @@ def static(path):
     return bottle.static_file(path, root=STATICDIR)
 
 
-bottle.run(host='localhost',
-           port=8080,
-           debug=True)
+def dump():
+    if os.path.isdir('out'):
+        shutil.rmtree('out')
+    rendered = bottle.mako_template('demo')
+    rendered = rendered.replace('/static/', 'static/')
+    os.makedirs('out')
+    with open('out/index.html', 'w') as f:
+        f.write(rendered)
+    shutil.copytree(STATICDIR, 'out/static')
+
+
+def main():
+    import argparse
+    parser = argparse.ArgumentParser('start demo server')
+    parser.add_argument('--public', '-P', help='serve publicly',
+                        action='store_true')
+    parser.add_argument('--port', '-p', help='port number', type=int,
+                        default=8080)
+    parser.add_argument('--dump', '-D', help='dump static version',
+                        action='store_true')
+    args = parser.parse_args()
+
+    if args.dump:
+        dump()
+        return
+
+    if args.public:
+        host = '0.0.0.0'
+    else:
+        host = '127.0.0.1'
+
+    bottle.run(host=host,
+               port=args.port,
+               debug=True)
+
+
+if __name__ == '__main__':
+    main()
