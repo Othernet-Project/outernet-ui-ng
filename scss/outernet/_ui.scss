@@ -1,3 +1,7 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/typography/text/replacement";
+
 // MIXINS
 @import "outernet/mixins/colors";
 @import "outernet/mixins/grid";
@@ -10,6 +14,7 @@
 @import "outernet/partial/buttons";
 @import "outernet/partial/hyperlinks";
 @import "outernet/partial/forms";
+@import "outernet/partial/tables";
 
 // WIDGETS
 @import "outernet/widgets/progress";

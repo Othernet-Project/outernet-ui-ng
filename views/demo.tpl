@@ -237,6 +237,70 @@
                 <h2 id="forms">Forms</h2>
             </div>
 
+            <h3>Single-input forms</h3>
+
+            <div class="fields single-input">
+                <form>
+                    <label for="input-single">
+                    <span class="icon search">Search:</span>
+                    </label>
+                    <input type="text" id="input-single" placeholder="Search the library">
+                    <button>Search</button>
+                </form>
+            </div>
+
+            <div class="docs">
+                <p>
+                <strong>Single input forms</strong> are forms that contain a
+                single label, input box and a button. The style is selectable
+                only using <code>single-input-form($width, $background,
+                $focus)</code> SASS mixin. The <code>$width</code> argument 
+                specifies the width of the <em>input</em> (not whole form).
+                The <code>$background</code> and <code>$focus</code> are used 
+                to specify the background color of the entire form, and input
+                when focused, respectively.
+                </p>
+                <p>
+                Because of the need to specify fixed width for the input, the
+                single-input forms do not readily adapt to parent element's
+                width. To support different screen sizes, we must employ <a
+                href="#responsive">media queries</a>. When using media queries,
+                the width of the input can be changed using the 
+                <code>single-input-form-width($width)</code> SASS mixin. Here 
+                is an example for the above form:
+                </p>
+                <pre><code>form {
+  @include single-input-form(600px, $white);
+  @include narrower-than(860px) {   @include single-input-form-width(400px); }
+  @include narrower-than($medium) { @include single-input-form-width(300px); }
+  @include narrower-than($narrow) { @include single-input-form-width(120px); }
+}</code></pre>
+
+            <h3>Inline single-input form</h3>
+
+            <div class="fields single-input-inline">
+                <form>
+                    <input type="text" id="input-single" placeholder="keywords...">
+                    <button>Search</button>
+                </form>
+            </div>
+
+            <div class="docs">
+                <p>
+                <strong>Single-input inline form</strong> is a variant of the
+                single-input form, which uses smaller-sized input and button
+                to address space-constrained situations such as usage within a 
+                table. This style is selected in a similar way as regular 
+                single-input form, by augmenting the
+                <code>single-input-form()</code> SASS mixin with a 
+                <code>single-input-inline()</code> SASS mixin.
+                </p>
+            </div>
+
+            </div>
+
+            <h3>Form controls</h3>
+
             <ul class="form-errors">
                 <li>Form-wide errors must appear above the form</li>
                 <li>
@@ -378,6 +442,60 @@
                 <code>.field-error</code> can be inserted after the input
                 element, which contains error message for the field.
                 </p>
+            </div>
+        </div>
+
+        <div class="section tables">
+            <div class="section-title">
+            <h2 id="tables">Tables</h2>
+            </div>
+
+            <div class="tables-demo">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Embedded form</th>
+                            <th>Embedded link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>
+                            <p>Data 2</p>
+                            </td>
+                            <td>
+                                <form>
+                                <input type="text" placeholder="Some text">
+                                <button>Click me</button>
+                                </form>
+                                <button class="delete">Delete</button>
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)" class="table-link">Link</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>
+                            <p>Data 2</p>
+                            </td>
+                            <td>
+                                <form>
+                                <input type="text" placeholder="Some text">
+                                <button>Click me</button>
+                                </form>
+                                <button class="delete">Delete</button>
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)" class="table-link">Link</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
             </div>
         </div>
 

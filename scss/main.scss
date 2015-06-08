@@ -1,5 +1,3 @@
-@import "compass/reset";
-@import "compass/css3";
 @import "outernet/ui";
 @import "outernet/mixins/media_query";
 
@@ -241,11 +239,57 @@ header {
 }
 
 .forms {
+  h3 {
+    @include simple-row;
+  }
+
   .fields {
     @include row;
 
     .col {
       @include two-col-even;
+    }
+  }
+
+  .single-input, .single-input-inline {
+    border-top: 1px solid $border;
+    border-bottom: 1px solid $border;
+    margin-bottom: 1em;
+    background: $input;
+  }
+
+  .single-input {
+    padding: 1em 0;
+    text-align: center;
+
+    .search {
+      @include icon(search, yes);
+      @include hide-text;
+    }
+
+    form {
+      @include single-input-form(600px, $white);
+
+      @include narrower-than(860px) {
+        @include single-input-form-width(400px);
+      }
+
+      @include narrower-than($medium) {
+        @include single-input-form-width(300px);
+      }
+
+      @include narrower-than($narrow) {
+        @include single-input-form-width(120px);
+      }
+    }
+  }
+
+  .single-input-inline {
+    padding: 0.5em 20px;
+    text-align: right;
+
+    form {
+      @include single-input-inline(100px, $white);
     }
   }
 
@@ -366,4 +410,8 @@ header {
       @include two-col-even;
     }
   }
+}
+
+.tables {
+  
 }
