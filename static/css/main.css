@@ -2104,11 +2104,27 @@ header h1 {
   -webkit-transition: border-top-width 0.3s, padding-top 0.3s, max-height 0.5s, padding-bottom 0.3s;
   transition: border-top-width 0.3s, padding-top 0.3s, max-height 0.5s, padding-bottom 0.3s;
 }
-/* line 107, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+/* line 106, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+.widgets .accordion.active .non-collapsible > :nth-child(1) {
+  cursor: default;
+}
+/* line 109, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
 .widgets .accordion.active .non-collapsible > :nth-child(1) .accordion-icon {
   opacity: 0.3;
 }
+/* line 113, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+.widgets .accordion.active .non-collapsible > :nth-child(1):hover {
+  background: #ffffff;
+}
 /* line 117, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+.widgets .accordion.active .non-collapsible > :nth-child(1) a {
+  cursor: default;
+}
+/* line 120, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+.widgets .accordion.active .non-collapsible > :nth-child(1) a:hover {
+  text-decoration: none;
+}
+/* line 131, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
 .widgets .accordion.active .non-collapsible > :nth-child(1) .accordion-icon,
 .widgets .accordion.active .expanded > :nth-child(1) .accordion-icon {
   display: inline-block;
@@ -2120,7 +2136,7 @@ header h1 {
   height: 25px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
-  /* line 117, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+  /* line 131, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
   .widgets .accordion.active .non-collapsible > :nth-child(1) .accordion-icon,
   .widgets .accordion.active .expanded > :nth-child(1) .accordion-icon {
     background-image: url('../img/icons/2x-s260dc8b508.png');
@@ -2131,7 +2147,7 @@ header h1 {
     background-size: 25px 1262px;
   }
 }
-/* line 122, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+/* line 136, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
 .widgets .accordion.active .non-collapsible > :nth-child(1):hover .accordion-icon,
 .widgets .accordion.active .expanded > :nth-child(1):hover .accordion-icon {
   display: inline-block;
@@ -2143,7 +2159,7 @@ header h1 {
   height: 25px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
-  /* line 122, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+  /* line 136, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
   .widgets .accordion.active .non-collapsible > :nth-child(1):hover .accordion-icon,
   .widgets .accordion.active .expanded > :nth-child(1):hover .accordion-icon {
     background-image: url('../img/icons/2x-s260dc8b508.png');
@@ -2154,7 +2170,7 @@ header h1 {
     background-size: 25px 1262px;
   }
 }
-/* line 129, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
+/* line 143, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
 .widgets .accordion.active .non-collapsible > :nth-child(2),
 .widgets .accordion.active .expanded > :nth-child(2) {
   border-top-width: 1px;
