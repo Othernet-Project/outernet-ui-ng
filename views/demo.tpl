@@ -381,112 +381,6 @@
             </div>
         </div>
 
-        <div class="section grid">
-            <div class="section-title">
-            <h2 id="grid">Grid system</h2>
-            </div>
-
-            <div class="grid-container">
-                <div class="grid-row cols1">
-                    ${cell('@include col1;')}
-                </div>
-
-                <div class="grid-row cols2">
-                    ${cell('@include col2;')}
-                    ${cell('@include col2;')}
-                </div>
-
-                <div class="grid-row cols4">
-                    ${cell('@include col4;')}
-                    ${cell('@include col4;')}
-                    ${cell('@include col4;')}
-                    ${cell('@include col4;')}
-                </div>
-
-                <div class="grid-row cols6">
-                    ${cell('@include col6;')}
-                    ${cell('@include col6;')}
-                    ${cell('@include col6;')}
-                    ${cell('@include col6;')}
-                    ${cell('@include col6;')}
-                    ${cell('@include col6;')}
-                </div>
-
-                <div class="grid-row cols-mixed">
-                    ${cell('@include col4;', cls='col col4')}
-                    ${cell('@include col6;', cls='col col6')}
-                    ${cell('@include col6;', cls='col col6')}
-                    ${cell('@include col6;', cls='col col6')}
-                    ${cell('@include col4;', cls='col col4')}
-                </div>
-
-                <div class="grid-row cols-nested">
-                    ${cell('@include col6(2);', cls='col col-left')}
-                    <div class="col col-right">
-                        <div class="content">
-                            <div class="nested-row">
-                                ${cell('@include col1;', cls='col')}
-                            </div>
-                            <div class="nested-row">
-                                ${cell('@include col1;', cls='col')}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="docs">
-                <h3>Using the grid</h3>
-                <p>
-                Outernet UI NG uses a flexible grid with 12 columns and 20px
-                guttter. 
-                </p>
-                <p>
-                The grid requires the following elements:
-                </p>
-                <ul class="bullets">
-                    <li>Grid container</li>
-                    <li>Rows</li>
-                    <li>Columns</li>
-                </ul>
-                <p>
-                The grid <strong>container groups grid rows</strong>. Grid
-                <strong>rows group grid columns</strong>. Main purpose of the
-                grid container is to regulate the vertical gutter between
-                adjacent containers. The grid rows adjusts the clearing below
-                the columns so that rows do not step on each other.
-                </p>
-                <p>
-                Grid elements are <strong>styled using mixins only</strong>.
-                There are no HTML tags or classes that are used as grid
-                elements by default.  This allows for a more semantic and
-                flexible layouting.
-                </p>
-                <p>
-                Grid container is styled using <code>grid-container</code> 
-                SASS mixin. To apply row styling use <code>row</code> SASS 
-                mixin.
-                </p>
-                <p>
-                Columns are applied using several subdivision SASS mixins. The 
-                subdivisions are 1/2, 1/3, 1/4, and 1/6. Matching mixins are 
-                <code>col2</code>, <code>col3</code>, <code>col4</code>, and
-                <code>col6</code>. Each of the mixins accepts a single numeric
-                argument that can be used to specify the number of columns to 
-                span. For example, <code>col4(3)</code> creates a single column
-                spanning 3 columns, each 1/4 width (spanning 9 out of 12
-                grid columns).
-                </p>
-                <p>
-                The grid system is <strong>flexible, but not
-                responsive</strong>. It is the developer's task to select 
-                different layouts depending on screen characteristics. For 
-                a typical usage, see the demo's source code, and refer to the
-                <a href="#responsive">Designing for mobile screens</a> section.
-                </p>
-            </div>
-        </div>
-
         <div class="section buttons">
             <div class="section-title">
                 <h2 id="buttons">Buttons</h2>
@@ -794,6 +688,112 @@ prog.updateValue(20, '-30db');</code></pre>
                         </div>
                     </%widgets:accordion>
                 </div>
+            </div>
+        </div>
+
+        <div class="section grid">
+            <div class="section-title">
+            <h2 id="grid">Grid system</h2>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-row cols1">
+                    ${cell('@include col1;')}
+                </div>
+
+                <div class="grid-row cols2">
+                    ${cell('@include col2;')}
+                    ${cell('@include col2;')}
+                </div>
+
+                <div class="grid-row cols4">
+                    ${cell('@include col4;')}
+                    ${cell('@include col4;')}
+                    ${cell('@include col4;')}
+                    ${cell('@include col4;')}
+                </div>
+
+                <div class="grid-row cols6">
+                    ${cell('@include col6;')}
+                    ${cell('@include col6;')}
+                    ${cell('@include col6;')}
+                    ${cell('@include col6;')}
+                    ${cell('@include col6;')}
+                    ${cell('@include col6;')}
+                </div>
+
+                <div class="grid-row cols-mixed">
+                    ${cell('@include col4;', cls='col col4')}
+                    ${cell('@include col6;', cls='col col6')}
+                    ${cell('@include col6;', cls='col col6')}
+                    ${cell('@include col6;', cls='col col6')}
+                    ${cell('@include col4;', cls='col col4')}
+                </div>
+
+                <div class="grid-row cols-nested">
+                    ${cell('@include col6(2);', cls='col col-left')}
+                    <div class="col col-right">
+                        <div class="content">
+                            <div class="nested-row">
+                                ${cell('@include col1;', cls='col')}
+                            </div>
+                            <div class="nested-row">
+                                ${cell('@include col1;', cls='col')}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="docs">
+                <h3>Using the grid</h3>
+                <p>
+                Outernet UI NG uses a flexible grid with 12 columns and 20px
+                guttter. 
+                </p>
+                <p>
+                The grid requires the following elements:
+                </p>
+                <ul class="bullets">
+                    <li>Grid container</li>
+                    <li>Rows</li>
+                    <li>Columns</li>
+                </ul>
+                <p>
+                The grid <strong>container groups grid rows</strong>. Grid
+                <strong>rows group grid columns</strong>. Main purpose of the
+                grid container is to regulate the vertical gutter between
+                adjacent containers. The grid rows adjusts the clearing below
+                the columns so that rows do not step on each other.
+                </p>
+                <p>
+                Grid elements are <strong>styled using mixins only</strong>.
+                There are no HTML tags or classes that are used as grid
+                elements by default.  This allows for a more semantic and
+                flexible layouting.
+                </p>
+                <p>
+                Grid container is styled using <code>grid-container</code> 
+                SASS mixin. To apply row styling use <code>row</code> SASS 
+                mixin.
+                </p>
+                <p>
+                Columns are applied using several subdivision SASS mixins. The 
+                subdivisions are 1/2, 1/3, 1/4, and 1/6. Matching mixins are 
+                <code>col2</code>, <code>col3</code>, <code>col4</code>, and
+                <code>col6</code>. Each of the mixins accepts a single numeric
+                argument that can be used to specify the number of columns to 
+                span. For example, <code>col4(3)</code> creates a single column
+                spanning 3 columns, each 1/4 width (spanning 9 out of 12
+                grid columns).
+                </p>
+                <p>
+                The grid system is <strong>flexible, but not
+                responsive</strong>. It is the developer's task to select 
+                different layouts depending on screen characteristics. For 
+                a typical usage, see the demo's source code, and refer to the
+                <a href="#responsive">Designing for mobile screens</a> section.
+                </p>
             </div>
         </div>
 
