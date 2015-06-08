@@ -275,6 +275,7 @@
   @include narrower-than($medium) { @include single-input-form-width(300px); }
   @include narrower-than($narrow) { @include single-input-form-width(120px); }
 }</code></pre>
+            </div>
 
             <h3>Inline single-input form</h3>
 
@@ -295,8 +296,6 @@
                 <code>single-input-form()</code> SASS mixin with a 
                 <code>single-input-inline()</code> SASS mixin.
                 </p>
-            </div>
-
             </div>
 
             <h3>Form controls</h3>
@@ -450,7 +449,9 @@
             <h2 id="tables">Tables</h2>
             </div>
 
-            <div class="tables-demo">
+            <h3>Regular table</h3>
+
+            <div class="tables-demo table-normal-demo">
                 <table>
                     <thead>
                         <tr>
@@ -493,9 +494,118 @@
                                 <a href="javascript:void(0)" class="table-link">Link</a>
                             </td>
                         </tr>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>
+                            <p>Data 2</p>
+                            </td>
+                            <td>No form</td>
+                            <td>No link</td>
+                        </tr>
                     </tbody>
                 </table>
+            </div>
 
+            <div class="docs">
+                <p>
+                Tables require no special markup to select the styling shown in
+                this guide. Please note, though, that tables have no built-in
+                responsive features. Look at <a href="#responsive">Designing for
+                mobile screens</a> section for more information.
+                </p>
+
+                <p>
+                Tables using the base Outernet UI NG stylesheet are laid out 
+                using <code>table-layout: fixed</code>. This means that the 
+                table columns' width is calculated using the widths of the 
+                very first row in the table. This increases the rendering 
+                performance (layout is not recalculated for every row 
+                downloaded), but requires the developer to fine-tune the 
+                widths of the columns in order to set the correct column width
+                for all rows. The helper SASS mixin 
+                <code>table-col-width($col, $width)</code> can be used for 
+                this purpose. This mixin is included in the table element
+                or one of the parents.
+                </p>
+
+                <pre><code>table {
+  @include table-col-width(1, 200px);  // 1st column is 200px wide
+  @include table-col-width(3, 20%);  // 3rd column is 20% wide
+}</code></pre>
+
+                <p>
+                We can also manually set the width by giving the first row's
+                <code>&lt;th&gt;</code> or <code>&lt;td&gt;</code> elements a
+                specific width (it has to be the first row). Usually we give
+                those cells a <code>class</code> attribute in order to select
+                them.
+                </p>
+            </div>
+
+            <h3>Flat table</h3>
+
+            <div class="table-demo table-flat-demo">
+                <table>
+                        <thead>
+                            <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Embedded form</th>
+                            <th>Embedded link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>
+                            <p>Data 2</p>
+                            </td>
+                            <td>
+                                <form>
+                                <input type="text" placeholder="Some text">
+                                <button>Click me</button>
+                                </form>
+                                <button class="delete">Delete</button>
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)" class="table-link">Link</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>
+                            <p>Data 2</p>
+                            </td>
+                            <td>
+                                <form>
+                                <input type="text" placeholder="Some text">
+                                <button>Click me</button>
+                                </form>
+                                <button class="delete">Delete</button>
+                            </td>
+                            <td>
+                                <a href="javascript:void(0)" class="table-link">Link</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Data 1</td>
+                            <td>
+                            <p>Data 2</p>
+                            </td>
+                            <td>No form</td>
+                            <td>No link</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="docs">
+                <p>
+                Flat tables use the normal table HTML markup, but lay the
+                table cells out as block elements. This style is selected 
+                using <code>table-flat()</code> SASS mixin. This style can be
+                useful for layout out tables for smaller screens.
+                </p>
             </div>
         </div>
 

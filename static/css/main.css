@@ -94,6 +94,56 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  * http://www.gnu.org/licenses/gpl.txt.
  */
 /**
+ * _forms.scss: form control definitions
+ * 
+ * Copyright 2015, Outernet Inc.
+ * Some rights reserved.
+ * 
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _colors.scss: color definitions
+ *
+ * Copyright 2014-2015, Outernet Inc.
+ * Some rights reserved.
+ *
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _fonts.scss: typography definitions
+ * 
+ * Copyright 2015, Outernet Inc.
+ * Some rights reserved.
+ * 
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _hdpi_images.scss: helpers for high-dpi display support
+ *
+ * Copyright 2014-2015, Outernet Inc.
+ * Some rights reserved.
+ *
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
+ * _tables.scss: table and table cell content styling
+ * 
+ * Copyright 2015, Outernet Inc.
+ * Some rights reserved.
+ * 
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/**
  * _media_query.scss: media query support
  *
  * Copyright 2014-2015, Outernet Inc.
@@ -1236,40 +1286,56 @@ select::-ms-expand {
  * COPYING file that comes with the source code, or
  * http://www.gnu.org/licenses/gpl.txt.
  */
-/* line 16, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+/**
+ * _tables.scss: table and table cell content styling
+ * 
+ * Copyright 2015, Outernet Inc.
+ * Some rights reserved.
+ * 
+ * This software is free software licensed under the terms of GPLv3. See
+ * COPYING file that comes with the source code, or
+ * http://www.gnu.org/licenses/gpl.txt.
+ */
+/* line 17, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
 table {
   width: 100%;
+  table-layout: fixed;
 }
-/* line 19, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
-table p {
-  margin: 0;
-}
-/* line 23, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+/* line 32, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_tables.scss */
 table th {
   font-weight: bold;
 }
-/* line 27, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
-table tr {
+/* line 36, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_tables.scss */
+table tbody tr {
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
 }
-/* line 31, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
-table tr:hover {
+/* line 39, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_tables.scss */
+table tbody tr:hover {
   background: #fafafa;
 }
-/* line 36, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+/* line 44, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_tables.scss */
 table th, table td {
   vertical-align: middle;
   padding-left: 25px;
   padding-right: 25px;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  height: 32px;
 }
-/* line 43, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+/* line 47, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_tables.scss */
 table th:nth-child(1), table td:nth-child(1) {
-  padding-left: 10px;
+  padding-left: 20px;
 }
-/* line 48, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+/* line 51, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_tables.scss */
+table th:last-child, table td:last-child {
+  padding-right: 20px;
+}
+/* line 20, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+table p {
+  margin: 0;
+}
+/* line 24, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
 table button, table .button {
   font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
   font-size: 16px;
@@ -1281,7 +1347,7 @@ table button, table .button {
   width: auto;
   min-width: 0;
 }
-/* line 53, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+/* line 29, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
 table input[type="text"],
 table input[type="numeric"],
 table input[type="email"],
@@ -1307,7 +1373,7 @@ table select:focus {
   font-size: 87.5%;
   line-height: 137.5%;
 }
-/* line 63, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
+/* line 39, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_tables.scss */
 table form {
   display: inline-block;
   border: 1px solid #dddddd;
@@ -1626,20 +1692,21 @@ body {
   font-size: 87.5%;
   line-height: 137.5%;
   color: #888888;
+  max-width: 600px;
 }
-/* line 54, ../../scss/main.scss */
+/* line 55, ../../scss/main.scss */
 .docs strong {
   color: #058120;
 }
 
-/* line 59, ../../scss/main.scss */
+/* line 60, ../../scss/main.scss */
 header {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 62, ../../scss/main.scss */
+/* line 63, ../../scss/main.scss */
 header h1 {
   font-size: 437.5%;
   line-height: 110%;
@@ -1652,7 +1719,7 @@ header h1 {
   width: 100%;
   clear: left;
 }
-/* line 69, ../../scss/main.scss */
+/* line 70, ../../scss/main.scss */
 .swatches .col {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1667,209 +1734,209 @@ header h1 {
   width: 16.6666666667%;
 }
 @media only screen and (max-width: 976px) {
-  /* line 69, ../../scss/main.scss */
+  /* line 70, ../../scss/main.scss */
   .swatches .col {
     width: 33.3333333333%;
   }
 }
 @media only screen and (max-width: 728px) {
-  /* line 69, ../../scss/main.scss */
+  /* line 70, ../../scss/main.scss */
   .swatches .col {
     width: 100%;
   }
 }
-/* line 71, ../../scss/main.scss */
+/* line 72, ../../scss/main.scss */
 .swatches li {
   margin-bottom: 1em;
   text-transform: uppercase;
 }
-/* line 75, ../../scss/main.scss */
+/* line 76, ../../scss/main.scss */
 .swatches li .swatch-label {
   font-size: 87.5%;
   line-height: 137.5%;
 }
-/* line 78, ../../scss/main.scss */
+/* line 79, ../../scss/main.scss */
 .swatches li .swatch-label.main {
   font-weight: bold;
 }
 
-/* line 85, ../../scss/main.scss */
+/* line 86, ../../scss/main.scss */
 .swatch {
   display: inline-block;
   width: 50px;
   height: 50px;
   vertical-align: top;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.sky25d {
   background-color: #28639b;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.sky100 {
   background-color: #3584cf;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.sky75 {
   background-color: #68a3db;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.sky50 {
   background-color: #9ac2e6;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.sky25 {
   background-color: #cddff3;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.sky10 {
   background-color: #ebf2fa;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.sky6 {
   background-color: #f3f8fc;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.ocean25d {
   background-color: #0f3a65;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.ocean100 {
   background-color: #134e87;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.ocean75 {
   background-color: #4f7aa5;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.ocean50 {
   background-color: #89a7c3;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.ocean25 {
   background-color: #c3d3e2;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.ocean10 {
   background-color: #e8edf3;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.ocean6 {
   background-color: #f0f5f8;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.sun25d {
   background-color: #a95902;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.sun100 {
   background-color: #e17502;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.sun75 {
   background-color: #ec973c;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.sun50 {
   background-color: #f1ba81;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.sun25 {
   background-color: #f7dcc1;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.sun10 {
   background-color: #fbf1e5;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.sun6 {
   background-color: #fef7f1;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.forest25d {
   background-color: #056118;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.forest100 {
   background-color: #058120;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.forest75 {
   background-color: #45a158;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.forest50 {
   background-color: #82c08f;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.forest25 {
   background-color: #c1dfc7;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.forest10 {
   background-color: #e7f3e9;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.forest6 {
   background-color: #f1f8f1;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.fire25d {
   background-color: #931010;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.fire100 {
   background-color: #c41414;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.fire75 {
   background-color: #d24f4f;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.fire50 {
   background-color: #e18988;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.fire25 {
   background-color: #f0c4c5;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.fire10 {
   background-color: #fae8e8;
 }
-/* line 93, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .swatch.fire6 {
   background-color: #fbf1f0;
 }
-/* line 99, ../../scss/main.scss */
+/* line 100, ../../scss/main.scss */
 .swatch.universe {
   background-color: #333333;
 }
-/* line 103, ../../scss/main.scss */
+/* line 104, ../../scss/main.scss */
 .swatch.base {
   background-color: #555555;
 }
-/* line 107, ../../scss/main.scss */
+/* line 108, ../../scss/main.scss */
 .swatch.sub {
   background-color: #888888;
 }
-/* line 111, ../../scss/main.scss */
+/* line 112, ../../scss/main.scss */
 .swatch.iconic {
   background-color: #bbbbbb;
 }
-/* line 115, ../../scss/main.scss */
+/* line 116, ../../scss/main.scss */
 .swatch.border {
   background-color: #dddddd;
 }
-/* line 119, ../../scss/main.scss */
+/* line 120, ../../scss/main.scss */
 .swatch.earth {
   background-color: #eeeeee;
 }
-/* line 123, ../../scss/main.scss */
+/* line 124, ../../scss/main.scss */
 .swatch.input {
   background-color: #fafafa;
 }
 
-/* line 131, ../../scss/main.scss */
+/* line 132, ../../scss/main.scss */
 .typography .section-title h2, .typography .section-title .note {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1884,54 +1951,54 @@ header h1 {
   width: 50%;
 }
 @media only screen and (max-width: 560px) {
-  /* line 131, ../../scss/main.scss */
+  /* line 132, ../../scss/main.scss */
   .typography .section-title h2, .typography .section-title .note {
     width: 100%;
   }
 }
-/* line 133, ../../scss/main.scss */
+/* line 134, ../../scss/main.scss */
 .typography .section-title .note {
   color: #bbbbbb;
   margin-top: 36px;
 }
-/* line 139, ../../scss/main.scss */
+/* line 140, ../../scss/main.scss */
 .typography .headings {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 143, ../../scss/main.scss */
+/* line 144, ../../scss/main.scss */
 .typography .heading-0 {
   font-size: 437.5%;
   line-height: 110%;
 }
-/* line 147, ../../scss/main.scss */
+/* line 148, ../../scss/main.scss */
 .typography .heading-1 {
   font-size: 175%;
   line-height: 125%;
 }
-/* line 151, ../../scss/main.scss */
+/* line 152, ../../scss/main.scss */
 .typography .heading-2 {
   font-size: 162.5%;
   line-height: 123%;
 }
-/* line 155, ../../scss/main.scss */
+/* line 156, ../../scss/main.scss */
 .typography .heading-3 {
   font-size: 150%;
   line-height: 125%;
 }
-/* line 159, ../../scss/main.scss */
+/* line 160, ../../scss/main.scss */
 .typography .heading-4 {
   font-size: 137.5%;
   line-height: 127%;
 }
-/* line 163, ../../scss/main.scss */
+/* line 164, ../../scss/main.scss */
 .typography .heading-5 {
   font-size: 125%;
   line-height: 130%;
 }
-/* line 167, ../../scss/main.scss */
+/* line 168, ../../scss/main.scss */
 .typography .heading-6 {
   font-size: 112.5%;
   line-height: 116%;
@@ -1943,7 +2010,7 @@ header h1 {
   width: 100%;
   clear: left;
 }
-/* line 174, ../../scss/main.scss */
+/* line 175, ../../scss/main.scss */
 .typography .body-text .regular, .typography .body-text .sub, .typography .body-text .code, .typography .body-text .misc {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1958,12 +2025,12 @@ header h1 {
   width: 50%;
 }
 @media only screen and (max-width: 560px) {
-  /* line 174, ../../scss/main.scss */
+  /* line 175, ../../scss/main.scss */
   .typography .body-text .regular, .typography .body-text .sub, .typography .body-text .code, .typography .body-text .misc {
     width: 100%;
   }
 }
-/* line 179, ../../scss/main.scss */
+/* line 180, ../../scss/main.scss */
 .typography .sub {
   font-size: 87.5%;
   line-height: 137.5%;
@@ -1976,11 +2043,11 @@ header h1 {
   width: 100%;
   clear: left;
 }
-/* line 187, ../../scss/main.scss */
+/* line 188, ../../scss/main.scss */
 .typography .links .docs {
   padding: 0;
 }
-/* line 191, ../../scss/main.scss */
+/* line 192, ../../scss/main.scss */
 .typography .links .link-type {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1995,18 +2062,18 @@ header h1 {
   width: 25%;
 }
 @media only screen and (max-width: 728px) {
-  /* line 191, ../../scss/main.scss */
+  /* line 192, ../../scss/main.scss */
   .typography .links .link-type {
     width: 50%;
   }
 }
 @media only screen and (max-width: 560px) {
-  /* line 191, ../../scss/main.scss */
+  /* line 192, ../../scss/main.scss */
   .typography .links .link-type {
     width: 100%;
   }
 }
-/* line 194, ../../scss/main.scss */
+/* line 195, ../../scss/main.scss */
 .typography .links .link-type .normal, .typography .links .link-type .visited {
   text-decoration: none;
   cursor: pointer;
@@ -2015,7 +2082,7 @@ header h1 {
 .typography .links .link-type .normal:hover, .typography .links .link-type .visited:hover {
   text-decoration: underline;
 }
-/* line 200, ../../scss/main.scss */
+/* line 201, ../../scss/main.scss */
 .typography .links .normal .normal {
   color: #3584cf;
 }
@@ -2023,11 +2090,11 @@ header h1 {
 .typography .links .normal .normal:visited {
   color: #28639b;
 }
-/* line 204, ../../scss/main.scss */
+/* line 205, ../../scss/main.scss */
 .typography .links .normal .visited {
   color: #28639b;
 }
-/* line 210, ../../scss/main.scss */
+/* line 211, ../../scss/main.scss */
 .typography .links .cta .normal {
   color: #e17502;
 }
@@ -2035,11 +2102,11 @@ header h1 {
 .typography .links .cta .normal:visited {
   color: #e17502;
 }
-/* line 214, ../../scss/main.scss */
+/* line 215, ../../scss/main.scss */
 .typography .links .cta .visited {
   color: #e17502;
 }
-/* line 220, ../../scss/main.scss */
+/* line 221, ../../scss/main.scss */
 .typography .links .confirm .normal {
   color: #058120;
 }
@@ -2047,11 +2114,11 @@ header h1 {
 .typography .links .confirm .normal:visited {
   color: #058120;
 }
-/* line 224, ../../scss/main.scss */
+/* line 225, ../../scss/main.scss */
 .typography .links .confirm .visited {
   color: #058120;
 }
-/* line 230, ../../scss/main.scss */
+/* line 231, ../../scss/main.scss */
 .typography .links .delete .normal {
   color: #c41414;
 }
@@ -2059,12 +2126,12 @@ header h1 {
 .typography .links .delete .normal:visited {
   color: #c41414;
 }
-/* line 234, ../../scss/main.scss */
+/* line 235, ../../scss/main.scss */
 .typography .links .delete .visited {
   color: #c41414;
 }
 
-/* line 242, ../../scss/main.scss */
+/* line 243, ../../scss/main.scss */
 .forms h3 {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2078,7 +2145,7 @@ header h1 {
   width: 100%;
   clear: left;
 }
-/* line 249, ../../scss/main.scss */
+/* line 250, ../../scss/main.scss */
 .forms .fields .col {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2093,24 +2160,24 @@ header h1 {
   width: 50%;
 }
 @media only screen and (max-width: 560px) {
-  /* line 249, ../../scss/main.scss */
+  /* line 250, ../../scss/main.scss */
   .forms .fields .col {
     width: 100%;
   }
 }
-/* line 254, ../../scss/main.scss */
+/* line 255, ../../scss/main.scss */
 .forms .single-input, .forms .single-input-inline {
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
   margin-bottom: 1em;
   background: #fafafa;
 }
-/* line 261, ../../scss/main.scss */
+/* line 262, ../../scss/main.scss */
 .forms .single-input {
   padding: 1em 0;
   text-align: center;
 }
-/* line 265, ../../scss/main.scss */
+/* line 266, ../../scss/main.scss */
 .forms .single-input .search {
   display: inline-block;
   vertical-align: middle;
@@ -2125,7 +2192,7 @@ header h1 {
   text-transform: capitalize;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
-  /* line 265, ../../scss/main.scss */
+  /* line 266, ../../scss/main.scss */
   .forms .single-input .search {
     background-image: url('../img/icons/2x-sc18f287ed7.png');
     background-position: 0 -1182px;
@@ -2135,7 +2202,7 @@ header h1 {
     background-size: 25px 1317px;
   }
 }
-/* line 270, ../../scss/main.scss */
+/* line 271, ../../scss/main.scss */
 .forms .single-input form {
   display: inline-block;
   border: 1px solid #dddddd;
@@ -2219,12 +2286,12 @@ header h1 {
     width: 120px;
   }
 }
-/* line 287, ../../scss/main.scss */
+/* line 288, ../../scss/main.scss */
 .forms .single-input-inline {
   padding: 0.5em 20px;
   text-align: right;
 }
-/* line 291, ../../scss/main.scss */
+/* line 292, ../../scss/main.scss */
 .forms .single-input-inline form {
   display: inline-block;
   border: 1px solid #dddddd;
@@ -2330,11 +2397,11 @@ header h1 {
   line-height: 137.5%;
   line-height: 100%;
 }
-/* line 296, ../../scss/main.scss */
+/* line 297, ../../scss/main.scss */
 .forms .field {
   margin-bottom: 1.25em;
 }
-/* line 300, ../../scss/main.scss */
+/* line 301, ../../scss/main.scss */
 .forms .form-input-custom-icon input {
   padding-right: 50px;
   background-position: right 12.5px top 50%;
@@ -2342,7 +2409,7 @@ header h1 {
   background-image: url('../img/icons/1x/lock.png?1433590418');
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
-  /* line 300, ../../scss/main.scss */
+  /* line 301, ../../scss/main.scss */
   .forms .form-input-custom-icon input {
     background-image: url('../img/icons/2x/lock.png?1433590427');
     -moz-background-size: 25px, 25px;
@@ -2352,14 +2419,14 @@ header h1 {
   }
 }
 
-/* line 306, ../../scss/main.scss */
+/* line 307, ../../scss/main.scss */
 .grid .intro {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 310, ../../scss/main.scss */
+/* line 311, ../../scss/main.scss */
 .grid .grid-container {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2374,17 +2441,17 @@ header h1 {
   width: 100%;
   clear: left;
 }
-/* line 318, ../../scss/main.scss */
+/* line 319, ../../scss/main.scss */
 .grid .grid-row .col {
   border: 1px solid #f7dcc1;
   text-align: center;
 }
-/* line 323, ../../scss/main.scss */
+/* line 324, ../../scss/main.scss */
 .grid .grid-row .content {
   background: #eeeeee;
   min-height: 50px;
 }
-/* line 329, ../../scss/main.scss */
+/* line 330, ../../scss/main.scss */
 .grid .cols1 .col {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2398,7 +2465,7 @@ header h1 {
   transition: width 0.5s;
   width: 100%;
 }
-/* line 333, ../../scss/main.scss */
+/* line 334, ../../scss/main.scss */
 .grid .cols2 .col {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2412,7 +2479,7 @@ header h1 {
   transition: width 0.5s;
   width: 50%;
 }
-/* line 337, ../../scss/main.scss */
+/* line 338, ../../scss/main.scss */
 .grid .cols4 .col {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2426,7 +2493,7 @@ header h1 {
   transition: width 0.5s;
   width: 25%;
 }
-/* line 341, ../../scss/main.scss */
+/* line 342, ../../scss/main.scss */
 .grid .cols6 .col {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2440,7 +2507,7 @@ header h1 {
   transition: width 0.5s;
   width: 16.6666666667%;
 }
-/* line 346, ../../scss/main.scss */
+/* line 347, ../../scss/main.scss */
 .grid .cols-mixed .col4 {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2454,7 +2521,7 @@ header h1 {
   transition: width 0.5s;
   width: 25%;
 }
-/* line 350, ../../scss/main.scss */
+/* line 351, ../../scss/main.scss */
 .grid .cols-mixed .col6 {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2468,7 +2535,7 @@ header h1 {
   transition: width 0.5s;
   width: 16.6666666667%;
 }
-/* line 356, ../../scss/main.scss */
+/* line 357, ../../scss/main.scss */
 .grid .cols-nested .col-left {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2482,7 +2549,7 @@ header h1 {
   transition: width 0.5s;
   width: 33.3333333333%;
 }
-/* line 360, ../../scss/main.scss */
+/* line 361, ../../scss/main.scss */
 .grid .cols-nested .col-right {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2503,7 +2570,7 @@ header h1 {
   width: 100%;
   clear: left;
 }
-/* line 367, ../../scss/main.scss */
+/* line 368, ../../scss/main.scss */
 .grid .cols-nested .col-right .col {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2518,35 +2585,35 @@ header h1 {
   width: 100%;
 }
 
-/* line 375, ../../scss/main.scss */
+/* line 376, ../../scss/main.scss */
 .buttons h3.subsection {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 379, ../../scss/main.scss */
+/* line 380, ../../scss/main.scss */
 .buttons .buttons-demo {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 383, ../../scss/main.scss */
+/* line 384, ../../scss/main.scss */
 .buttons .buttons-reverse {
   background: #3584cf;
   padding: 10px;
 }
-/* line 387, ../../scss/main.scss */
+/* line 388, ../../scss/main.scss */
 .buttons .buttons-reverse .docs {
   color: #ebf2fa;
 }
-/* line 390, ../../scss/main.scss */
+/* line 391, ../../scss/main.scss */
 .buttons .buttons-reverse .docs code {
   color: #555555;
 }
 
-/* line 398, ../../scss/main.scss */
+/* line 399, ../../scss/main.scss */
 .widgets .widget {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2764,7 +2831,7 @@ header h1 {
   width: 100%;
   clear: left;
 }
-/* line 409, ../../scss/main.scss */
+/* line 410, ../../scss/main.scss */
 .widgets .accordion .col {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2779,8 +2846,47 @@ header h1 {
   width: 50%;
 }
 @media only screen and (max-width: 560px) {
-  /* line 409, ../../scss/main.scss */
+  /* line 410, ../../scss/main.scss */
   .widgets .accordion .col {
     width: 100%;
   }
+}
+
+/* line 417, ../../scss/main.scss */
+.tables .table-demo, .tables h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 85, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_tables.scss */
+.tables .table-normal-demo table th:nth-of-type(3) {
+  width: 320px;
+}
+/* line 89, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_tables.scss */
+.tables .table-normal-demo table td:nth-of-type(3) {
+  width: 320px;
+}
+/* line 58, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_tables.scss */
+.tables .table-flat-demo table thead {
+  display: none;
+}
+/* line 62, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_tables.scss */
+.tables .table-flat-demo table tr {
+  display: block;
+  padding-top: 0.5em;
+  border-bottom: 0;
+}
+/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_tables.scss */
+.tables .table-flat-demo table tr:last-child {
+  border-bottom: 1px solid #dddddd;
+}
+/* line 73, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_tables.scss */
+.tables .table-flat-demo table tbody tr:hover {
+  background: transparent;
+}
+/* line 78, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_tables.scss */
+.tables .table-flat-demo table th, .tables .table-flat-demo table td {
+  display: block;
+  padding: 0 0 0.5em;
 }
