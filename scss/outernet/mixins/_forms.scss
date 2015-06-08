@@ -54,6 +54,7 @@ $form-animation-delay: 0.3s;
   background-color: $background;
   border-color: $border;
   outline: none;  // removes boxy outline when field is focused in Chrome
+  @include regular;
   @include transition(
     color $form-animation-delay, 
     background-color $form-animation-delay, 
