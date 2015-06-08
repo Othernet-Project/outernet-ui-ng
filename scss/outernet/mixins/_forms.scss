@@ -50,6 +50,13 @@ $form-animation-delay: 0.3s;
   @include box-sizing(border-box);
 }
 
+@mixin input-geometry-s {
+  padding: 2px $form-text-offset / 2 3px;
+  @include border-radius(3px);
+  width: auto;
+  max-width: 100%;
+}
+
 @mixin input-styling($text, $background, $border) {
   color: $text;
   background-color: $background;
@@ -60,6 +67,14 @@ $form-animation-delay: 0.3s;
     color $form-animation-delay, 
     background-color $form-animation-delay, 
     border-color $form-animation-delay);
+}
+
+@mixin input-styling-s {
+  @include sub;
+
+  &:focus {
+    @include sub;
+  }
 }
 
 @mixin input-icon($name) {
@@ -159,3 +174,82 @@ $form-animation-delay: 0.3s;
   margin-bottom: 1.25em;
 }
 
+@mixin single-input-form-width($width: 200px) {
+  input[type="text"],
+  input[type="numeric"],
+  input[type="email"],
+  input[type="file"],
+  input[type="password"] {
+    width: $width;
+  }
+}
+
+@mixin single-input-form-container($background: $input) {
+  display: inline-block;
+  border: 1px solid $border;
+  background: $background;
+  @include border-radius(1000px);  // fully rounded
+  padding: 2px;
+  position: relative;
+  white-space: nowrap;
+}
+
+@mixin single-input-form($width: 200px, $background: $input, $focus: $sky6) {
+  @include single-input-form-container($background);
+
+  input[type="text"],
+  input[type="numeric"],
+  input[type="email"],
+  input[type="file"],
+  input[type="password"] {
+    display: inline-block;
+    max-width: none;
+    border: 0;
+    background-color: transparent;
+    vertical-align: middle;
+    @include border-radius(1000px); // fully rounded
+
+    &:focus {
+      background-color: $focus;
+    }
+  }
+
+  @include single-input-form-width($width);
+
+
+  label {
+    display: inline-block;
+    padding-bottom: 0;
+    margin-right: 0.5em;
+    vertical-align: middle;
+  }
+
+  button {
+    display: inline-block;
+  }
+}
+
+@mixin single-input-inline($width: 100px, $background: $input, $focus: $sky6) {
+  @include single-input-form($width, $background, $focus);
+
+  label {
+    @include sub;
+  }
+
+  input[type="text"],
+  input[type="numeric"],
+  input[type="email"],
+  input[type="file"],
+  input[type="password"] {
+    @include input-geometry-s;
+    @include input-styling-s;
+    @include border-radius(1000px); // fully rounded
+  }
+
+  @include single-input-form-width($width);
+
+  button {
+    @include button-geometry-s;
+    @include button-label-s;
+  }
+}
