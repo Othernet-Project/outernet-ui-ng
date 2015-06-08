@@ -112,10 +112,15 @@
 
         &:hover {
           background: $white;
+
+          span.accordion-icon {
+            @include icon(accordion_close_sky);
+          }
         }
 
         a {
           cursor: default;
+          color: $base;
 
           &:hover {
             text-decoration: none;
