@@ -138,9 +138,9 @@ $form-animation-delay: 0.3s;
 
 @mixin checkbox-checked-styling {
   @include input-positive-styling;
-  background-image: image-url('icons/1x/checkmark.png');
   background-position: center center;
   background-repeat: no-repeat;
+  @include with-hdpi('icons', 'checkmark');
 }
 
 @mixin checkbox-active-styling {
@@ -148,9 +148,9 @@ $form-animation-delay: 0.3s;
 }
 
 @mixin checkbox-active-checked-styling {
-  background-image: image-url('icons/1x/checkmark_active.png');
   background-position: center center;
   background-repeat: no-repeat;
+  @include with-hdpi('icons', 'checkmark_active');
 }
 
 @mixin input-container {
