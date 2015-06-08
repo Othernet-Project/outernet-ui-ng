@@ -50,6 +50,7 @@ body {
   @include simple-row;
   @include sub;
   color: $sub;
+  max-width: 600px;
 
   strong {
     color: $forest;
@@ -413,5 +414,17 @@ header {
 }
 
 .tables {
-  
+  .table-demo, h3 {
+    @include simple-row;
+  }
+
+  .table-normal-demo {
+    table {
+      @include table-col-width(3, 320px);
+    }
+  }
+
+  .table-flat-demo table {
+    @include table-flat;
+  }
 }
