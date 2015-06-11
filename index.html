@@ -14,7 +14,34 @@
         <link rel="stylesheet" href="static/css/main.css">
     </head>
     </body>
-        <header>
+        <header class="menu">
+            <div class="inner">
+                <div class="menu-subblock">
+                    <div class="logo">Outernet</div>
+                </div>
+
+                <div class="menu-block-right">
+                    <nav class="sections menu-subblock" id="nav">
+                        <a href="/1">Home</a>
+                        <a href="/1">Apps</a>
+                        <a href="/1">Files</a>
+                        <a href="/1"><span class="icon settings"></span> <span class="phone-only">Settings</span></a>
+                    </nav>
+
+                    <div class="notifications menu-subblock">
+                        <a class="icon" href="/notifications"><span class="label">24</span></a>
+                    </div>
+
+                    <div class="hamburger">
+                        <a href="#nav">
+                            Site menu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="section intro">
             <h1>OUTERNET UI NG</h1>
             <p>
             This page represents the style guide for Outernet UI elements. When
@@ -24,7 +51,7 @@
             <p>
             Status of this guide is: DRAFT
             </p>
-        </header>
+        </div>
 
         <div class="section colors" id="colors">
             <div class="section-title">
@@ -398,7 +425,7 @@
                 <p>
                 H0 style is reserved for special cases, and it is not, by
                 default, applied to any concrete element. To select this style,
-                use the <code>header-0()</code> SASS mixin. Please refer to
+                use the <code>heading-0()</code> SASS mixin. Please refer to
                 each project's design documentation for correct application. 
                 It may be used in cases where H1 should be emphasized more than 
                 usual, or for page title where H1 is used for some other 
@@ -726,7 +753,7 @@
                                 <input type="text" placeholder="Some text">
                                 <button>Click me</button>
                                 </form>
-                                <button class="delete">Delete</button>
+                                <button class="delete secondary">Delete</button>
                             </td>
                             <td>
                                 <a href="javascript:void(0)" class="table-link">Link</a>
@@ -742,7 +769,7 @@
                                 <input type="text" placeholder="Some text">
                                 <button>Click me</button>
                                 </form>
-                                <button class="delete">Delete</button>
+                                <button class="delete secondary">Delete</button>
                             </td>
                             <td>
                                 <a href="javascript:void(0)" class="table-link">Link</a>
@@ -819,7 +846,7 @@
                                 <input type="text" placeholder="Some text">
                                 <button>Click me</button>
                                 </form>
-                                <button class="delete">Delete</button>
+                                <button class="delete secondary">Delete</button>
                             </td>
                             <td>
                                 <a href="javascript:void(0)" class="table-link">Link</a>
@@ -835,7 +862,7 @@
                                 <input type="text" placeholder="Some text">
                                 <button>Click me</button>
                                 </form>
-                                <button class="delete">Delete</button>
+                                <button class="delete secondary">Delete</button>
                             </td>
                             <td>
                                 <a href="javascript:void(0)" class="table-link">Link</a>
@@ -1556,6 +1583,7 @@ prog.updateValue(20, '-30db');</code></pre>
         <script src="static/js/widgets/progress.js"></script>
         <script src="static/js/widgets/accordion.js"></script>
         <script src="static/js/widgets/forms.js"></script>
+        <script src="static/js/widgets/menu.js"></script>
         <script type="text/javascript">
             var progress = $('#progress').progress();
 
