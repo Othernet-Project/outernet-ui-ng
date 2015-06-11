@@ -26,15 +26,43 @@ body {
   background: image-url('bg.png');
 }
 
-.section, header {
-  max-width: 1200px;
+.section {
   margin: 0 auto;
   background: $white;
   margin-bottom: $base-size;
 }
 
+header {
+  .logo {
+    display: inline-block;
+    @include hide-text;
+    @include icon(outernet_logo, yes);
+  }
+
+  .notifications {
+    .icon {
+      @include icon-button(alert);
+    }
+  }
+
+  .settings {
+    @include icon-button(settings);
+  }
+}
+
 .section {
   @include grid-container;
+
+  &.intro {
+    h1 {
+      @include heading-0;
+      @include simple-row;
+    }
+
+    p {
+      @include simple-row;
+    }
+  }
 
   .section-title {
     @include row;
