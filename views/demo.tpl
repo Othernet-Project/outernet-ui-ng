@@ -273,7 +273,7 @@
                     <span class="icon search">Search:</span>
                     </label>
                     <input type="text" id="input-single" placeholder="Search the library">
-                    <button>Search</button>
+                    <button class="primary">Search</button>
                 </form>
             </div>
 
@@ -310,7 +310,7 @@
             <div class="fields single-input-inline">
                 <form>
                     <input type="text" id="input-single" placeholder="keywords...">
-                    <button>Search</button>
+                    <button class="primary">Search</button>
                 </form>
             </div>
 
@@ -412,13 +412,13 @@
                 </div>
                 <div class="field-clear-demo col">
                     <p>
-                    <button id="clear-negative-error" class="secondary">Clear negative field error</button>
+                    <button id="clear-negative-error">Clear negative field error</button>
                     <span class="docs">
                     Field errors can be cleared using JavaScript. The jQuery plugin that deals with forms is defined in <code>widgets/forms.js</code>. Include this module and call <code>$.fn.clearError()</code> method on the field's container element.
                     </span>
                     </p>
                     <p>
-                    <button id="clear-errors" class="secondary">Clear all errors</button>
+                    <button id="clear-errors">Clear all errors</button>
                     <span class="docs">
                     The <code>$.fn.clearError()</code> can also be called on the form element (or any element that contains all fields) to clear errors for all fields.
                     </span>
@@ -648,21 +648,21 @@
             <div class="buttons-demo">
                 <div class="buttons-normal">
                     <p>
-                    <button>Action</button>
-                    <button class="secondary">Secondary</button>
+                    <button class="primary">Action</button> <a class="button primary">Button link</a>
+                    <button>Secondary</button> <a class="button">Button link secondary</a>
                     <span class="docs">
                     Action button initiates a new action. This button is used
                     to signify <strong>user actions that have no special
                     emphasis</strong>.  When multiple buttons are present in a
                     button group, then the secondary style is used. Action
-                    button is the default style for all buttons. Secondary
-                    style is selected using <code>secondary</code> class.
+                    button is the default style for all buttons. Primary
+                    style is selected using <code>primary</code> class.
                     </span>
                     </p>
 
                     <p>
-                    <button class="delete">Delete</button>
-                    <button class="delete secondary">Delete secondary</button>
+                    <button class="delete primary">Delete</button>
+                    <button class="delete">Delete secondary</button>
                     <span class="docs">
                     Delete buttons are used for action that <strong>negate
                     previous actions or have irreversible destructive
@@ -671,8 +671,8 @@
                     significant action, secondary style is used. This also
                     applies to cases where there are multiple delete actions in
                     a single group. Delete style is selected using
-                    <code>delete</code> class, and its secondary counterpart is
-                    selected using <code>delete secondary</code> class.
+                    <code>delete</code> class, and its primary style is
+                    selected using <code>delete primary</code> class.
                     </span>
                     </p>
 
@@ -689,8 +689,8 @@
                     </p>
 
                     <p>
-                    <button class="cta">CTA</button>
-                    <button class="cta secondary">CTA secondary</button>
+                    <button class="cta primary">CTA</button>
+                    <button class="cta">CTA secondary</button>
                     <span class="docs">
                     CTA buttons are used to call user's attention to actions
                     that reveal new sections of a site, usually containing an
@@ -699,14 +699,14 @@
                     one can be significant, and others must use the secondary
                     style.  CTA buttons must not appear in the same group as
                     other button types. CTA button style is selected using
-                    <code>cta</code> class, and its secondary counterpart by
-                    using <code>cta secondary</code> class.
+                    <code>cta</code> class, and its primary counterpart by
+                    using <code>cta primary</code> class.
                     </span>
                     </p>
 
                     <p>
-                    <button disabled>Disabled</button>
-                    <button class="secondary" disabled>Disabled secondary</button>
+                    <button disabled class="primary">Disabled</button>
+                    <button disabled>Disabled secondary</button>
                     <span class="docs">
                     Buttons that <strong>cannot be used at a given
                     moment</strong> (e.g., conditions for performing the action
@@ -727,8 +727,8 @@
             <div class="buttons-demo">
                 <div class="buttons-small">
                     <p>
-                    <button class="small">Action</button>
-                    <button class="small secondary">Action secondary</button>
+                    <button class="small primary">Action</button>
+                    <button class="small">Action secondary</button>
                     <span class="docs">
                     Small buttons are used as part of more complex widgets 
                     <strong>where space constraints do not allow placement of 
@@ -741,15 +741,15 @@
                     </span>
                     </p>
                     <p>
-                    <button class="delete small">Delete</button>
-                    <button class="delete small secondary">Delete secondary</button>
+                    <button class="delete small primary">Delete</button>
+                    <button class="delete small">Delete secondary</button>
                     </p>
                     <p>
                     <button class="confirm small">Confirm</button>
                     </p>
                     <p>
-                    <button class="small" disabled>Disabled</button>
-                    <button class="small secondary" disabled>Disabled secondary</button>
+                    <button class="small primary" disabled>Disabled</button>
+                    <button class="small" disabled>Disabled secondary</button>
                     </p>
                 </div>
             </div>
@@ -759,8 +759,8 @@
             <div class="buttons-demo">
                 <div class="buttons-reverse">
                     <p>
-                    <button class="cta reverse">CTA</button>
-                    <button class="cta reverse secondary">Secondary</button>
+                    <button class="cta reverse primary">CTA</button>
+                    <button class="cta reverse">Secondary</button>
                     <span class="docs">
                     Reverse video buttons are typically used on surfaces that
                     are delibrately designed to stand out from the rest of the
@@ -768,8 +768,8 @@
                     only CTA buttons. The secondary style is used if there is
                     more than one button in the same button group. Reverse
                     video CTA button is selected by using <code>cta
-                    reverse</code> class, and the secondary style by using
-                    <code>cta reverse secondary</code> style.
+                    reverse</code> class, and the primary style by using
+                    <code>cta reverse primary</code> style.
                     </span>
                     </p>
                 </div>
