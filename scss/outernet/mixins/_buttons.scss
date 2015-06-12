@@ -86,17 +86,12 @@ $default-button-style: outline;
   }
 }
 
-@mixin button-label-base {
-  @include regular;
-}
-
 @mixin button-label {
-  @include button-label-base;
+  font-size: $base-size;
   line-height: 100%;
 }
 
 @mixin button-label-s {
-  @include button-label-base;
   @include sub;
   line-height: 100%;
 }
@@ -105,8 +100,9 @@ $default-button-style: outline;
   padding: 0.6em 20px;
   width: auto;
   min-width: 170px;
-  border-radius: 100px;
+  height: 40px;
   @include border-radius(100px);  // make button fully rounded
+  @include box-sizing(border-box);
 
   @include narrower-than(320px) {
     width: 100%;
@@ -117,6 +113,7 @@ $default-button-style: outline;
   padding: 0.2em 20px;
   width: auto;
   min-width: 0;
+  height: 24px;
 }
 
 // Default buttons
