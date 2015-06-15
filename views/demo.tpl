@@ -728,7 +728,9 @@
                 <div class="buttons-small">
                     <p>
                     <button class="small primary">Action</button>
+                    <a href="#" class="button small primary">Button link</a>
                     <button class="small">Action secondary</button>
+                    <a href="#" class="button small">Button link secondary</a>
                     <span class="docs">
                     Small buttons are used as part of more complex widgets 
                     <strong>where space constraints do not allow placement of 
@@ -1158,7 +1160,16 @@ prog.updateValue(20, '-30db');</code></pre>
             </div>
         </div>
 
+        <script type="text/template" id="menu">
+            <nav class="alt-menu">
+                <a href="/1">Home</a>
+                <a href="/1">Apps</a>
+                <a href="/1">Files</a>
+                <a href="/1"><span class="icon settings"></span> <span class="phone-only">Settings</span></a>
+            </nav>
+        </script>
         <script src="/static/js/jquery.js"></script>
+        <script src="/static/js/templates.js"></script>
         <script src="/static/js/widgets/progress.js"></script>
         <script src="/static/js/widgets/accordion.js"></script>
         <script src="/static/js/widgets/forms.js"></script>
