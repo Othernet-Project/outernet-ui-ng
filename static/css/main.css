@@ -367,9 +367,10 @@ button,
   cursor: pointer;
   vertical-align: middle;
   border: 1px solid transparent;
+  line-height: inherit;
+  font-family: Arial, Helvetica, "Liberation Sans", sans-serif;
   font-size: 16px;
   line-height: 100%;
-  padding: 0.6em 20px;
   width: auto;
   min-width: 170px;
   height: 40px;
@@ -383,6 +384,12 @@ button,
   background-color: transparent;
   border-color: #3584cf;
 }
+/* line 27, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+button ::-moz-focus-inner,
+.button ::-moz-focus-inner {
+  padding: 0 !important;
+  border: none !important;
+}
 @media only screen and (max-width: 320px) {
   /* line 14, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
   button,
@@ -390,12 +397,12 @@ button,
     width: 100%;
   }
 }
-/* line 42, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 48, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button:visited,
 .button:visited {
   color: #3584cf;
 }
-/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 73, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button:focus, button:hover,
 .button:focus,
 .button:hover {
@@ -410,7 +417,6 @@ button.small,
   font-size: 87.5%;
   line-height: 137.5%;
   line-height: 100%;
-  padding: 0.2em 20px;
   width: auto;
   min-width: 0;
   height: 24px;
@@ -422,12 +428,12 @@ button.primary,
   background-color: #3584cf;
   border-color: #3584cf;
 }
-/* line 60, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 66, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.primary:visited,
 .button.primary:visited {
   color: #ffffff;
 }
-/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 73, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.primary:focus, button.primary:hover,
 .button.primary:focus,
 .button.primary:hover {
@@ -443,12 +449,12 @@ button.cta,
   background-color: transparent;
   border-color: #e17502;
 }
-/* line 42, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 48, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.cta:visited,
 .button.cta:visited {
   color: #e17502;
 }
-/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 73, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.cta:focus, button.cta:hover,
 .button.cta:focus,
 .button.cta:hover {
@@ -464,12 +470,12 @@ button.cta.primary,
   background-color: #e17502;
   border-color: #e17502;
 }
-/* line 60, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 66, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.cta.primary:visited,
 .button.cta.primary:visited {
   color: #ffffff;
 }
-/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 73, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.cta.primary:focus, button.cta.primary:hover,
 .button.cta.primary:focus,
 .button.cta.primary:hover {
@@ -485,12 +491,12 @@ button.delete,
   background-color: transparent;
   border-color: #c41414;
 }
-/* line 42, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 48, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.delete:visited,
 .button.delete:visited {
   color: #c41414;
 }
-/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 73, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.delete:focus, button.delete:hover,
 .button.delete:focus,
 .button.delete:hover {
@@ -506,12 +512,12 @@ button.delete.primary,
   background-color: #c41414;
   border-color: #c41414;
 }
-/* line 60, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 66, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.delete.primary:visited,
 .button.delete.primary:visited {
   color: #ffffff;
 }
-/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 73, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.delete.primary:focus, button.delete.primary:hover,
 .button.delete.primary:focus,
 .button.delete.primary:hover {
@@ -527,12 +533,12 @@ button.confirm,
   background-color: #058120;
   border-color: #058120;
 }
-/* line 60, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 66, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.confirm:visited,
 .button.confirm:visited {
   color: #ffffff;
 }
-/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 73, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.confirm:focus, button.confirm:hover,
 .button.confirm:focus,
 .button.confirm:hover {
@@ -548,12 +554,12 @@ button.reverse,
   background-color: transparent;
   border-color: #ffffff;
 }
-/* line 51, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 57, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.reverse:visited,
 .button.reverse:visited {
   color: #ffffff;
 }
-/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 73, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.reverse:focus, button.reverse:hover,
 .button.reverse:focus,
 .button.reverse:hover {
@@ -570,12 +576,12 @@ button.reverse.primary,
   background-color: #ffffff;
   border-color: #ffffff;
 }
-/* line 33, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 39, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.reverse.primary:visited,
 .button.reverse.primary:visited {
   color: #3584cf;
 }
-/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 73, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.reverse.primary:focus, button.reverse.primary:hover,
 .button.reverse.primary:focus,
 .button.reverse.primary:hover {
@@ -589,12 +595,12 @@ button.reverse.cta,
   background-color: transparent;
   border-color: #ffffff;
 }
-/* line 51, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 57, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.reverse.cta:visited,
 .button.reverse.cta:visited {
   color: #ffffff;
 }
-/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 73, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.reverse.cta:focus, button.reverse.cta:hover,
 .button.reverse.cta:focus,
 .button.reverse.cta:hover {
@@ -611,12 +617,12 @@ button.reverse.cta.primary,
   background-color: #ffffff;
   border-color: #ffffff;
 }
-/* line 33, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 39, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.reverse.cta.primary:visited,
 .button.reverse.cta.primary:visited {
   color: #e17502;
 }
-/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 73, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.reverse.cta.primary:focus, button.reverse.cta.primary:hover,
 .button.reverse.cta.primary:focus,
 .button.reverse.cta.primary:hover {
@@ -630,12 +636,12 @@ button.reverse.delete,
   background-color: transparent;
   border-color: #ffffff;
 }
-/* line 51, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 57, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.reverse.delete:visited,
 .button.reverse.delete:visited {
   color: #ffffff;
 }
-/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 73, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.reverse.delete:focus, button.reverse.delete:hover,
 .button.reverse.delete:focus,
 .button.reverse.delete:hover {
@@ -652,12 +658,12 @@ button.reverse.delete.primary,
   background-color: #ffffff;
   border-color: #ffffff;
 }
-/* line 33, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 39, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.reverse.delete.primary:visited,
 .button.reverse.delete.primary:visited {
   color: #c41414;
 }
-/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 73, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.reverse.delete.primary:focus, button.reverse.delete.primary:hover,
 .button.reverse.delete.primary:focus,
 .button.reverse.delete.primary:hover {
@@ -671,12 +677,12 @@ button.reverse.confirm,
   background-color: transparent;
   border-color: #ffffff;
 }
-/* line 51, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 57, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.reverse.confirm:visited,
 .button.reverse.confirm:visited {
   color: #ffffff;
 }
-/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 73, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.reverse.confirm:focus, button.reverse.confirm:hover,
 .button.reverse.confirm:focus,
 .button.reverse.confirm:hover {
@@ -693,12 +699,12 @@ button.reverse.confirm.primary,
   background-color: #ffffff;
   border-color: #ffffff;
 }
-/* line 33, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 39, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.reverse.confirm.primary:visited,
 .button.reverse.confirm.primary:visited {
   color: #058120;
 }
-/* line 67, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 73, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.reverse.confirm.primary:focus, button.reverse.confirm.primary:hover,
 .button.reverse.confirm.primary:focus,
 .button.reverse.confirm.primary:hover {
@@ -714,7 +720,7 @@ button.reverse[disabled], button.reverse.disabled,
   border-color: #ffffff;
   opacity: 0.5;
 }
-/* line 51, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 57, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button.reverse[disabled]:visited, button.reverse.disabled:visited,
 .button.reverse[disabled]:visited,
 .button.reverse.disabled:visited {
@@ -729,7 +735,7 @@ button[disabled], button.disabled,
   border-color: #bbbbbb;
   cursor: default;
 }
-/* line 42, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 48, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button[disabled]:visited, button.disabled:visited,
 .button[disabled]:visited,
 .button.disabled:visited {
@@ -743,11 +749,20 @@ button[disabled].primary, button.disabled.primary,
   background-color: #bbbbbb;
   border-color: #bbbbbb;
 }
-/* line 60, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
+/* line 66, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_buttons.scss */
 button[disabled].primary:visited, button.disabled.primary:visited,
 .button[disabled].primary:visited,
 .button.disabled.primary:visited {
   color: #ffffff;
+}
+
+/* line 96, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+a.button {
+  padding: 11px 20px 0;
+}
+/* line 99, /home/foxbunny/code/outernet-ui-ng/scss/outernet/partial/_buttons.scss */
+a.button.small {
+  padding: 4px 20px 0;
 }
 
 /**
@@ -1446,7 +1461,6 @@ table button, table .button {
   font-size: 87.5%;
   line-height: 137.5%;
   line-height: 100%;
-  padding: 0.2em 20px;
   width: auto;
   min-width: 0;
   height: 24px;
@@ -1573,7 +1587,6 @@ table form input[type="password"] {
 }
 /* line 251, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
 table form button {
-  padding: 0.2em 20px;
   width: auto;
   min-width: 0;
   height: 24px;
@@ -1792,7 +1805,7 @@ table form button {
  * COPYING file that comes with the source code, or
  * http://www.gnu.org/licenses/gpl.txt.
  */
-/* line 33, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 35, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu {
   position: fixed;
   z-index: 1000;
@@ -1805,138 +1818,88 @@ table form button {
   background: #333333;
   color: #eeeeee;
 }
-/* line 45, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 47, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu a {
   color: #888888;
 }
-/* line 48, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 50, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu a:hover {
   color: #ffffff;
   text-decoration: none;
 }
-/* line 53, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 55, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu a:visited {
   color: #888888;
 }
-/* line 57, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 59, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu a:focus {
   color: #3584cf;
 }
-/* line 62, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 64, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu.reverse {
   background: #ffffff;
   color: #bbbbbb;
 }
-/* line 66, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 68, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu.reverse a {
   color: #555555;
 }
-/* line 18, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 20, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu.reverse a:hover, .menu.reverse a:focus {
   color: #3584cf;
 }
-/* line 23, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 25, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu.reverse a:visited {
   color: #555555;
 }
-/* line 71, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 73, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu .menu-block-right {
   position: absolute;
   right: 0;
   top: 0;
 }
-/* line 77, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 79, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu .menu-subblock {
   display: inline-block;
   padding-top: 18px;
-  margin-right: 2em;
+  margin-right: 1.2em;
   vertical-align: top;
 }
-/* line 83, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 85, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu .menu-subblock:last-child {
   margin-right: 0;
 }
 @media only screen and (max-width: 640px) {
-  /* line 77, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+  /* line 79, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
   .menu .menu-subblock {
     margin-right: 0.5em;
   }
 }
-/* line 93, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 95, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu #nav a {
   font-size: 18px;
-  margin-right: 2em;
+  margin-right: 1.2em;
 }
-/* line 96, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 98, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu #nav a:hover {
   color: #ffffff;
 }
-/* line 100, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 102, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu #nav a:last-child {
   margin-right: 0;
 }
-/* line 104, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
-.menu #nav a .phone-only {
-  display: none;
-}
-@media only screen and (max-width: 640px) {
-  /* line 104, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
-  .menu #nav a .phone-only {
-    display: inline-block;
-  }
-}
-/* line 113, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 107, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu #nav .active {
   font-size: 18px;
-  margin-right: 2em;
+  margin-right: 1.2em;
 }
 @media only screen and (max-width: 640px) {
-  /* line 92, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+  /* line 94, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
   .menu #nav {
-    position: fixed;
-    top: 60px;
-    right: 0;
-    left: 0;
-    background: #ffffff;
-    padding: 0 20px;
-    border-bottom: 2px solid #dddddd;
-    margin-right: 0;
-    max-height: 0;
-    overflow: hidden;
-    height: 100%;
-    -moz-transition: max-height 0.5s;
-    -o-transition: max-height 0.5s;
-    -webkit-transition: max-height 0.5s;
-    transition: max-height 0.5s;
-  }
-  /* line 131, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
-  .menu #nav.open {
-    max-height: 2000px;
-    overflow-y: scroll;
-  }
-  /* line 136, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
-  .menu #nav a {
-    display: block;
-    color: #555555;
-    line-height: 60px;
-    border-bottom: 1px solid #dddddd;
-    color: #555555;
-    margin: 0;
-  }
-  /* line 18, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
-  .menu #nav a:hover, .menu #nav a:focus {
-    color: #3584cf;
-  }
-  /* line 23, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
-  .menu #nav a:visited {
-    color: #555555;
-  }
-  /* line 144, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
-  .menu #nav a:last-child {
-    border-bottom: none;
+    display: none;
   }
 }
-/* line 151, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 116, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu .hamburger {
   width: 60px;
   line-height: 60px;
@@ -1946,13 +1909,17 @@ table form button {
   vertical-align: top;
   display: none;
 }
+/* line 125, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+.menu .hamburger.open {
+  background: #ffffff;
+}
 @media only screen and (max-width: 640px) {
-  /* line 151, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+  /* line 116, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
   .menu .hamburger {
     display: inline-block;
   }
 }
-/* line 164, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+/* line 133, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
 .menu .hamburger a {
   display: block;
   width: 100%;
@@ -1966,7 +1933,7 @@ table form button {
   background-image: url('../img/icons/1x/hamburger.png?1434096013');
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
-  /* line 164, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+  /* line 133, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
   .menu .hamburger a {
     background-image: url('../img/icons/2x/hamburger.png?1434096013');
     -moz-background-size: 25px, 25px;
@@ -1974,6 +1941,67 @@ table form button {
     -webkit-background-size: 25px, 25px;
     background-size: 25px, 25px;
   }
+}
+
+/* line 145, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+.alt-menu {
+  position: fixed;
+  z-index: 2000;
+  top: 60px;
+  bottom: 0;
+  left: 100%;
+  width: 100%;
+  opacity: 0;
+  -moz-transition: left 0.3s ease-out, opacity 0.3s ease-out;
+  -o-transition: left 0.3s ease-out, opacity 0.3s ease-out;
+  -webkit-transition: left 0.3s ease-out, opacity 0.3s ease-out;
+  transition: left 0.3s ease-out, opacity 0.3s ease-out;
+}
+/* line 155, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+.alt-menu .active .icon,
+.alt-menu .active .label {
+  opacity: 0.5;
+}
+/* line 160, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+.alt-menu .level2-trigger,
+.alt-menu .top-trigger {
+  color: #bbbbbb;
+}
+/* line 168, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+.alt-menu .level1, .alt-menu .level2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow-y: scroll;
+  background: #ffffff;
+}
+/* line 178, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+.alt-menu .level2 {
+  left: 100%;
+  border-left: 3px solid #dddddd;
+  -moz-transition: left 0.3s ease-out;
+  -o-transition: left 0.3s ease-out;
+  -webkit-transition: left 0.3s ease-out;
+  transition: left 0.3s ease-out;
+}
+/* line 183, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+.alt-menu .level2.open {
+  left: 0;
+}
+/* line 188, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+.alt-menu.open {
+  left: 0;
+  opacity: 1;
+}
+/* line 193, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_menu.scss */
+.alt-menu a, .alt-menu .active {
+  display: block;
+  line-height: 60px;
+  padding: 0 20px;
+  border-bottom: 1px solid #dddddd;
+  color: #555555;
 }
 
 /**
@@ -2047,8 +2075,8 @@ header .logo {
   text-transform: capitalize;
   display: inline-block;
   vertical-align: middle;
-  background-image: url('../img/icons/1x-s4e005fc0a7.png');
-  background-position: 0 -2030px;
+  background-image: url('../img/icons/1x-sf91d4b23c2.png');
+  background-position: 0 -2228px;
   background-repeat: no-repeat;
   width: 152px;
   height: 22px;
@@ -2056,12 +2084,12 @@ header .logo {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
   /* line 36, ../../scss/main.scss */
   header .logo {
-    background-image: url('../img/icons/2x-s6376508c6c.png');
-    background-position: 0 -2030px;
-    -moz-background-size: 152px 2543px;
-    -o-background-size: 152px 2543px;
-    -webkit-background-size: 152px 2543px;
-    background-size: 152px 2543px;
+    background-image: url('../img/icons/2x-s41b5e8441c.png');
+    background-position: 0 -2228px;
+    -moz-background-size: 152px 2790px;
+    -o-background-size: 152px 2790px;
+    -webkit-background-size: 152px 2790px;
+    background-size: 152px 2790px;
   }
 }
 /* line 43, ../../scss/main.scss */
@@ -2070,7 +2098,7 @@ header .notifications .icon {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  background-image: url('../img/icons/1x-s4e005fc0a7.png');
+  background-image: url('../img/icons/1x-sf91d4b23c2.png');
   background-position: 0 -220px;
   background-repeat: no-repeat;
   width: 25px;
@@ -2079,43 +2107,43 @@ header .notifications .icon {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
   /* line 43, ../../scss/main.scss */
   header .notifications .icon {
-    background-image: url('../img/icons/2x-s6376508c6c.png');
+    background-image: url('../img/icons/2x-s41b5e8441c.png');
     background-position: 0 -220px;
-    -moz-background-size: 152px 2543px;
-    -o-background-size: 152px 2543px;
-    -webkit-background-size: 152px 2543px;
-    background-size: 152px 2543px;
+    -moz-background-size: 152px 2790px;
+    -o-background-size: 152px 2790px;
+    -webkit-background-size: 152px 2790px;
+    background-size: 152px 2790px;
   }
 }
-/* line 22, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_icons.scss */
+/* line 33, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_icons.scss */
 header .notifications .icon:hover {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('../img/icons/1x-s4e005fc0a7.png');
+  background-image: url('../img/icons/1x-sf91d4b23c2.png');
   background-position: 0 -385px;
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
-  /* line 22, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_icons.scss */
+  /* line 33, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_icons.scss */
   header .notifications .icon:hover {
-    background-image: url('../img/icons/2x-s6376508c6c.png');
+    background-image: url('../img/icons/2x-s41b5e8441c.png');
     background-position: 0 -385px;
-    -moz-background-size: 152px 2543px;
-    -o-background-size: 152px 2543px;
-    -webkit-background-size: 152px 2543px;
-    background-size: 152px 2543px;
+    -moz-background-size: 152px 2790px;
+    -o-background-size: 152px 2790px;
+    -webkit-background-size: 152px 2790px;
+    background-size: 152px 2790px;
   }
 }
-/* line 26, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_icons.scss */
+/* line 37, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_icons.scss */
 header .notifications .icon.no-label {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
 }
-/* line 34, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_icons.scss */
+/* line 45, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_icons.scss */
 header .notifications .icon .label {
   display: inline-block;
   position: absolute;
@@ -2144,8 +2172,8 @@ header .settings {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  background-image: url('../img/icons/1x-s4e005fc0a7.png');
-  background-position: 0 -2137px;
+  background-image: url('../img/icons/1x-sf91d4b23c2.png');
+  background-position: 0 -2335px;
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
@@ -2153,43 +2181,43 @@ header .settings {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
   /* line 48, ../../scss/main.scss */
   header .settings {
-    background-image: url('../img/icons/2x-s6376508c6c.png');
-    background-position: 0 -2137px;
-    -moz-background-size: 152px 2543px;
-    -o-background-size: 152px 2543px;
-    -webkit-background-size: 152px 2543px;
-    background-size: 152px 2543px;
+    background-image: url('../img/icons/2x-s41b5e8441c.png');
+    background-position: 0 -2335px;
+    -moz-background-size: 152px 2790px;
+    -o-background-size: 152px 2790px;
+    -webkit-background-size: 152px 2790px;
+    background-size: 152px 2790px;
   }
 }
-/* line 22, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_icons.scss */
+/* line 33, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_icons.scss */
 header .settings:hover {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('../img/icons/1x-s4e005fc0a7.png');
-  background-position: 0 -2192px;
+  background-image: url('../img/icons/1x-sf91d4b23c2.png');
+  background-position: 0 -2390px;
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
-  /* line 22, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_icons.scss */
+  /* line 33, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_icons.scss */
   header .settings:hover {
-    background-image: url('../img/icons/2x-s6376508c6c.png');
-    background-position: 0 -2192px;
-    -moz-background-size: 152px 2543px;
-    -o-background-size: 152px 2543px;
-    -webkit-background-size: 152px 2543px;
-    background-size: 152px 2543px;
+    background-image: url('../img/icons/2x-s41b5e8441c.png');
+    background-position: 0 -2390px;
+    -moz-background-size: 152px 2790px;
+    -o-background-size: 152px 2790px;
+    -webkit-background-size: 152px 2790px;
+    background-size: 152px 2790px;
   }
 }
-/* line 26, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_icons.scss */
+/* line 37, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_icons.scss */
 header .settings.no-label {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
 }
-/* line 34, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_icons.scss */
+/* line 45, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_icons.scss */
 header .settings .label {
   display: inline-block;
   position: absolute;
@@ -2236,7 +2264,7 @@ header .settings .label {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 36, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_grid.scss */
+/* line 38, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_grid.scss */
 .section .section-title:after {
   content: '';
   display: block;
@@ -2288,7 +2316,7 @@ header h1 {
   line-height: 110%;
 }
 
-/* line 36, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_grid.scss */
+/* line 38, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_grid.scss */
 .swatches:after {
   content: '';
   display: block;
@@ -2579,7 +2607,7 @@ header h1 {
   font-size: 112.5%;
   line-height: 116%;
 }
-/* line 36, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_grid.scss */
+/* line 38, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_grid.scss */
 .typography .body-text:after {
   content: '';
   display: block;
@@ -2612,7 +2640,7 @@ header h1 {
   line-height: 137.5%;
   color: #888888;
 }
-/* line 36, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_grid.scss */
+/* line 38, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_grid.scss */
 .typography .links:after {
   content: '';
   display: block;
@@ -2714,7 +2742,7 @@ header h1 {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 36, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_grid.scss */
+/* line 38, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_grid.scss */
 .forms .fields:after {
   content: '';
   display: block;
@@ -2757,8 +2785,8 @@ header h1 {
 .forms .single-input .search {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('../img/icons/1x-s4e005fc0a7.png');
-  background-position: 0 -2082px;
+  background-image: url('../img/icons/1x-sf91d4b23c2.png');
+  background-position: 0 -2280px;
   background-repeat: no-repeat;
   width: 25px;
   height: 25px;
@@ -2770,12 +2798,12 @@ header h1 {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
   /* line 294, ../../scss/main.scss */
   .forms .single-input .search {
-    background-image: url('../img/icons/2x-s6376508c6c.png');
-    background-position: 0 -2082px;
-    -moz-background-size: 152px 2543px;
-    -o-background-size: 152px 2543px;
-    -webkit-background-size: 152px 2543px;
-    background-size: 152px 2543px;
+    background-image: url('../img/icons/2x-s41b5e8441c.png');
+    background-position: 0 -2280px;
+    -moz-background-size: 152px 2790px;
+    -o-background-size: 152px 2790px;
+    -webkit-background-size: 152px 2790px;
+    background-size: 152px 2790px;
   }
 }
 /* line 299, ../../scss/main.scss */
@@ -2963,7 +2991,6 @@ header h1 {
 }
 /* line 251, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_forms.scss */
 .forms .single-input-inline form button {
-  padding: 0.2em 20px;
   width: auto;
   min-width: 0;
   height: 24px;
@@ -3008,7 +3035,7 @@ header h1 {
   padding-right: 10px;
   border: 1px solid #f0c4c5;
 }
-/* line 36, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_grid.scss */
+/* line 38, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_grid.scss */
 .grid .grid-row:after {
   content: '';
   display: block;
@@ -3137,7 +3164,7 @@ header h1 {
   transition: width 0.5s;
   width: 66.6666666667%;
 }
-/* line 36, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_grid.scss */
+/* line 38, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_grid.scss */
 .grid .cols-nested .col-right .nested-row:after {
   content: '';
   display: block;
@@ -3248,7 +3275,7 @@ header h1 {
   display: inline-block;
   display: inline-block;
   vertical-align: middle;
-  background-image: url('../img/icons/1x-s4e005fc0a7.png');
+  background-image: url('../img/icons/1x-sf91d4b23c2.png');
   background-position: 0 -110px;
   background-repeat: no-repeat;
   width: 25px;
@@ -3259,12 +3286,12 @@ header h1 {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
   /* line 74, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
   .widgets .accordion.active .accordion-section > :nth-child(1) .accordion-icon {
-    background-image: url('../img/icons/2x-s6376508c6c.png');
+    background-image: url('../img/icons/2x-s41b5e8441c.png');
     background-position: 0 -110px;
-    -moz-background-size: 152px 2543px;
-    -o-background-size: 152px 2543px;
-    -webkit-background-size: 152px 2543px;
-    background-size: 152px 2543px;
+    -moz-background-size: 152px 2790px;
+    -o-background-size: 152px 2790px;
+    -webkit-background-size: 152px 2790px;
+    background-size: 152px 2790px;
   }
 }
 /* line 81, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
@@ -3275,7 +3302,7 @@ header h1 {
 .widgets .accordion.active .accordion-section > :nth-child(1):hover .accordion-icon {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('../img/icons/1x-s4e005fc0a7.png');
+  background-image: url('../img/icons/1x-sf91d4b23c2.png');
   background-position: 0 -165px;
   background-repeat: no-repeat;
   width: 25px;
@@ -3284,12 +3311,12 @@ header h1 {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
   /* line 84, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
   .widgets .accordion.active .accordion-section > :nth-child(1):hover .accordion-icon {
-    background-image: url('../img/icons/2x-s6376508c6c.png');
+    background-image: url('../img/icons/2x-s41b5e8441c.png');
     background-position: 0 -165px;
-    -moz-background-size: 152px 2543px;
-    -o-background-size: 152px 2543px;
-    -webkit-background-size: 152px 2543px;
-    background-size: 152px 2543px;
+    -moz-background-size: 152px 2790px;
+    -o-background-size: 152px 2790px;
+    -webkit-background-size: 152px 2790px;
+    background-size: 152px 2790px;
   }
 }
 /* line 91, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
@@ -3319,7 +3346,7 @@ header h1 {
 .widgets .accordion.active .non-collapsible > :nth-child(1):hover span.accordion-icon {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('../img/icons/1x-s4e005fc0a7.png');
+  background-image: url('../img/icons/1x-sf91d4b23c2.png');
   background-position: 0 0;
   background-repeat: no-repeat;
   width: 25px;
@@ -3328,12 +3355,12 @@ header h1 {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-resolution: 120dpi), only screen and (min-resolution: 1.3dppx) {
   /* line 116, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
   .widgets .accordion.active .non-collapsible > :nth-child(1):hover span.accordion-icon {
-    background-image: url('../img/icons/2x-s6376508c6c.png');
+    background-image: url('../img/icons/2x-s41b5e8441c.png');
     background-position: 0 0;
-    -moz-background-size: 152px 2543px;
-    -o-background-size: 152px 2543px;
-    -webkit-background-size: 152px 2543px;
-    background-size: 152px 2543px;
+    -moz-background-size: 152px 2790px;
+    -o-background-size: 152px 2790px;
+    -webkit-background-size: 152px 2790px;
+    background-size: 152px 2790px;
   }
 }
 /* line 121, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
@@ -3350,7 +3377,7 @@ header h1 {
 .widgets .accordion.active .expanded > :nth-child(1) .accordion-icon {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('../img/icons/1x-s4e005fc0a7.png');
+  background-image: url('../img/icons/1x-sf91d4b23c2.png');
   background-position: 0 0;
   background-repeat: no-repeat;
   width: 25px;
@@ -3360,12 +3387,12 @@ header h1 {
   /* line 136, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
   .widgets .accordion.active .non-collapsible > :nth-child(1) .accordion-icon,
   .widgets .accordion.active .expanded > :nth-child(1) .accordion-icon {
-    background-image: url('../img/icons/2x-s6376508c6c.png');
+    background-image: url('../img/icons/2x-s41b5e8441c.png');
     background-position: 0 0;
-    -moz-background-size: 152px 2543px;
-    -o-background-size: 152px 2543px;
-    -webkit-background-size: 152px 2543px;
-    background-size: 152px 2543px;
+    -moz-background-size: 152px 2790px;
+    -o-background-size: 152px 2790px;
+    -webkit-background-size: 152px 2790px;
+    background-size: 152px 2790px;
   }
 }
 /* line 141, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
@@ -3373,7 +3400,7 @@ header h1 {
 .widgets .accordion.active .expanded > :nth-child(1):hover .accordion-icon {
   display: inline-block;
   vertical-align: middle;
-  background-image: url('../img/icons/1x-s4e005fc0a7.png');
+  background-image: url('../img/icons/1x-sf91d4b23c2.png');
   background-position: 0 -55px;
   background-repeat: no-repeat;
   width: 25px;
@@ -3383,12 +3410,12 @@ header h1 {
   /* line 141, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
   .widgets .accordion.active .non-collapsible > :nth-child(1):hover .accordion-icon,
   .widgets .accordion.active .expanded > :nth-child(1):hover .accordion-icon {
-    background-image: url('../img/icons/2x-s6376508c6c.png');
+    background-image: url('../img/icons/2x-s41b5e8441c.png');
     background-position: 0 -55px;
-    -moz-background-size: 152px 2543px;
-    -o-background-size: 152px 2543px;
-    -webkit-background-size: 152px 2543px;
-    background-size: 152px 2543px;
+    -moz-background-size: 152px 2790px;
+    -o-background-size: 152px 2790px;
+    -webkit-background-size: 152px 2790px;
+    background-size: 152px 2790px;
   }
 }
 /* line 148, /home/foxbunny/code/outernet-ui-ng/scss/outernet/widgets/_accordion.scss */
@@ -3398,7 +3425,7 @@ header h1 {
   max-height: 1500px;
   padding: 20px;
 }
-/* line 36, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_grid.scss */
+/* line 38, /home/foxbunny/code/outernet-ui-ng/scss/outernet/mixins/_grid.scss */
 .widgets .accordion .row:after {
   content: '';
   display: block;
