@@ -1160,7 +1160,16 @@ prog.updateValue(20, '-30db');</code></pre>
             </div>
         </div>
 
+        <script type="text/template" id="menu">
+            <nav class="alt-menu">
+                <a href="/1">Home</a>
+                <a href="/1">Apps</a>
+                <a href="/1">Files</a>
+                <a href="/1"><span class="icon settings"></span> <span class="phone-only">Settings</span></a>
+            </nav>
+        </script>
         <script src="/static/js/jquery.js"></script>
+        <script src="/static/js/templates.js"></script>
         <script src="/static/js/widgets/progress.js"></script>
         <script src="/static/js/widgets/accordion.js"></script>
         <script src="/static/js/widgets/forms.js"></script>
