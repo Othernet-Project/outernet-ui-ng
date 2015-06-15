@@ -728,7 +728,9 @@
                 <div class="buttons-small">
                     <p>
                     <button class="small primary">Action</button>
+                    <a href="#" class="button small primary">Button link</a>
                     <button class="small">Action secondary</button>
+                    <a href="#" class="button small">Button link secondary</a>
                     <span class="docs">
                     Small buttons are used as part of more complex widgets 
                     <strong>where space constraints do not allow placement of 
