@@ -36,7 +36,7 @@ header {
   .logo {
     display: inline-block;
     @include hide-text;
-    @include icon(outernet_logo, yes);
+    @include misc-icon(logo_menu, yes);
   }
 
   .notifications {
